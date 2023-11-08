@@ -10,6 +10,7 @@
   --bg-primary: #121418;
   --bg-Secondary: #ede3d9;
   --bg-Secondary2: #dcb996;
+  --bg-Red: #bd1414;
 
   /* ------FONTS------ */
   --font-primary: Montserrat Alternates;
@@ -30,6 +31,15 @@
   align-items: flex-start;
   transition: all 0.5s ease-in-out;
 }
+.btn-outline {
+  display: flex;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--bg-primary);
+  background: transparent;
+  cursor: pointer;
+}
 .btn:hover {
   border: 1px solid;
   background: transparent;
@@ -39,6 +49,12 @@
 a {
   font-size: 14px !important;
   font-weight: 400;
+}
+small {
+  color: var(--grey-300, #95989d);
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: line-through;
 }
 h1 {
   font-size: 61px;
@@ -50,6 +66,12 @@ h2 {
   font-size: 40px;
   font-weight: 600;
   line-height: 48px;
+}
+h4 {
+  color: var(--Primary, #121418);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
 }
 h5 {
   color: var(--Primary, #121418);
@@ -176,58 +198,244 @@ body {
 .explore {
   padding: 80px;
 }
-.explore-content .line-b{
+.explore-content .line-b {
   width: 114px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-.explore-data img ,.explore-data h5{
-    transition: all .5s ease-in-out;
+.explore-data img,
+.explore-data h5 {
+  transition: all 0.5s ease-in-out;
 }
-.explore-data:hover .skw-right{
-    transform: skew(-0.01turn, 5deg);
-    transition: all .5s ease-in-out;
+.explore-data:hover .skw-right {
+  transform: skew(-0.01turn, 5deg);
+  transition: all 0.5s ease-in-out;
 }
-.explore-data:hover .skw-left{
-    transform: skew(0.01turn, -5deg);
-    transition: all .5s ease-in-out;
+.explore-data:hover .skw-left {
+  transform: skew(0.01turn, -5deg);
+  transition: all 0.5s ease-in-out;
 }
-.explore-data:hover .line-b{
-    width: 0px;
-    transition: all .5s ease-in-out;
+.explore-data:hover .line-b {
+  width: 0px;
+  transition: all 0.5s ease-in-out;
 }
-.explore-data:hover .up{
-    transform: translatey(-25%);
-    transition: all .5s ease-in-out;
+.explore-data:hover .up {
+  transform: translatey(-25%);
+  transition: all 0.5s ease-in-out;
 }
-.explore-data:hover .dwon{
-    transform: translatey(25%);
-    transition: all .5s ease-in-out;
+.explore-data:hover .dwon {
+  transform: translatey(25%);
+  transition: all 0.5s ease-in-out;
 }
-.explore-data .text .photo-up{
-    transform: translatey(-40%);
-    opacity: 0;
+.explore-data .text .photo-up {
+  transform: translatey(-40%);
+  opacity: 0;
 }
-.explore-data:hover .photo-up{
-    opacity: 1;
+.explore-data:hover .photo-up {
+  opacity: 1;
 }
-.explore-data .text .photo-dwon{
-    transform: translatey(50%);
-    opacity: 0;
+.explore-data .text .photo-dwon {
+  transform: translatey(50%);
+  opacity: 0;
 }
-.explore-data:hover .photo-dwon{
-    opacity: 1;
+.explore-data:hover .photo-dwon {
+  opacity: 1;
 }
 /* SECTION SHOP */
-.shop p{
-    font-size: 13px;
-    margin: 0 0 74px;
+.shop {
+  padding: 0 0 87px 0;
+}
+.text-content {
+  padding: 69px 20px 69px 33px;
+}
+.shop-title .box {
+  top: 5%;
+  width: 100%;
+  height: 90%;
+  border-top: 1px solid var(--bg-Secondary2);
+  border-bottom: 1px solid var(--bg-Secondary2);
+  border-left: 1px solid var(--bg-Secondary2);
+  z-index: -1;
+}
+.shop p {
+  font-size: 13px;
+  margin: 0 0 74px;
 }
 .shop button {
-    width: 223px;
-    padding: 10px 16px;
+  width: 223px;
+  padding: 10px 16px;
+}
+.shop .shop-bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/home/shop-bg.png);
+  background-size: 100% 100%;
+  background-position: center;
+  animation: shrink 3s infinite alternate;
+}
+.shop .shop-bg .box {
+  opacity: 1;
+  top: 5%;
+  width: 95%;
+  height: 90%;
+  border-top: 1px solid var(--White, #fff);
+  border-bottom: 1px solid var(--White, #fff);
+  border-right: 1px solid var(--White, #fff);
+  animation: hide 0.5s infinite alternate;
+}
+@keyframes shrink {
+  0% {
+    width: 90%;
+    height: 90%;
   }
-  .shop .shop-bg{
-    background-image: url(../images/home/shop-bg.png);
-    background-size: cover;
-    background-position: center;
+  100% {
+    width: 100%;
+    height: 100%;
   }
+}
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* SECTION  */
+.content-text {
+  padding: 25px 0 25px 9px;
+}
+.title .line {
+  width: 138px;
+}
+.price p {
+  font-weight: 600;
+}
+.content-text button {
+  width: 223px;
+  padding: 12px 16px;
+}
+li {
+  font-size: 14px;
+}
+.product-photo {
+  overflow: hidden;
+}
+.product-photo:hover img {
+  transform: scale3d(1, 1, 1.1);
+  transition: all 0.5s ease-in-out;
+}
+.product-veiw {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 33px;
+}
+.img-elepse {
+  left: 61px;
+  top: 161px;
+}
+/* SECTION NEW PRODUCT */
+.new-product {
+  padding: 107px 0;
+}
+.rating {
+  z-index: 1;
+}
+.p-new,
+.p-star {
+  padding: 3px 12px;
+  font-size: 14px;
+}
+.p-new {
+  background: var(--bg-Red);
+  color: #fff;
+}
+.p-star {
+  background: var(--bg-Secondary);
+  color: var(--Primary);
+}
+.img-head:hover .overlay{
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 1s ease-in-out;
+}
+.img-head:hover .overlay-data{
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+.overlay {
+  background: var(--bg-Secondary);
+  top: 100%;
+  right: 100%;
+  left: 100%;
+  bottom: 100%;
+  transition: all 1s ease-in-out;
+  z-index: 1;
+}
+.overlay .box {
+  border: 1px solid;
+  top: 5%;
+  bottom: 5%;
+  right: 5%;
+  left: 5%;
+}
+.overlay-data {
+  padding: 70px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  z-index: 1;
+}
+.overlay-btn {
+  margin: 22.5px 0 0 0;
+  gap: 12px;
+}
+.overlay-btn button {
+  z-index: 1;
+}
+.overlay-btn button:first-child {
+  display: block;
+  width: 166px;
+  padding: 12px 16px;
+  gap: 63px;
+}
+.overlay-btn button:last-child {
+  display: flex;
+  width: 48px;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 63px;
+}
+/* SECTION SAVE UP */
+.save-up{
+  height: 455px;
+  overflow: hidden;
+}
+.bg-save{
+  height: 100%;
+  background-image: url(/assets/images/home/bg-save.png);
+  background-size: 100% 100%;
+
+  animation: zoom 3s infinite alternate;
+}
+.content-save{
+  top: 50%;
+  transform: translatey(-25%);
+}
+.content-save .title h6{
+  color: var(--bg-primary);
+}
+.content-save button{
+  margin-top: 67px;
+  width: 223px;
+  padding: 12px 16px;
+}
+@keyframes zoom {
+  0% {
+scale: 1;
+  }
+  100% {
+    scale: 1.2;
+  }
+}
