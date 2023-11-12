@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/bootstrap/all.min.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap/all.min.css">
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,318 +22,507 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Montserrat+Alternates:wght@200;300;400;500;600&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/css/pages/shop.css">
+    <!-- STYLE SHEET -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/pages/shop.css">
     <title>Shop</title>
 </head>
 
 <body>
-    <div class="container bg-white">
-        <nav class="d-flex justify-content-between align-item-center mt-2 w-100">
-            <div class="search">
-                <img src="/assets/images/search-normal.png" alt="">
-            </div>
-            <div class="logo">
-                <img src="/assets/images/logo.png" alt="">
-            </div>
-            <div class="profil ">
-                <img class="me-2" src="/assets/images/heart.png" alt="">
-                <img class="me-2" src="/assets/images/bag-2.png" alt="">
-                <img src="/assets/images/user.png" alt="">
-            </div>
-        </nav>
-        <nav class="navbar navbar-expand-lg bg-second f-14 justify-content-center py-1 mt-3">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav m-auto ">
-                        <li class="nav-item me-4">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item me-4">
-                            <a class="nav-link active" href="#">Shop</a>
-                        </li>
-                        <li class="nav-item me-4">
-                            <a class="nav-link" href="#">Blogs</a>
-                        </li>
-                        <li class="nav-item me-4">
-                            <a class="nav-link" href="#">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
-                    </ul>
+    <!-- HEADER -->
+    <header>
+        <div class="container bg-white">
+            <nav class="d-flex justify-content-between align-item-center my-4">
+                <div class="search">
+                    <a href="#"><img src="/assets/images/search-normal.svg" alt=""></a>
                 </div>
-
-            </div>
-        </nav>
-        <div class="shop d-flex justify-content-center align-items-center my-4">
-            <div class="text-center">
-                <h2>Shop</h2>
-                <img src="/assets/images/pages/Breadcrumb.svg" alt="">
-            </div>
-        </div>
-    </div>
-    <!-- shop store -->
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h2>Filter</h2>
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Collection
-                            </button>
-                          </h2>
-                          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <form>
-                                    <div class="form-group">
-                                      <input type="checkbox" id="html">
-                                      <label for="html">Earrings</label>
-                                    </div>
-                                    <div class="form-group">
-                                      <input class="checked" type="checkbox" id="css">
-                                      <label for="css">Rings</label>
-                                    </div>
-                                    <div class="form-group">
-                                      <input type="checkbox" id="javascript">
-                                      <label for="javascript">Bracelets</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="checkbox" id="javascript">
-                                        <label for="javascript">Necklaces</label>
-                                      </div>
-                                  </form>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Brand
-                            </button>
-                          </h2>
-                          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                          <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Size
-                            </button>
-                          </h2>
-                          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                          </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Color
-                              </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Availability
-                              </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="accordion-item">
-                            <h2 class="accordion-header">
-                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Price
-                              </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                              <div class="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                      <div class="reset d-flex align-items-center justify-content-center">
-                        <img src="/assets/images/pages/rotate-left.svg" alt="">
-                        <p class="mb-0">Reset Filter</p>
-                      </div>
+                <div class="logo">
+                    <a href="#"><img src="/assets/images/logo.svg" alt=""></a>
                 </div>
-                <div class="col-md-9">
-                    <div class="row gy-3">
-                        <div class="header d-flex justify-content-between align-items-center ">
-                            <div> 
-                            <p class="mb-0 mx-2 f-16">Shop All (2341 Products)</p>
-                            </div>
-                            <div class="sort d-flex ">
-                                <div class="sort-img">
-                                    <a href="/html/pages/shop2.html"><img src="/assets/images/pages/sort 2.svg" alt=""></a>
-                                <img class="active" src="/assets/images/pages/sort 3.svg" alt="">
-                                </div>
-                                <div class="dropdown sort-dropd ms-1">
-                                    <button class="d-flex dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <img src="/assets/images/pages/sort rectangle.svg" alt="">
-                                        <p class="mb-0 mx-2">Alphabetically: A- Z</p>
-                                        <img src="/assets/images/pages/arrow-right.svg" alt="">
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                      <li><a class="dropdown-item" href="#">Action</a></li>
-                                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                  </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="img-head position-relative">
-                                <div class="text-head mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new">New</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                <img class="w-100" src="/assets/images/pages/prod1.svg" alt="">
-                            </div>
-                            <div class="text-cont">
-                                <p class="fm-2 f-14 m-0">PYRAMID STUD TENNIS NECKLACE- GOLD</p>
-                                <p class="f-bold f-16 m-0">$25.00 <span>$50.00</span></p>
-                            </div>   
-                        </div>
-                        <div class="col-md-4">
-                            <div class="img-head position-relative">
-                                <div class="text-head mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new">New</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                <img class="w-100" src="/assets/images/pages/prod 2.svg" alt="">
-                            </div>
-                            <div class="text-cont">
-                                <p class="fm-2 f-14 m-0">BEZEL EMERALD BALLIER RING- SAPPHIRE- SILVER</p>
-                                <p class="f-bold f-16 m-0">$25.00 <span>$50.00</span></p>
-                            </div>   
-                        </div>
-                        <div class="col-md-4">
-                            <div class="img-head position-relative">
-                                <div class="text-head mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new">New</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                <img class="w-100" src="/assets/images/pages/prod 3.svg" alt="">
-                            </div>
-                            <div class="text-cont">
-                                <p class="fm-2 f-14 m-0">COLETTE SHAKER STATEMENT NECKLACE- GOLD</p>
-                                <p class="f-bold f-16 m-0">$25.00 <span>$50.00</span></p>
-                            </div>   
-                        </div>
-                        <div class="col-md-4">
-                            <div class="img-head position-relative">
-                                <div class="text-head mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new">New</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                <img class="w-100" src="/assets/images/pages/prod 4.svg" alt="">
-                            </div>
-                            <div class="text-cont">
-                                <p class="fm-2 f-14 m-0">BABY AMALFI TUBE HOOPS- GOLD (SHIPS LATE MARCH)</p>
-                                <p class="f-bold f-16 m-0">$25.00 <span>$50.00</span></p>
-                            </div>   
-                        </div>
-                        <div class="col-md-4">
-                            <div class="img-head position-relative">
-                                <div class="text-head mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new">New</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                <img class="w-100" src="/assets/images/pages/prod 5.svg" alt="">
-                            </div>
-                            <div class="text-cont">
-                                <p class="fm-2 f-14 m-0">COLETTE SHAKER STATEMENT NECKLACE- GOLD</p>
-                                <p class="f-bold f-16 m-0">$25.00 <span>$50.00</span></p>
-                            </div>   
-                        </div>
-                        <div class="col-md-4">
-                            <div class="img-head position-relative">
-                                <div class="text-head mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new">New</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                <img class="w-100" src="/assets/images/pages/prod 6.svg" alt="">
-                            </div>
-                            <div class="text-cont">
-                                <p class="fm-2 f-14 m-0">HANGING PAVE CHAIN LINK HUGGIES- GOLD</p>
-                                <p class="f-bold f-16 m-0">$25.00 <span>$50.00</span></p>
-                            </div>   
-                        </div>
-                        <div class="col-md-4">
-                            <div class="img-head position-relative">
-                                <div class="text-head mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new">New</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                <img class="w-100" src="/assets/images/pages/prod 7.svg" alt="">
-                            </div>
-                            <div class="text-cont">
-                                <p class="fm-2 f-14 m-0">MINI BEZEL STONE CROSS STUDS- GOLD</p>
-                                <p class="f-bold f-16 m-0">$25.00 <span>$50.00</span></p>
-                            </div>   
-                        </div>
-                        <div class="col-md-4">
-                            <div class="img-head position-relative">
-                                <div class="text-head mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new">New</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                <img class="w-100" src="/assets/images/pages/prod 8.svg" alt="">
-                            </div>
-                            <div class="text-cont">
-                                <p class="fm-2 f-14 m-0">MINI BEZEL STONE CROSS STUDS- GOLD</p>
-                                <p class="f-bold f-16 m-0">$25.00 <span>$50.00</span></p>
-                            </div>   
-                        </div>
-                        <div class="col-md-4">
-                            <div class="img-head position-relative">
-                                <div class="text-head mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new">New</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                <img class="w-100" src="/assets/images/pages/prod 9.svg" alt="">
-                            </div>
-                            <div class="text-cont">
-                                <p class="fm-2 f-14 m-0">BEZEL EMERALD BALLIER RING- EMERALD- GOLD</p>
-                                <p class="f-bold f-16 m-0">$25.00 <span>$50.00</span></p>
-                            </div>   
+                <div class="profil">
+                    <a href="#"><img class="heart" id="imgheart" src="/assets/images/heart.svg" alt=""></a>
+                    <a class="mx-3" href="#"><img src="/assets/images/bag-2.svg" alt=""></a>
+                    <a href="#"><img src="/assets/images/user.svg" alt=""></a>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg bg-second f-14 justify-content-center py-1 mt-3">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item me-4">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link active" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#">Blogs</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="shop-head">
+                <div class="shop-bg2 d-flex justify-content-center align-items-center">
+                    <div class="">
+                        <h2>Shop</h2>
+                        <div class="d-flex">
+                            <img class="me-2" src="/assets/images/shop/home-2.svg" alt="">
+                            <img class="me-2" src="/assets/images/shop/arrow-right.svg" alt="">
+                            <h5>Shop</h5>
                         </div>
                     </div>
                 </div>
-                
+
+            </div>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Filter</h5>
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Collection
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="checkbox" id="html">
+                                            <label for="html">Earrings</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="checked" type="checkbox" id="css">
+                                            <label for="css">Rings</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="checkbox" id="javascript">
+                                            <label for="javascript">Bracelets</label>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="checkbox" id="javascript">
+                                            <label for="javascript">Necklaces</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Brand
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Size
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Color
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Availability
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Price
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the third item's accordion body.</strong> It is hidden by default,
+                                    until the collapse plugin adds the appropriate classes that we use to style each
+                                    element. These classes control the overall appearance, as well as the showing and
+                                    hiding via CSS transitions. You can modify any of this with custom CSS or overriding
+                                    our default variables. It's also worth noting that just about any HTML can go within
+                                    the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reset d-flex align-items-center justify-content-center">
+                        <img src="/assets/images/shop/rotate-left.svg" alt="">
+                        <p class="mb-0">Reset Filter</p>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="row gy-3">
+                        <div class="header-sort d-flex justify-content-between align-items-center ">
+                            <div class="title-all">
+                                <p>Shop All (2341 Products)</p>
+                            </div>
+                            <div class="sort d-flex ">
+                                    <div class="sort-img"><a href="/html/pages/shop2.html">
+                                            <img src="/assets/images/shop/sort2.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="sort-img active"><a href="#">
+                                        <img src="/assets/images/shop/sort3.svg" alt="">
+                                    </a>
+                                </div>
+                                <div class="dropdown sort-dropd ms-1">
+                                    <button class="d-flex dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="/assets/images/shop/sort.svg" alt="">
+                                        <p class="mb-0 mx-3">Alphabetically: A- Z</p>
+                                        <img src="/assets/images/shop/arrow-dowen.svg" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img-head position-relative">
+                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                    <p class="p-new"><span>N</span>ew</p>
+                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                </div>
+                                <div class="overlay position-absolute">
+                                    <div class="box position-absolute"></div>
+                                </div>
+                                <div class="overlay-data position-absolute">
+                                    <ul>
+                                        <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                        <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                        <li>Made from Brass with CZ Stones</li>
+                                        <li>Plated Silver</li>
+                                    </ul>
+                                    <div class="overlay-btn d-flex">
+                                        <button class="btn">
+                                            Add to cart
+                                        </button>
+                                        <button class="btn-outline">
+                                            <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <img class="w-100" src="/assets/images/home/new product2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img-head position-relative">
+                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                    <p class="p-new"><span>N</span>ew</p>
+                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                </div>
+                                <div class="overlay position-absolute">
+                                    <div class="box position-absolute"></div>
+                                </div>
+                                <div class="overlay-data position-absolute">
+                                    <ul>
+                                        <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                        <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                        <li>Made from Brass with CZ Stones</li>
+                                        <li>Plated Silver</li>
+                                    </ul>
+                                    <div class="overlay-btn d-flex">
+                                        <button class="btn">
+                                            Add to cart
+                                        </button>
+                                        <button class="btn-outline">
+                                            <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <img class="w-100" src="/assets/images/home/new product2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img-head position-relative">
+                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                    <p class="p-new"><span>N</span>ew</p>
+                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                </div>
+                                <div class="overlay position-absolute">
+                                    <div class="box position-absolute"></div>
+                                </div>
+                                <div class="overlay-data position-absolute">
+                                    <ul>
+                                        <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                        <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                        <li>Made from Brass with CZ Stones</li>
+                                        <li>Plated Silver</li>
+                                    </ul>
+                                    <div class="overlay-btn d-flex">
+                                        <button class="btn">
+                                            Add to cart
+                                        </button>
+                                        <button class="btn-outline">
+                                            <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <img class="w-100" src="/assets/images/home/new product2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img-head position-relative">
+                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                    <p class="p-new"><span>N</span>ew</p>
+                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                </div>
+                                <div class="overlay position-absolute">
+                                    <div class="box position-absolute"></div>
+                                </div>
+                                <div class="overlay-data position-absolute">
+                                    <ul>
+                                        <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                        <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                        <li>Made from Brass with CZ Stones</li>
+                                        <li>Plated Silver</li>
+                                    </ul>
+                                    <div class="overlay-btn d-flex">
+                                        <button class="btn">
+                                            Add to cart
+                                        </button>
+                                        <button class="btn-outline">
+                                            <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <img class="w-100" src="/assets/images/home/new product2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img-head position-relative">
+                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                    <p class="p-new"><span>N</span>ew</p>
+                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                </div>
+                                <div class="overlay position-absolute">
+                                    <div class="box position-absolute"></div>
+                                </div>
+                                <div class="overlay-data position-absolute">
+                                    <ul>
+                                        <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                        <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                        <li>Made from Brass with CZ Stones</li>
+                                        <li>Plated Silver</li>
+                                    </ul>
+                                    <div class="overlay-btn d-flex">
+                                        <button class="btn">
+                                            Add to cart
+                                        </button>
+                                        <button class="btn-outline">
+                                            <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <img class="w-100" src="/assets/images/home/new product2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img-head position-relative">
+                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                    <p class="p-new"><span>N</span>ew</p>
+                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                </div>
+                                <div class="overlay position-absolute">
+                                    <div class="box position-absolute"></div>
+                                </div>
+                                <div class="overlay-data position-absolute">
+                                    <ul>
+                                        <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                        <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                        <li>Made from Brass with CZ Stones</li>
+                                        <li>Plated Silver</li>
+                                    </ul>
+                                    <div class="overlay-btn d-flex">
+                                        <button class="btn">
+                                            Add to cart
+                                        </button>
+                                        <button class="btn-outline">
+                                            <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <img class="w-100" src="/assets/images/home/new product2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img-head position-relative">
+                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                    <p class="p-new"><span>N</span>ew</p>
+                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                </div>
+                                <div class="overlay position-absolute">
+                                    <div class="box position-absolute"></div>
+                                </div>
+                                <div class="overlay-data position-absolute">
+                                    <ul>
+                                        <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                        <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                        <li>Made from Brass with CZ Stones</li>
+                                        <li>Plated Silver</li>
+                                    </ul>
+                                    <div class="overlay-btn d-flex">
+                                        <button class="btn">
+                                            Add to cart
+                                        </button>
+                                        <button class="btn-outline">
+                                            <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <img class="w-100" src="/assets/images/home/new product2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img-head position-relative">
+                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                    <p class="p-new"><span>N</span>ew</p>
+                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                </div>
+                                <div class="overlay position-absolute">
+                                    <div class="box position-absolute"></div>
+                                </div>
+                                <div class="overlay-data position-absolute">
+                                    <ul>
+                                        <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                        <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                        <li>Made from Brass with CZ Stones</li>
+                                        <li>Plated Silver</li>
+                                    </ul>
+                                    <div class="overlay-btn d-flex">
+                                        <button class="btn">
+                                            Add to cart
+                                        </button>
+                                        <button class="btn-outline">
+                                            <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <img class="w-100" src="/assets/images/home/new product2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="img-head position-relative">
+                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                    <p class="p-new"><span>N</span>ew</p>
+                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                </div>
+                                <div class="overlay position-absolute">
+                                    <div class="box position-absolute"></div>
+                                </div>
+                                <div class="overlay-data position-absolute">
+                                    <ul>
+                                        <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                        <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                        <li>Made from Brass with CZ Stones</li>
+                                        <li>Plated Silver</li>
+                                    </ul>
+                                    <div class="overlay-btn d-flex">
+                                        <button class="btn">
+                                            Add to cart
+                                        </button>
+                                        <button class="btn-outline">
+                                            <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <img class="w-100" src="/assets/images/home/new product2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-    </section>
-    <footer class="detals mt-5">
+    </main>
+    <!-- FOOTER -->
+    <footer class="detals">
         <div class="container">
-            <div class="row py-5">
-                <div class="col-md-3 d-flex align-items-center justify-content-between ">
+            <div class="row">
+                <div class="col-lg-2">
                     <div>
-                        <p>Company</p>
+                        <h5>Company</h5>
                         <ul>
                             <li><a href="#">About us</a></li>
                             <li><a href="#">Contact us</a></li>
@@ -339,8 +530,10 @@
                             <li><a href="#">Product</a></li>
                         </ul>
                     </div>
+                </div>
+                <div class="col-lg-2">
                     <div>
-                        <p>Shop</p>
+                        <h5>Shop</h5>
                         <ul>
                             <li><a href="#">Earrings</a></li>
                             <li><a href="#">Rings</a></li>
@@ -349,30 +542,41 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6 text-center addres">
-                    <img class="mb-3" src="/assets/images/logo.png" alt="">
-                    <a class="d-block"><i class="fa-solid fa-location-dot"></i> 1431 W. Hubbard St. Suite 201
+
+                <div class="col-lg-4 text-center addres">
+                    <img src="/assets/images/logo.svg" alt="">
+                    <a class="d-block"><i class="fa-solid fa-location-dot shape"></i> 1431 W. Hubbard St. Suite 201
                         Chicago</a>
-                    <div class="d-flex justify-content-between phone ">
-                        <a><i class="fa-solid fa-phone"></i> +1 100 200 300</a>
-                        <a><i class="fa-regular fa-envelope"></i> Péarléu@Xbuilt.com</a>
+                    <div class="row contact">
+                        <div class="col-lg-6 p-0">
+                            <a><i class="fa-solid fa-phone shape"></i> +1 100 200 300</a>
+                        </div>
+                        <div class="col-lg-6 p-0">
+                            <a><i class="fa-regular fa-envelope shape"></i> Péarléu@Xbuilt.com</a>
+                        </div>
                     </div>
-                    <div class="soial-icon d-flex justify-content-center mt-3">
-                        <div class="icon box-border text-center me-3"><i class="fa-brands fa-facebook-f"></i></div>
-                        <div class="icon box-border text-center me-3"><i class="fa-brands fa-google"></i></div>
-                        <div class="icon box-border text-center"><i class="fa-brands fa-twitter"></i></div>
+
+                    <div class="soial-icon d-flex justify-content-center">
+                        <div class="icon box-border text-center me-3"><a href="#"><i
+                                    class="fa-brands fa-instagram"></i></a></div>
+                        <div class="icon box-border text-center me-3"><a href="#"><i
+                                    class="fa-brands fa-facebook-f"></i></a></div>
+                        <div class="icon box-border text-center"><a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 d-flex align-items-center justify-content-between">
-                    <div>
-                        <p>Help</p>
+                <div class="col-lg-2">
+                    <div class="float-end">
+                        <h5>Help</h5>
                         <ul>
                             <li><a href="#">Terms of service</a></li>
                             <li><a href="#">Shipping</a></li>
                             <li><a href="#">Return Policy</a></li>
                         </ul>
                     </div>
-                    <div>
+                </div>
+                <div class="col-lg-2 ">
+                    <div class="float-end faqs">
                         <ul>
                             <li><a href="#">Privacy Policy</a></li>
                             <li><a href="#">FAQs</a></li>
@@ -381,19 +585,20 @@
                 </div>
             </div>
         </div>
-        <div class="container  mt-5">
+        <div class="container">
             <div class="line-footer"></div>
-            <div class="creted d-flex justify-content-between mt-2">
-                <a>Created with love by <span class="f-14 f-bold">Affsquare</span> </a>
-                <a>@2023 Péarléu</a>
+            <div class="creted d-flex justify-content-between align-items-center">
+                <a class="d-flex">Created with love by<p>Affsquare</p></a>
+                <a>@2023 <small>Péarléu</small></a>
             </div>
         </div>
     </footer>
 
 
 
-    <script src="/js/bootstrap/bootstrap.bundle.js"></script>
-    <script src="/js/bootstrap/all.min.js"></script>
+    <script src="/assets/js/bootstrap/bootstrap.bundle.js"></script>
+    <script src="/assets/js/bootstrap/all.min.js"></script>
+    <script src="/assets/js/main.js"></script>
 </body>
 
 </html>

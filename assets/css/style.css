@@ -275,15 +275,16 @@ body {
   background-position: center;
   animation: shrink 3s infinite alternate;
 }
-.shop .shop-bg .box {
+.shop .shop-bghead .box {
   opacity: 1;
   top: 5%;
-  width: 95%;
-  height: 90%;
+  bottom: 5%;
+  left: 0;
+  right: 5%;
   border-top: 1px solid var(--White, #fff);
   border-bottom: 1px solid var(--White, #fff);
   border-right: 1px solid var(--White, #fff);
-  animation: hide 0.5s infinite alternate;
+  /* animation: hide 0.5s infinite alternate; */
 }
 @keyframes shrink {
   0% {
@@ -367,7 +368,7 @@ li {
   opacity: 1;
   transition: all 1s ease-in-out;
 }
-.overlay {
+.img-head .overlay {
   background: var(--bg-Secondary);
   top: 100%;
   right: 100%;
@@ -510,6 +511,8 @@ li {
 /* SECTION INSTGRAM */
 .instgram h2 {
   font-size: 27px;
+  margin: 0;
+  padding-bottom: 19px;
 }
 .instgarm-slide {
   padding-top: 11px;
@@ -531,6 +534,10 @@ li {
 .right-box{
   right: 0;
 }
+.photo-insta img{
+  width: 181px;
+  height: 215px;
+}
 .instgarm-slide img {
   animation: slide 4s infinite alternate;
 }
@@ -541,4 +548,95 @@ li {
   100% {
     transform: translateX(0);
   }
+}
+.photo-insta{
+  position: relative;
+
+}
+.photo-insta .overlay{
+  position:absolute;
+  background: rgba(255, 255, 255,.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+.photo-insta .overlay .fa-instagram{
+  color: var(--bg-primary);
+  font-size: 22px;
+}
+.photo-insta:hover .overlay{
+  opacity: 1;
+}
+.photo-insta img:first-child:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #bd1414;
+}
+
+
+/* FOOTER */
+footer{
+  padding: 48px 0;
+  background: rgba(237, 227, 217, 0.50);
+}
+footer li{
+  padding-bottom: 7px;
+}
+footer a{
+  text-decoration: none;
+  color: var(--bg-primary);
+  font-size: 13.5px;
+}
+footer h5{
+  font-size: 16px;
+  margin-bottom: 13.5px;
+}
+footer img{
+  padding-bottom: 27px;
+}
+footer .contact{
+  padding-top: 18px;
+}
+footer .shape{
+  font-size: 20px;
+}
+.faqs{
+  padding: 55px 0 0 0;
+}
+.soial-icon{
+  padding: 40px 0 0 0;
+}
+.icon{
+  width: 33px;
+  height: 33px;
+  border: 1px solid var(--bg-primary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line-footer{
+  padding-top: 67px;
+  border-bottom: 1px solid var(--bg-primary);
+}
+footer .creted a ,p {
+  font-size: 12px !important;
+}
+footer .creted p{
+  font-weight: 600;
+}
+.creted small{
+  text-decoration: none;
+  color: var(--bg-primary);
+  font-weight: 400;
 }

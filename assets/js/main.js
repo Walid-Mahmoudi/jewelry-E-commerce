@@ -1,3 +1,20 @@
+  //------------ Change Icon Heart ------------//
+  let heartChange = document.querySelectorAll(".heart");
+  let hearToggle = false;
+  for(let i=0 ; i<=heartChange.length ; i++){
+  heartChange[i].addEventListener("click", ()=>{
+    hearToggle=!hearToggle
+    if(hearToggle){
+      heartChange[i].src="./assets/images/heart-red.svg"
+    }else{
+      heartChange[i].src="./assets/images/heart.svg"
+  
+    }
+  })
+  }
+  
+
+
 // <-------------------- owl-carsoul options ---------------------------->
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
@@ -57,9 +74,6 @@ $(document).ready(function () {
       },
     });
   });
-
-
-
 
 
 
