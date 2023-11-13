@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/bootstrap/all.min.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap/all.min.css">
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,95 +22,105 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Montserrat+Alternates:wght@200;300;400;500;600&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/css/pages/shop.css">
-    <link rel="stylesheet" href="/css/pages/Product details.css">
+    <!-- SHEET STYLE -->
+    <link rel="stylesheet" href="/assets/css/pages/shop.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/pages/Product details.css">
     <title>Product details</title>
 </head>
 
 <body>
-    <div class="container bg-white">
-        <nav class="d-flex justify-content-between align-item-center mt-2 w-100">
-            <div class="search">
-                <img src="/assets/images/search-normal.png" alt="">
-            </div>
-            <div class="logo">
-                <img src="/assets/images/logo.png" alt="">
-            </div>
-            <div class="profil ">
-                <img class="me-2" src="/assets/images/heart.png" alt="">
-                <img class="me-2" src="/assets/images/bag-2.png" alt="">
-                <img src="/assets/images/user.png" alt="">
-            </div>
-        </nav>
-        <nav class="navbar navbar-expand-lg bg-second f-14 justify-content-center py-1 mt-3">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav m-auto ">
-                        <li class="nav-item me-4">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item me-4">
-                            <a class="nav-link active" href="#">Shop</a>
-                        </li>
-                        <li class="nav-item me-4">
-                            <a class="nav-link" href="#">Blogs</a>
-                        </li>
-                        <li class="nav-item me-4">
-                            <a class="nav-link" href="#">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
-                        </li>
-                    </ul>
+    <!-- HEADER -->
+    <header>
+        <div class="container bg-white">
+            <nav class="d-flex justify-content-between align-item-center my-4">
+                <div class="search">
+                    <a href="#"><img src="/assets/images/search-normal.svg" alt=""></a>
+                </div>
+                <div class="logo">
+                    <a href="#"><img src="/assets/images/logo.svg" alt=""></a>
+                </div>
+                <div class="profil">
+                    <a href="#"><img class="heart" id="imgheart" src="/assets/images/heart.svg" alt=""></a>
+                    <a class="mx-3" href="#"><img src="/assets/images/bag-2.svg" alt=""></a>
+                    <a href="#"><img src="/assets/images/user.svg" alt=""></a>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg bg-second f-14 justify-content-center py-1 mt-3">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item me-4">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link active" href="#">Shop</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#">Blogs</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="shop-head">
+                <div class="shop-bg2 d-flex justify-content-center align-items-center">
+                    <div class="title-bg">
+                        <h2>Product details</h2>
+                        <div class="d-flex">
+                            <img class="me-2" src="/assets/images/shop/home-2.svg" alt="">
+                            <img class="me-2" src="/assets/images/shop/arrow-right.svg" alt="">
+                            <h5>Shop</h5>
+                            <img class="me-2" src="/assets/images/shop/arrow-right.svg" alt="">
+                            <h5>Product details</h5>
+                        </div>
+                    </div>
                 </div>
 
             </div>
-        </nav>
-        <div class="shop d-flex justify-content-center align-items-center my-4">
-            <div class="text-center">
-                <h2>Product details</h2>
-                <div class="Product-seklect d-flex align-items-center justify-content-center">
-                    <img src="/assets/images/pages/home-2.svg" alt="">
-                    <img class="mx-1" src="/assets/images/pages/arrow-right (1).svg" alt="">
-                    <p class="mb-0">Shop</p>
-                    <img class="mx-1" src="/assets/images/pages/arrow-right (1).svg" alt="">
-                    <p class="mb-0">Product details</p>
-                </div>
-            </div>
         </div>
-    </div>
-    <!-- shop store -->
+    </header>
+    <!-- MAIN -->
     <section class="container">
         <div class="row">
-            <div class="col-lg-8">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="Product-img  " style="background-image: url('/assets/images/pages/detals1.svg') ;">
+            <div class="col-lg-9">
+                <div class="row position-relative">
+                    <div class="col-lg-7">
+                        <div class="Product-img  " style="background-image: url('/assets/images/Product-details/product-detals-bg.png') ;">
                             <div class="share-top">
-                                <i class="fa-solid fa-share-nodes"></i>
-                                <p class="mb-0">Share</p>
-                                <i class="fa-solid fa-repeat"></i>
-                                <p class="mb-0">Compare</p>
+                                <img src="/assets/images/Product-details/Icons=share-2.svg" alt="">
+                                <p>Share</p>
+                                <p>|</p>
+                                <img src="/assets/images/Product-details/repeat.svg" alt="">
+                                <p>Compare</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="detales-item w-100">
+                    <div class="col-lg-5">
+                        <div class="detales-item">
                             <p>Necklaces</p>
-                            <h2>COLETTE SHAKER STATEMENT NECKLACE- GOLD</h2>
-                            <div class="price d-flex">
-                                <p class="me-2">$25.00</p>
-                                <span>$50.00</span>
+                            <h4>Colette Shaker Statement Necklace- Gold</h4>
+                            <div class="prices d-flex align-items-center">
+                                <p class="pe-1">$25.00</p>
+                                <small> $50.00</small>
                             </div>
-                            <div class="store"><p >by <span>We bingo Store</span></p></div>
-                            <div class="rating d-flex">
-                                <i class="fa-solid fa-star me-2"></i>
-                                <p>4.5 Ratings  .  2.3K+ Reviews  .  1.5K+ Sold</p>
+                            <div class="store">
+                                <p>By <span>We bingo Store</span></p>
+                            </div>
+                            <div class="rating d-flex align-items-center">
+                                <i class="fa-solid fa-star me-2 star"></i>
+                                <p class="mb-0">4.5 Ratings <span>.</span> 2.3K+ Reviews <span>.</span> 1.5K+ Sold</p>
                             </div>
                             <div class="stock d-flex">
                                 <i class="circle fa-regular fa-circle-check me-2"></i>
@@ -123,9 +135,10 @@
                                 </ul>
                             </div>
                         </div>
-                        </div>
-                        <div class="bagination d-flex align-items-center">
-                            <ul class="d-flex">
+                    </div>
+                    <div class="slider d-flex align-items-center position-absolute">
+                        <div class="bagination d-flex align-items-center ">
+                            <ul class="d-flex align-items-center">
                                 <li class="active">01</li>
                                 <li>02</li>
                                 <li>03</li>
@@ -133,246 +146,355 @@
                                 <li>05</li>
                             </ul>
                             <div>
-                            <img src="/assets/images/arrow-line.svg" alt="">
+                                <img src="/assets/images/Product-details/arrow-left.svg" alt="">
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="buy-detales w-100">
-                        <p>Color: <span>Antique</span> </p>
-                        <div class="color-select">
-                            <label for="red">
-                                <input type="radio" name="color" id="red">
-                                <span class="color1"></span>
-                            </label>
-                            <label for="green">
-                                <input type="radio" name="color" id="green">
-                                <span class="color2"></span>
-                            </label>
-                            <label for="blue">
-                                <input type="radio" name="color" id="blue">
-                                <span class="color3"></span>
-                            </label>
-                            <label for="pink">
-                                <input type="radio" name="color" id="pink">
-                                <span class="color4"></span>
-                            </label>
-                            <label for="pink">
-                                <input type="radio" name="color" id="pink">
-                                <span class="color5"></span>
-                            </label>
-                        </div>
-                        <p>Size:<span>XL</span> </p>
-                        <div class="size-detales">
-                            <ul class="d-flex">
-                                <li>XS</li>
-                                <li>S</li>
-                                <li>L</li>
-                                <li class="active">XL</li>
-                            </ul>
-                        </div>
-                        <p>Quantity: <span>2</span> </p>
-                        <div class="Quantity-detales d-flex align-items-center">
-                            <img src="/assets/images/pages/min.svg" alt="">
-                            <label for="quantity">2</label>
-                            <img src="/assets/images/pages/max.svg" alt="">
-                        </div>
-                        <div class="line"></div>
-                        <div class="total-detales d-flex justify-content-between">
-                            <p>Total</p>
-                            <p>$120.23</p>
-                        </div>
-                        <div class="add-cart d-flex justify-content-between">
-                            <button>Add to cart</button>
-                            <button><img src="/assets/images/pages/heart.png" alt=""></button>
-                        </div>
-                        <div class="buy">
-                            <button>Buy Now</button>
+                        <div class="bagination-img d-flex gap-3">
+                            <div class="img-slide-detals ">
+                                <img class="active" src="/assets/images/Product-details/slide-detals.png" alt="">
+                            </div>
+                            <div class="img-slide-detals">
+                                <img src="/assets/images/Product-details/slide-detals.png" alt="">
+                            </div>
+                            <div class="img-slide-detals">
+                                <img src="/assets/images/Product-details/slide-detals2.png" alt="">
+                            </div>
+                            <div class="img-slide-detals">
+                                <img src="/assets/images/Product-details/slide-detals.png" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="meniu-shape ">
-                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Shipping</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Return Policy</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Warranty</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Reviews</button>
-                      </li>
-                  </ul>
-                  <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0"><p>All items in stock will ship between 1-3 business days. For shipping transit times, head to checkout and enter in your shipping address to see our location-based options. Most US orders ship Fed Ex 2 Day Air which is 2 day transit.</p></div>
-                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab" tabindex="0">...</div>
-                  </div>
+            <div class="col-lg-3">
+                <div class="buy-detales w-100">
+                    <p>Color: <span>Antique</span> </p>
+                    <div class="color-select">
+                        <label for="red">
+                            <input type="radio" name="color" id="red">
+                            <span class="color1"></span>
+                        </label>
+                        <label for="green">
+                            <input type="radio" name="color" id="green">
+                            <span class="color2"></span>
+                        </label>
+                        <label for="blue">
+                            <input type="radio" name="color" id="blue">
+                            <span class="color3"></span>
+                        </label>
+                        <label for="pink">
+                            <input type="radio" name="color" id="pink">
+                            <span class="color4"></span>
+                        </label>
+                        <label for="pink">
+                            <input type="radio" name="color" id="pink">
+                            <span class="color5"></span>
+                        </label>
+                    </div>
+                    <p>Size:<span>XL</span> </p>
+                    <div class="size-detales">
+                        <ul class="d-flex">
+                            <li>XS</li>
+                            <li>S</li>
+                            <li>L</li>
+                            <li class="active">XL</li>
+                        </ul>
+                    </div>
+                    <p>Quantity: <span>2</span> </p>
+                    <div class="Quantity-detales d-flex align-items-center">
+                        <img src="/assets/images/pages/min.svg" alt="">
+                        <label for="quantity">2</label>
+                        <img src="/assets/images/pages/max.svg" alt="">
+                    </div>
+                    <div class="line"></div>
+                    <div class="total-detales d-flex justify-content-between">
+                        <p>Total</p>
+                        <p>$120.23</p>
+                    </div>
+                    <div class="add-cart d-flex justify-content-between">
+                        <button>Add to cart</button>
+                        <button><img src="/assets/images/pages/heart.png" alt=""></button>
+                    </div>
+                    <div class="buy">
+                        <button>Buy Now</button>
+                    </div>
+                </div>
             </div>
-            <div class="row Related">
-                <h2 class="text-center">Related Products</h2>
-                <div class="col-lg-3">
-                    <div class="Related-Products">
-                        <div class="img-head position-relative">
-                            <div class="text-head mt-2 w-100 position-absolute d-flex justify-content-between">
-                                <p class="p-new">New</p>
-                                <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                            </div>
-                            <img class="w-100" src="/assets/images/pages/prod1.svg" alt="">
-                        </div>
-                        <div class="text-cont">
-                            <p class="fm-2 f-14 m-0">PYRAMID STUD TENNIS NECKLACE- GOLD</p>
-                            <p class="f-bold f-16 m-0">$25.00 <span>$50.00</span></p>
-                        </div> 
-                    </div>
+        </div>
+        <div class="meniu-shape ">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">Shipping</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">Return Policy</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Warranty</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">Reviews</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+                    <p>All items in stock will ship between 1-3 business days. For shipping transit times, head to
+                        checkout and enter in your shipping address to see our location-based options. Most US orders
+                        ship Fed Ex 2 Day Air which is 2 day transit.</p>
                 </div>
-                <div class="col-lg-3">
-                    <div class="Related-Products">
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">...</div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">...</div>
+                <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+                    tabindex="0">...</div>
+            </div>
+        </div>
+        <!-- Related Products -->
+        <div class="related-products">
+            <div class="header text-center">
+                <h2>Related Products</h2>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-3">
                         <div class="img-head position-relative">
-                            <div class="text-head mt-2 w-100 position-absolute d-flex justify-content-between">
-                                <p class="p-new">New</p>
+                            <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                <p class="p-new"><span>N</span>ew</p>
                                 <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
                             </div>
-                            <img class="w-100" src="/assets/images/pages/prod1.svg" alt="">
+                            <div class="overlay position-absolute">
+                                <div class="box position-absolute"></div>
+                            </div>
+                            <div class="overlay-data position-absolute">
+                                <ul>
+                                    <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                    <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                    <li>Made from Brass with CZ Stones</li>
+                                    <li>Plated Silver</li>
+                                </ul>
+                                <div class="overlay-btn d-flex">
+                                    <button class="btn">
+                                        Add to cart
+                                    </button>
+                                    <button class="btn-outline">
+                                        <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <img class="w-100" src="/assets/images/home/new product1.png" alt="">
                         </div>
                         <div class="text-cont">
-                            <p class="fm-2 f-14 m-0">PYRAMID STUD TENNIS NECKLACE- GOLD</p>
-                            <p class="f-bold f-16 m-0">$25.00 <span>$50.00</span></p>
-                        </div> 
+                            <h4 class="mt-2">Colette Shaker Statement Necklace- Gold</h4>
+                            <div class="prices d-flex align-items-center">
+                                <p class="pe-1">$25.00</p>
+                                <small> $50.00</small>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="Related-Products">
+                    <div class="col-md-3">
                         <div class="img-head position-relative">
-                            <div class="text-head mt-2 w-100 position-absolute d-flex justify-content-between">
-                                <p class="p-new">New</p>
+                            <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                <p class="p-new"><span>N</span>ew</p>
                                 <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
                             </div>
-                            <img class="w-100" src="/assets/images/pages/prod1.svg" alt="">
+                            <div class="overlay position-absolute">
+                                <div class="box position-absolute"></div>
+                            </div>
+                            <div class="overlay-data position-absolute">
+                                <ul>
+                                    <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                    <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                    <li>Made from Brass with CZ Stones</li>
+                                    <li>Plated Silver</li>
+                                </ul>
+                                <div class="overlay-btn d-flex">
+                                    <button class="btn">
+                                        Add to cart
+                                    </button>
+                                    <button class="btn-outline">
+                                        <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                    </button>
+                                </div>
+                            </div>
+                            <img class="w-100" src="/assets/images/home/new product2.png" alt="">
                         </div>
                         <div class="text-cont">
-                            <p class="fm-2 f-14 m-0">PYRAMID STUD TENNIS NECKLACE- GOLD</p>
-                            <p class="f-bold f-16 m-0">$25.00 <span>$50.00</span></p>
-                        </div> 
+                            <h4 class="mt-2">Colette Shaker Statement Necklace- Gold</h4>
+                            <div class="prices d-flex align-items-center">
+                                <p class="pe-1">$25.00</p>
+                                <small> $50.00</small>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="Related-Products">
+                    <div class="col-md-3">
                         <div class="img-head position-relative">
                             <div class="text-head mt-2 w-100 position-absolute d-flex justify-content-between">
-                                <p class="p-new">New</p>
+                                <p class="p-new"><span>N</span>ew</p>
                                 <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
                             </div>
-                            <img class="w-100" src="/assets/images/pages/prod1.svg" alt="">
+                            <div class="overlay position-absolute">
+                                <div class="box position-absolute"></div>
+                            </div>
+                            <div class="overlay-data position-absolute">
+                                <ul>
+                                    <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                    <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                    <li>Made from Brass with CZ Stones</li>
+                                    <li>Plated Silver</li>
+                                </ul>
+                                <div class="overlay-btn d-flex">
+                                    <button class="btn">
+                                        Add to cart
+                                    </button>
+                                    <button class="btn-outline">
+                                        <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                    </button>
+                                </div>
+                            </div>
+                            <img class="w-100" src="/assets/images/home/new product3.png" alt="">
                         </div>
                         <div class="text-cont">
-                            <p class="fm-2 f-14 m-0">PYRAMID STUD TENNIS NECKLACE- GOLD</p>
-                            <p class="f-bold f-16 m-0">$25.00 <span>$50.00</span></p>
-                        </div> 
+                            <h4 class="mt-2">Colette Shaker Statement Necklace- Gold</h4>
+                            <div class="prices d-flex align-items-center">
+                                <p class="pe-1">$25.00</p>
+                                <small> $50.00</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="img-head position-relative">
+                            <div class="text-head mt-2 w-100 position-absolute d-flex justify-content-between">
+                                <p class="p-new"><span>N</span>ew</p>
+                                <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                            </div>
+                            <div class="overlay position-absolute">
+                                <div class="box position-absolute"></div>
+                            </div>
+                            <div class="overlay-data position-absolute">
+                                <ul>
+                                    <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                    <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                    <li>Made from Brass with CZ Stones</li>
+                                    <li>Plated Silver</li>
+                                </ul>
+                                <div class="overlay-btn d-flex">
+                                    <button class="btn">
+                                        Add to cart
+                                    </button>
+                                    <button class="btn-outline">
+                                        <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                    </button>
+                                </div>
+                            </div>
+                            <img class="w-100" src="/assets/images/home/new product4.png" alt="">
+                        </div>
+                        <div class="text-cont">
+                            <h4 class="mt-2">Colette Shaker Statement Necklace- Gold</h4>
+                            <div class="prices d-flex align-items-center">
+                                <p class="pe-1">$25.00</p>
+                                <small> $50.00</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- fotter -->
+    <!-- FOOTER -->
     <footer class="detals">
         <div class="container">
-            <div class="row fotter-data">
-                <div class="col-md-4 ">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div>
-                                <p>Company</p>
-                                <ul>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                    <li><a href="#">Blogs</a></li>
-                                    <li><a href="#">Product</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div>
-                                <p>Shop</p>
-                                <ul>
-                                    <li><a href="#">Earrings</a></li>
-                                    <li><a href="#">Rings</a></li>
-                                    <li><a href="#">Necklaces</a></li>
-                                    <li><a href="#">Bracelets</a></li>
-                                </ul>
-                            </div>
-                        </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <div>
+                        <h5>Company</h5>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Product</a></li>
+                        </ul>
                     </div>
-                    
                 </div>
-                <div class="col-md-4">
-                    <div class="row d-flex justify-content-center">
-                        <div class="logo"><img src="/assets/images/logo.png" alt=""></div>
-                        <div class="address"> <a class="d-block"><i class="fa-solid fa-location-dot"></i> 1431 W. Hubbard St. Suite 201
-                            Chicago</a></div>
-                            <div class="col-lg-6">
-                                <div class="phone">
-                                    <a><i class="fa-solid fa-phone"></i> +1 100 200 300</a>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="web">
-                            <a><i class="fa-regular fa-envelope"></i> Péarléu@Xbuilt.com</a>
-                                </div>
-                            </div>
+                <div class="col-lg-2">
+                    <div>
+                        <h5>Shop</h5>
+                        <ul>
+                            <li><a href="#">Earrings</a></li>
+                            <li><a href="#">Rings</a></li>
+                            <li><a href="#">Necklaces</a></li>
+                            <li><a href="#">Bracelets</a></li>
+                        </ul>
                     </div>
+                </div>
+
+                <div class="col-lg-4 text-center addres">
+                    <img src="/assets/images/logo.svg" alt="">
+                    <a class="d-block"><i class="fa-solid fa-location-dot shape"></i> 1431 W. Hubbard St. Suite 201
+                        Chicago</a>
+                    <div class="row contact">
+                        <div class="col-lg-6 p-0">
+                            <a><i class="fa-solid fa-phone shape"></i> +1 100 200 300</a>
+                        </div>
+                        <div class="col-lg-6 p-0">
+                            <a><i class="fa-regular fa-envelope shape"></i> Péarléu@Xbuilt.com</a>
+                        </div>
+                    </div>
+
                     <div class="soial-icon d-flex justify-content-center">
-                        <div class="icon box-border text-center me-3"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
-                        <div class="icon box-border text-center me-3"><a href="#"><i class="fa-brands fa-google"></i></a></div>
-                        <div class="icon box-border text-center"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+                        <div class="icon box-border text-center me-3"><a href="#"><i
+                                    class="fa-brands fa-instagram"></i></a></div>
+                        <div class="icon box-border text-center me-3"><a href="#"><i
+                                    class="fa-brands fa-facebook-f"></i></a></div>
+                        <div class="icon box-border text-center"><a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div>
-                                <p>Help</p>
-                                <ul>
-                                    <li><a href="#">Terms of service</a></li>
-                                    <li><a href="#">Shipping</a></li>
-                                    <li><a href="#">Return Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="Privacy">
-                                <ul>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">FAQs</a></li>
-                                </ul>
-                            </div>
-                        </div>
+                <div class="col-lg-2">
+                    <div class="float-end">
+                        <h5>Help</h5>
+                        <ul>
+                            <li><a href="#">Terms of service</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 ">
+                    <div class="float-end faqs">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="line-footer"></div>
-            <div class="creted d-flex justify-content-between">
-                <p>Created with love by <span>Affsquare</span> </p>
-                <div class="year">
-                <p>@2023 <span>Péarléu</span></p>
-                </div>
+            <div class="creted d-flex justify-content-between align-items-center">
+                <a class="d-flex">Created with love by<p>Affsquare</p></a>
+                <a>@2023 <small>Péarléu</small></a>
             </div>
         </div>
     </footer>
 
 
 
-    <script src="/js/bootstrap/bootstrap.bundle.js"></script>
-    <script src="/js/bootstrap/all.min.js"></script>
+
+    <script src="/assets/js/bootstrap/bootstrap.bundle.js"></script>
+    <script src="/assets/js/bootstrap/all.min.js"></script>
 </body>
 
 </html>

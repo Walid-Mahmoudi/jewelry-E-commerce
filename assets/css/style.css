@@ -11,6 +11,8 @@
   --bg-Secondary: #ede3d9;
   --bg-Secondary2: #dcb996;
   --bg-Red: #bd1414;
+  --bg-gray: #95989D;
+  --bg-Success: #21973a;
 
   /* ------FONTS------ */
   --font-primary: Montserrat Alternates;
@@ -357,6 +359,16 @@ li {
   background: var(--bg-Secondary);
   color: var(--Primary);
 }
+.text-cont h4{
+  font-size: 16px;
+}
+.text-cont p{
+  font-size: 19px !important;
+  font-weight: 600;
+}
+.text-cont small{
+  font-size: 11px !important;
+}
 .img-head:hover .overlay {
   top: 0;
   right: 0;
@@ -366,7 +378,7 @@ li {
 }
 .img-head:hover .overlay-data {
   opacity: 1;
-  transition: all 1s ease-in-out;
+  transition: all 2s ease-in;
 }
 .img-head .overlay {
   background: var(--bg-Secondary);
@@ -391,7 +403,7 @@ li {
   right: 5%;
   padding: 9px;
   opacity: 0;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-out;
   z-index: 1;
 }
 .overlay-btn {

@@ -9,13 +9,24 @@
   background-size: 100% 100%;
   background-position: center center;
 }
+.title-bg{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 header .shop-head h2{
   color: #ffffff;
 }
+header .shop-head img:first-child{
+  width: 14px;
+}
 header .shop-head h5{
     color: #fff;
+    font-size: 15px;
+    font-weight: 600;
 }
 /* SHOP MAIN */
+/* TITLE SORT */
 .header-sort .title-all p {
   font-size: 17px !important;
 }
@@ -34,6 +45,7 @@ header .shop-head h5{
 .sort-img.active {
   background: var(--bg-Secondary);
   padding: 5px;
+  transition: all .5s ease-in-out;
 }
 .sort-img{
     margin-right: 10px;
@@ -59,7 +71,7 @@ header .shop-head h5{
 .dropdown p {
   font-size: 12px !important;
 }
-
+/* ACCORDION */
 .accordion .accordion-item {
   border: none;
 }
@@ -79,11 +91,13 @@ header .shop-head h5{
 .accordion-button:not(.collapsed)::after {
   background-image: url(/assets/images/shop/minus.svg);
 }
+.accordion-button:not(.collapsed){
+  font-weight: 500;
+}
 .form-group {
   display: block;
   margin-bottom: 15px;
 }
-
 .form-group input {
   padding: 0;
   height: initial;
@@ -133,6 +147,24 @@ label:before {
 .reset img {
   width: 20px;
   margin-right: 5px;
+}
+/* SHOP3 */
+#shop3 .p-new, .p-star{
+  padding: 3px 12px;
+}
+/* SHOP2 */
+#shop2{
+  display: none;
+}
+#shop2 .img-show{
+  height: 278px;
+  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#shop2 .p-new, #shop2 .p-star{
+  padding: 8px 24px;
+  font-size: 15px !important;
 }
 
 /* FOOTER */
