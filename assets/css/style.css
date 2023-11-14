@@ -11,15 +11,18 @@
   --bg-Secondary: #ede3d9;
   --bg-Secondary2: #dcb996;
   --bg-Red: #bd1414;
-  --bg-gray: #95989D;
+  --bg-gray: #95989d;
   --bg-Success: #21973a;
+  --bg-gray1: #E9EAEC;
+  --bg-gray2: #CBCCCF;
+  --bg-gray3: #95989D;
 
   /* ------FONTS------ */
   --font-primary: Montserrat Alternates;
   --font-Secondary: Montserrat;
   --font-Secondary2: Meow Script;
 }
-.btn {
+.btn-solid {
   border: none;
   outline: none;
   background: var(--bg-primary);
@@ -42,11 +45,20 @@
   background: transparent;
   cursor: pointer;
 }
-.btn:hover {
-  border: 1px solid;
+.btn-solid:hover {
+  border: 1px solid var(--bg-primary);
+  color: var(--bg-primary);
   background: transparent;
   padding: 10px 25px;
   transition: all 0.5s ease-in-out;
+}
+input {
+  width: 384px;
+  height: 48px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid var(--bg-primary);
 }
 a {
   font-size: 14px !important;
@@ -359,14 +371,14 @@ li {
   background: var(--bg-Secondary);
   color: var(--Primary);
 }
-.text-cont h4{
+.text-cont h4 {
   font-size: 16px;
 }
-.text-cont p{
+.text-cont p {
   font-size: 19px !important;
   font-weight: 600;
 }
-.text-cont small{
+.text-cont small {
   font-size: 11px !important;
 }
 .img-head:hover .overlay {
@@ -403,7 +415,7 @@ li {
   right: 5%;
   padding: 9px;
   opacity: 0;
-  transition: all .5s ease-out;
+  transition: all 0.5s ease-out;
   z-index: 1;
 }
 .overlay-btn {
@@ -531,7 +543,8 @@ li {
   display: flex;
   overflow: hidden;
 }
-.left-box , .right-box{
+.left-box,
+.right-box {
   width: 72px;
   height: 256px;
   flex-shrink: 0;
@@ -543,10 +556,10 @@ li {
   );
   z-index: 1;
 }
-.right-box{
+.right-box {
   right: 0;
 }
-.photo-insta img{
+.photo-insta img {
   width: 181px;
   height: 215px;
 }
@@ -561,13 +574,12 @@ li {
     transform: translateX(0);
   }
 }
-.photo-insta{
+.photo-insta {
   position: relative;
-
 }
-.photo-insta .overlay{
-  position:absolute;
-  background: rgba(255, 255, 255,.5);
+.photo-insta .overlay {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -576,17 +588,17 @@ li {
   left: 0;
   bottom: 0;
   opacity: 0;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-.photo-insta .overlay .fa-instagram{
+.photo-insta .overlay .fa-instagram {
   color: var(--bg-primary);
   font-size: 22px;
 }
-.photo-insta:hover .overlay{
+.photo-insta:hover .overlay {
   opacity: 1;
 }
-.photo-insta img:first-child:before{
-  content: '';
+.photo-insta img:first-child:before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -595,40 +607,39 @@ li {
   background: #bd1414;
 }
 
-
 /* FOOTER */
-footer{
+footer {
   padding: 48px 0;
-  background: rgba(237, 227, 217, 0.50);
+  background: rgba(237, 227, 217, 0.5);
 }
-footer li{
+footer li {
   padding-bottom: 7px;
 }
-footer a{
+footer a {
   text-decoration: none;
   color: var(--bg-primary);
   font-size: 13.5px;
 }
-footer h5{
+footer h5 {
   font-size: 16px;
   margin-bottom: 13.5px;
 }
-footer img{
+footer img {
   padding-bottom: 27px;
 }
-footer .contact{
+footer .contact {
   padding-top: 18px;
 }
-footer .shape{
+footer .shape {
   font-size: 20px;
 }
-.faqs{
+.faqs {
   padding: 55px 0 0 0;
 }
-.soial-icon{
+.soial-icon {
   padding: 40px 0 0 0;
 }
-.icon{
+.icon {
   width: 33px;
   height: 33px;
   border: 1px solid var(--bg-primary);
@@ -637,17 +648,18 @@ footer .shape{
   justify-content: center;
   align-items: center;
 }
-.line-footer{
+.line-footer {
   padding-top: 67px;
   border-bottom: 1px solid var(--bg-primary);
 }
-footer .creted a ,p {
+footer .creted a,
+p {
   font-size: 12px !important;
 }
-footer .creted p{
+footer .creted p {
   font-weight: 600;
 }
-.creted small{
+.creted small {
   text-decoration: none;
   color: var(--bg-primary);
   font-weight: 400;

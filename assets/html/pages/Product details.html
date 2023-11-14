@@ -56,10 +56,10 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item me-4">
-                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
                             </li>
                             <li class="nav-item me-4">
-                                <a class="nav-link active" href="#">Shop</a>
+                                <a class="nav-link active" href="/assets/html/pages/shop.html">Shop</a>
                             </li>
                             <li class="nav-item me-4">
                                 <a class="nav-link" href="#">Blogs</a>
@@ -93,11 +93,12 @@
     </header>
     <!-- MAIN -->
     <section class="container">
-        <div class="row">
+        <div class="row buy-shop">
             <div class="col-lg-9">
                 <div class="row position-relative">
                     <div class="col-lg-7">
-                        <div class="Product-img  " style="background-image: url('/assets/images/Product-details/product-detals-bg.png') ;">
+                        <div class="Product-img  "
+                            style="background-image: url('/assets/images/Product-details/product-detals-bg.png') ;">
                             <div class="share-top">
                                 <img src="/assets/images/Product-details/Icons=share-2.svg" alt="">
                                 <p>Share</p>
@@ -167,96 +168,277 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="buy-detales w-100">
-                    <p>Color: <span>Antique</span> </p>
-                    <div class="color-select">
-                        <label for="red">
-                            <input type="radio" name="color" id="red">
-                            <span class="color1"></span>
-                        </label>
-                        <label for="green">
-                            <input type="radio" name="color" id="green">
-                            <span class="color2"></span>
-                        </label>
-                        <label for="blue">
-                            <input type="radio" name="color" id="blue">
-                            <span class="color3"></span>
-                        </label>
-                        <label for="pink">
-                            <input type="radio" name="color" id="pink">
-                            <span class="color4"></span>
-                        </label>
-                        <label for="pink">
-                            <input type="radio" name="color" id="pink">
-                            <span class="color5"></span>
-                        </label>
+                <div class="buy-detales">
+                    <div class="color-detales">
+                        <p>Color: <span>Antique</span></p>
+                        <div class="color-select">
+                            <label for="red">
+                                <input type="radio" name="color" id="red">
+                                <span class="color1"></span>
+                            </label>
+                            <label for="green">
+                                <input type="radio" name="color" id="green">
+                                <span class="color2"></span>
+                            </label>
+                            <label for="blue">
+                                <input type="radio" name="color" id="blue">
+                                <span class="color3"></span>
+                            </label>
+                            <label for="pink">
+                                <input type="radio" name="color" id="pink">
+                                <span class="color4"></span>
+                            </label>
+                            <label for="pink">
+                                <input type="radio" name="color" id="pink">
+                                <span class="color5"></span>
+                            </label>
+                        </div>
                     </div>
-                    <p>Size:<span>XL</span> </p>
                     <div class="size-detales">
-                        <ul class="d-flex">
-                            <li>XS</li>
-                            <li>S</li>
-                            <li>L</li>
-                            <li class="active">XL</li>
-                        </ul>
+                        <p>Size:<span>XL</span> </p>
+                        <div class="size-select">
+                            <ul class="d-flex">
+                                <li>XS</li>
+                                <li>S</li>
+                                <li>L</li>
+                                <li class="active">XL</li>
+                            </ul>
+                        </div>
                     </div>
-                    <p>Quantity: <span>2</span> </p>
-                    <div class="Quantity-detales d-flex align-items-center">
-                        <img src="/assets/images/pages/min.svg" alt="">
-                        <label for="quantity">2</label>
-                        <img src="/assets/images/pages/max.svg" alt="">
+                    <div class="quantity-detales">
+                        <p>Quantity: <span>2</span> </p>
+                        <div class="quantity-select d-flex align-items-center">
+                            <img src="/assets/images/Product-details/mins.svg" alt="">
+                            <label for="quantity">2</label>
+                            <img src="/assets/images/Product-details/plus.svg" alt="">
+                        </div>
                     </div>
                     <div class="line"></div>
                     <div class="total-detales d-flex justify-content-between">
                         <p>Total</p>
                         <p>$120.23</p>
                     </div>
-                    <div class="add-cart d-flex justify-content-between">
-                        <button>Add to cart</button>
-                        <button><img src="/assets/images/pages/heart.png" alt=""></button>
+                    <div class="add-cart d-flex justify-content-between gap-2">
+                        <button class="btn-solid">Add to cart</button>
+                        <button class="btn-outline"><img class="heart" src="/assets/images/heart.svg" alt=""></button>
                     </div>
                     <div class="buy">
-                        <button>Buy Now</button>
+                        <button class="btn-outline">Buy Now</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="meniu-shape ">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                        aria-selected="true">Shipping</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                        aria-selected="false">Return Policy</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                        aria-selected="false">Warranty</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                        aria-selected="false">Reviews</button>
-                </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-                    tabindex="0">
-                    <p>All items in stock will ship between 1-3 business days. For shipping transit times, head to
-                        checkout and enter in your shipping address to see our location-based options. Most US orders
-                        ship Fed Ex 2 Day Air which is 2 day transit.</p>
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="menu-shape">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-shipping-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-shipping" type="button" role="tab" aria-controls="pills-shipping"
+                                aria-selected="true">Shipping</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-return-policy-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-return-policy" type="button" role="tab"
+                                aria-controls="pills-return-policy" aria-selected="false">Return Policy</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-warranty-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-warranty" type="button" role="tab" aria-controls="pills-warranty"
+                                aria-selected="false">Warranty</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-reviews-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-reviews" type="button" role="tab" aria-controls="pills-reviews"
+                                aria-selected="false">Reviews</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active Shipping" id="pills-shipping" role="tabpanel"
+                            aria-labelledby="pills-shipping-tab" tabindex="0">
+                            <p>All items in stock will ship between 1-3 business days. For shipping transit times, head
+                                to
+                                checkout and enter in your shipping address to see our location-based options. Most US
+                                orders
+                                ship Fed Ex 2 Day Air which is 2 day transit.</p>
+                        </div>
+                        <div class="tab-pane fade return-policy" id="pills-return-policy" role="tabpanel"
+                            aria-labelledby="pills-return-policy-tab" tabindex="0">
+                            <p>You can choose between a refund or a credit note on full priced items</p>
+                            <ul>
+                                <li>Item(s) must be returned in their original condition and packaging: unworn, unwashed
+                                    and with all tags attached.</li>
+                                <li>Earrings cannot be returned due to health and safety reasons.</li>
+                                <li>Return shipping methods and associated costs are the responsibility of the customer.
+                                </li>
+                                <li>Sale items can not be refunded for change of mind.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade Warranty" id="pills-warranty" role="tabpanel"
+                            aria-labelledby="pills-warranty-tab" tabindex="0">
+                            <p>We stand by all our jewelry so if you have any issues with a piece you have purchased, we
+                                will replace it for you within 1 year of purchase. Email us for more details.</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-reviews" role="tabpanel"
+                            aria-labelledby="pills-reviews-tab" tabindex="0">
+                            <div class="reviews">
+                                <div class="write-review d-flex justify-content-between">
+                                    <div class="customer-reviews">
+                                        <h5>Customer Reviews</h5>
+                                        <div class="rating-stars d-flex align-items-center">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <p>4.5 Ratings <span>.</span> 2.3K+ Reviews</p>
+                                        </div>
+                                    </div>
+                                    <div class="write-btn">
+                                        <button class="btn-solid" id="add-review" onclick="addReview()">Write a review</button>
+                                    </div>
+
+                                </div>
+                                <div class="write-data" id="review-input">
+                                    <p>What would you rate this product</p>
+                                    <div class="rating-stars d-flex align-items-center">
+                                        <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                        <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                        <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                        <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                        <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                    </div>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <input class="input" type="text" placeholder="Enter your name">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <input class="input" type="email" placeholder="Enter your email">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <textarea name="" id="" cols="30" rows="3"
+                                                    placeholder="Tell us your feedback"></textarea>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="review-show">
+                                    <div class="title-show d-flex justify-content-between">
+                                        <div class="rating-stars d-flex align-items-center">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                        </div>
+                                        <p>Verified Buyer - Sep 8,2023</p>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="content-show d-flex align-items-center">
+                                        <div class="review-img">
+                                            <img  src="/assets/images/Product-details/review1.png" alt=""></div>
+                                        <div>
+                                        <div class="quote">
+                                            <img src="/assets/images/Product-details/bxs_quote-alt-left.svg" alt="">
+                                        </div>
+                                        <p>Montluc claim to offer the finest diamond jewelry you can buy direct from
+                                                the maker. I did my research, compared specifications with some of the
+                                                big brands.</p>
+                                        <div class="name-review d-flex align-items-center">
+                                                <img src="/assets/images/Product-details/line-small.svg" alt="">
+                                                <h5>Alexandra Seral</h5>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-show">
+                                    <div class="title-show d-flex justify-content-between">
+                                        <div class="rating-stars d-flex align-items-center">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                        </div>
+                                        <p>Verified Buyer - Sep 8,2023</p>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="content-show d-flex align-items-center">
+                                        <div class="review-img">
+                                            <img  src="/assets/images/Product-details/review2.png" alt=""></div>
+                                        <div>
+                                        <div class="quote">
+                                            <img src="/assets/images/Product-details/bxs_quote-alt-left.svg" alt="">
+                                        </div>
+                                        <p>I’m very pleased with the things that I’ve purchased from pearleu and I'd probably do it again.</p>
+                                        <div class="name-review d-flex align-items-center">
+                                                <img src="/assets/images/Product-details/line-small.svg" alt="">
+                                                <h5>Rosie Lebsack</h5>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-show">
+                                    <div class="title-show d-flex justify-content-between">
+                                        <div class="rating-stars d-flex align-items-center">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                        </div>
+                                        <p>Verified Buyer - Sep 8,2023</p>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="content-show d-flex align-items-center">
+                                        <div class="review-img">
+                                            <img  src="/assets/images/Product-details/review3.png" alt=""></div>
+                                        <div>
+                                        <div class="quote">
+                                            <img src="/assets/images/Product-details/bxs_quote-alt-left.svg" alt="">
+                                        </div>
+                                        <p>I purchased the earrings and bracelet set; I have been eyeing it for quite a while now. I'm glad I did</p>
+                                        <div class="name-review d-flex align-items-center">
+                                                <img src="/assets/images/Product-details/line-small.svg" alt="">
+                                                <h5>Ellen Prosacco</h5>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review-show">
+                                    <div class="title-show d-flex justify-content-between">
+                                        <div class="rating-stars d-flex align-items-center">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                            <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                        </div>
+                                        <p>Verified Buyer - Sep 8,2023</p>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="content-show d-flex align-items-center">
+                                        <div class="review-img">
+                                            <img  src="/assets/images/Product-details/review4.png" alt=""></div>
+                                        <div>
+                                        <div class="quote">
+                                            <img src="/assets/images/Product-details/bxs_quote-alt-left.svg" alt="">
+                                        </div>
+                                        <p>I am a Fairly new Platinum Plus Member and I just wanted to thank the Staff for their kindness, professionalism and knowledge.</p>
+                                        <div class="name-review d-flex align-items-center">
+                                                <img src="/assets/images/Product-details/line-small.svg" alt="">
+                                                <h5>Nina Rowe</h5>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-                    tabindex="0">...</div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
-                    tabindex="0">...</div>
-                <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
-                    tabindex="0">...</div>
             </div>
         </div>
         <!-- Related Products -->
@@ -283,7 +465,7 @@
                                     <li>Plated Silver</li>
                                 </ul>
                                 <div class="overlay-btn d-flex">
-                                    <button class="btn">
+                                    <button class="btn-solid">
                                         Add to cart
                                     </button>
                                     <button class="btn-outline">
@@ -319,7 +501,7 @@
                                     <li>Plated Silver</li>
                                 </ul>
                                 <div class="overlay-btn d-flex">
-                                    <button class="btn">
+                                    <button class="btn-solid">
                                         Add to cart
                                     </button>
                                     <button class="btn-outline">
@@ -340,7 +522,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="img-head position-relative">
-                            <div class="text-head mt-2 w-100 position-absolute d-flex justify-content-between">
+                            <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
                                 <p class="p-new"><span>N</span>ew</p>
                                 <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
                             </div>
@@ -355,7 +537,7 @@
                                     <li>Plated Silver</li>
                                 </ul>
                                 <div class="overlay-btn d-flex">
-                                    <button class="btn">
+                                    <button class="btn-solid">
                                         Add to cart
                                     </button>
                                     <button class="btn-outline">
@@ -375,7 +557,7 @@
                     </div>
                     <div class="col-md-3">
                         <div class="img-head position-relative">
-                            <div class="text-head mt-2 w-100 position-absolute d-flex justify-content-between">
+                            <div class="rating text-head mt-2 w-100 position-absolute d-flex justify-content-between">
                                 <p class="p-new"><span>N</span>ew</p>
                                 <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
                             </div>
@@ -390,7 +572,7 @@
                                     <li>Plated Silver</li>
                                 </ul>
                                 <div class="overlay-btn d-flex">
-                                    <button class="btn">
+                                    <button class="btn-solid">
                                         Add to cart
                                     </button>
                                     <button class="btn-outline">
@@ -474,7 +656,7 @@
                 <div class="col-lg-2 ">
                     <div class="float-end faqs">
                         <ul>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="/assets/html/pages/Privacy Policy.html">Privacy Policy</a></li>
                             <li><a href="#">FAQs</a></li>
                         </ul>
                     </div>
@@ -495,6 +677,9 @@
 
     <script src="/assets/js/bootstrap/bootstrap.bundle.js"></script>
     <script src="/assets/js/bootstrap/all.min.js"></script>
+    <script src="/assets/js/pages/product details.js"></script>
+    <script src="/assets/js/pages/shop.js"></script>
 </body>
+
 
 </html>

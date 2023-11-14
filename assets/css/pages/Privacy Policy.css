@@ -1,0 +1,27 @@
+.shop-head .shop-bg2{
+    background-image: url(/assets/images/Privacy-Policy/Privacy-Policy-bg.png);
+}
+.product-details span{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--bg-gray3);
+}
+.product-details h5{
+    font-size: 17px;
+    padding-top: 13.5px;
+}
+.product-details h3{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: 13.5px;
+}
+.product-details  .line{
+    border-bottom: 1px solid var(--bg-gray1);
+    margin: 18px 0;
+}
+.product-details p{
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 25px;
+}
