@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap/all.min.css">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;300;400;500;600&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Meow+Script&family=Montserrat+Alternates:wght@200;300;400;500;600&family=Montserrat:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- SHEET STYLE -->
+    <link rel="stylesheet" href="/assets/css/pages/shop.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/pages/cart.css">
+    <title>Cart</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="container bg-white">
+            <nav class="d-flex justify-content-between align-item-center my-4">
+                <div class="search">
+                    <a href="#"><img src="/assets/images/search-normal.svg" alt=""></a>
+                </div>
+                <div class="logo">
+                    <a href="#"><img src="/assets/images/logo.svg" alt=""></a>
+                </div>
+                <div class="profil">
+                    <a href="#"><img class="heart" id="imgheart" src="/assets/images/heart.svg" alt=""></a>
+                    <a class="mx-3" href="#"><img src="/assets/images/bag-2.svg" alt=""></a>
+                    <a href="#"><img src="/assets/images/user.svg" alt=""></a>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg bg-second f-14 justify-content-center py-1 mt-3">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item me-4">
+                                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link active" href="/assets/html/pages/shop.html">Shop</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#">Blogs</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="shop-head">
+                <div class="shop-bg2 d-flex justify-content-center align-items-center">
+                    <div class="title-bg">
+                        <h2>Cart</h2>
+                        <div class="d-flex">
+                            <img class="me-2" src="/assets/images/shop/home-2.svg" alt="">
+                            <img class="me-2" src="/assets/images/shop/arrow-right.svg" alt="">
+                            <h5>Shop</h5>
+                            <img class="me-2" src="/assets/images/shop/arrow-right.svg" alt="">
+                            <h5>Product details</h5>
+                            <img class="me-2" src="/assets/images/shop/arrow-right.svg" alt="">
+                            <h5>Cart</h5>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- MAIN -->
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="shopping-cart d-flex align-items-center">
+                            <h5>Shopping Cart</h5>
+                            <p>(3 items)</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="shopping-cart d-flex align-items-center justify-content-end">
+                            <button class="btn-outline">Keep Shopping</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="items mt-4">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="items-cart d-flex align-items-center">
+                                <div class="item-img">
+                                    <img src="/assets/images/Cart/item-cart1.svg" alt="">
+                                </div>
+                                <div class="title-item">
+                                    <span>Colette Shaker Statement Necklace- Gold</span>
+                                    <div class="prices d-flex align-items-center">
+                                        <p class="pe-1">$125.00</p>
+                                        <small> $150.00</small>
+                                    </div>
+                                    <div class="quantity-detales">
+                                        <p>Quantity: <span>2</span> </p>
+                                        <div class="quantity-select d-flex align-items-center">
+                                            <img src="/assets/images/Product-details/mins.svg" alt="">
+                                            <span>2</span>
+                                            <img src="/assets/images/Product-details/plus.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
+                                <button class="btn-outline">Remove</button>
+                                <button class="btn-brown">
+                                    <div>Subtotal:</div>
+                                    <div>$250.00</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="items mt-4">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="items-cart d-flex align-items-center">
+                                <div class="item-img">
+                                    <img src="/assets/images/Cart/item-cart2.svg" alt="">
+                                </div>
+                                <div class="title-item">
+                                    <span>Baby Amalfi Tube Hoops- Gold (Ships Late March)</span>
+                                    <div class="prices d-flex align-items-center">
+                                        <p class="pe-1">$25.00</p>
+                                        <small> $150.00</small>
+                                    </div>
+                                    <div class="quantity-detales">
+                                        <p>Quantity: <span>2</span> </p>
+                                        <div class="quantity-select d-flex align-items-center">
+                                            <img src="/assets/images/Product-details/mins.svg" alt="">
+                                            <span>2</span>
+                                            <img src="/assets/images/Product-details/plus.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
+                                <button class="btn-outline">Remove</button>
+                                <button class="btn-brown">
+                                    <div>Subtotal:</div>
+                                    <div>$250.00</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="items mt-4">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="items-cart d-flex align-items-center">
+                                <div class="item-img">
+                                    <img src="/assets/images/Cart/item-cart3.svg" alt="">
+                                </div>
+                                <div class="title-item">
+                                    <span>Mini Bezel Stone Cross Studs- Gold</span>
+                                    <div class="prices d-flex align-items-center">
+                                        <p class="pe-1">$74.00</p>
+                                        <small> $150.00</small>
+                                    </div>
+                                    <div class="quantity-detales">
+                                        <p>Quantity: <span>2</span> </p>
+                                        <div class="quantity-select d-flex align-items-center">
+                                            <img src="/assets/images/Product-details/mins.svg" alt="">
+                                            <span>2</span>
+                                            <img src="/assets/images/Product-details/plus.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
+                                <button class="btn-outline">Remove</button>
+                                <button class="btn-brown">
+                                    <div>Subtotal:</div>
+                                    <div>$250.00</div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3">
+                <div class="summary">
+                    <h5>Summary</h5>
+                    <div class="line"></div>
+                    <div class="subtotal d-flex justify-content-between align-items-center">
+                        <p>Subtotal</p>
+                        <span>$500.00</span>
+                    </div>
+                    <div class="discount d-flex justify-content-between align-items-center">
+                        <p>Discount</p>
+                        <span>- $16.50</span>
+                    </div>
+                    <div class="shipping-fees d-flex justify-content-between align-items-center">
+                        <p>Shipping Fees</p>
+                        <span>Free</span>
+                    </div>
+                    <div class="line"></div>
+                    <input class="form-control" type="text" placeholder="Have a promo code?">
+                    <button class="btn-brown w-100">
+                        <div>Total</div>
+                        <div>$250.00</div>
+                    </button>
+                    <button class="btn-solid w-100">
+                        Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="detals">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div>
+                        <h5>Company</h5>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Product</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div>
+                        <h5>Shop</h5>
+                        <ul>
+                            <li><a href="#">Earrings</a></li>
+                            <li><a href="#">Rings</a></li>
+                            <li><a href="#">Necklaces</a></li>
+                            <li><a href="#">Bracelets</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 text-center addres">
+                    <img src="/assets/images/logo.svg" alt="">
+                    <a class="d-block"><i class="fa-solid fa-location-dot shape"></i> 1431 W. Hubbard St. Suite 201
+                        Chicago</a>
+                    <div class="row contact">
+                        <div class="col-lg-6 p-0">
+                            <a><i class="fa-solid fa-phone shape"></i> +1 100 200 300</a>
+                        </div>
+                        <div class="col-lg-6 p-0">
+                            <a><i class="fa-regular fa-envelope shape"></i> Péarléu@Xbuilt.com</a>
+                        </div>
+                    </div>
+
+                    <div class="soial-icon d-flex justify-content-center">
+                        <div class="icon box-border text-center me-3"><a href="#"><i
+                                    class="fa-brands fa-instagram"></i></a></div>
+                        <div class="icon box-border text-center me-3"><a href="#"><i
+                                    class="fa-brands fa-facebook-f"></i></a></div>
+                        <div class="icon box-border text-center"><a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="float-end">
+                        <h5>Help</h5>
+                        <ul>
+                            <li><a href="#">Terms of service</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Return Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 ">
+                    <div class="float-end faqs">
+                        <ul>
+                            <li><a href="/assets/html/pages/Privacy Policy.html">Privacy Policy</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="line-footer"></div>
+            <div class="creted d-flex justify-content-between align-items-center">
+                <a class="d-flex">Created with love by<p>Affsquare</p></a>
+                <a>@2023 <small>Péarléu</small></a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="/assets/js/bootstrap/bootstrap.bundle.js"></script>
+    <script src="/assets/js/bootstrap/all.min.js"></script>
+    <script src="/assets/js/pages/product details.js"></script>
+    <script src="/assets/js/pages/shop.js"></script>
+</body>
+
+
+</html>

@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="/assets/css/pages/shop.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/pages/Product details.css">
+    <link rel="stylesheet" href="/assets/css/pages/cart.css">
     <title>Product details</title>
 </head>
 
@@ -42,7 +43,7 @@
                 </div>
                 <div class="profil">
                     <a href="#"><img class="heart" id="imgheart" src="/assets/images/heart.svg" alt=""></a>
-                    <a class="mx-3" href="#"><img src="/assets/images/bag-2.svg" alt=""></a>
+                    <a class="mx-3" href="/assets/html/pages/Cart.html"><img src="/assets/images/bag-2.svg" alt=""></a>
                     <a href="#"><img src="/assets/images/user.svg" alt=""></a>
                 </div>
             </nav>
@@ -219,8 +220,142 @@
                         <p>$120.23</p>
                     </div>
                     <div class="add-cart d-flex justify-content-between gap-2">
-                        <button class="btn-solid">Add to cart</button>
-                        <button class="btn-outline"><img class="heart" src="/assets/images/heart.svg" alt=""></button>
+                        <button class="btn-solid" data-bs-toggle="modal" data-bs-target="#exampleModal">Add to
+                            cart</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="cart-sucsses d-flex align-items-center">
+                                        <i class="fa-regular fa-circle-check tick"></i>
+                                        <p>2 items <span>added in your shopping cart successfully</span></p>
+                                    </div>
+                                    <div class="modal-header">
+                                        <div class="shopping-cart d-flex align-items-center">
+                                            <h5>Shopping Cart</h5>
+                                            <p>(3 items)</p>
+                                        </div>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="line"></div>
+
+                                    <div class="modal-body">
+                                        <div class="items">
+                                            <div class="row">
+                                                <div class="col-lg-9">
+                                                    <div class="items-cart d-flex align-items-center">
+                                                        <div class="item-img">
+                                                            <img src="/assets/images/Cart/item-cart1.svg" alt="">
+                                                        </div>
+                                                        <div class="title-item">
+                                                            <span>Colette Shaker Statement Necklace- Gold</span>
+                                                            <div class="prices d-flex align-items-center">
+                                                                <p class="pe-1">$125.00</p>
+                                                                <small> $150.00</small>
+                                                            </div>
+                                                            <div class="quantity-detales">
+                                                                <p>Quantity: <span>2</span> </p>
+                                                                <div class="quantity-select d-flex align-items-center">
+                                                                    <img src="/assets/images/Product-details/mins.svg" alt="">
+                                                                    <span>2</span>
+                                                                    <img src="/assets/images/Product-details/plus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
+                                                        <button class="btn-outline">Remove</button>                            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="line"></div>
+
+                                        <div class="items">
+                                            <div class="row">
+                                                <div class="col-lg-9">
+                                                    <div class="items-cart d-flex align-items-center">
+                                                        <div class="item-img">
+                                                            <img src="/assets/images/Cart/item-cart1.svg" alt="">
+                                                        </div>
+                                                        <div class="title-item">
+                                                            <span>Colette Shaker Statement Necklace- Gold</span>
+                                                            <div class="prices d-flex align-items-center">
+                                                                <p class="pe-1">$125.00</p>
+                                                                <small> $150.00</small>
+                                                            </div>
+                                                            <div class="quantity-detales">
+                                                                <p>Quantity: <span>2</span> </p>
+                                                                <div class="quantity-select d-flex align-items-center">
+                                                                    <img src="/assets/images/Product-details/mins.svg" alt="">
+                                                                    <span>2</span>
+                                                                    <img src="/assets/images/Product-details/plus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
+                                                        <button class="btn-outline">Remove</button>                            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="line"></div>
+
+                                        <div class="items">
+                                            <div class="row">
+                                                <div class="col-lg-9">
+                                                    <div class="items-cart d-flex align-items-center">
+                                                        <div class="item-img">
+                                                            <img src="/assets/images/Cart/item-cart1.svg" alt="">
+                                                        </div>
+                                                        <div class="title-item">
+                                                            <span>Colette Shaker Statement Necklace- Gold</span>
+                                                            <div class="prices d-flex align-items-center">
+                                                                <p class="pe-1">$125.00</p>
+                                                                <small> $150.00</small>
+                                                            </div>
+                                                            <div class="quantity-detales">
+                                                                <p>Quantity: <span>2</span> </p>
+                                                                <div class="quantity-select d-flex align-items-center">
+                                                                    <img src="/assets/images/Product-details/mins.svg" alt="">
+                                                                    <span>2</span>
+                                                                    <img src="/assets/images/Product-details/plus.svg" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
+                                                        <button class="btn-outline">Remove</button>                            
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="line"></div>
+
+                                        <button class="btn-brown w-100 mt-4">
+                                            <div>Subtotal</div>
+                                            <div>$120.23</div>
+                                        </button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Keep Shopping</button>
+                                        <button type="button" class="btn btn-primary">View Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-outlineblock"><img class="heart" src="/assets/images/heart.svg"
+                                alt=""></button>
                     </div>
                     <div class="buy">
                         <button class="btn-outline">Buy Now</button>
@@ -294,8 +429,8 @@
                                             <p>4.5 Ratings <span>.</span> 2.3K+ Reviews</p>
                                         </div>
                                     </div>
-                                    <div class="write-btn">
-                                        <button class="btn-solid" id="add-review" onclick="addReview()">Write a review</button>
+                                    <div class="write-buton">
+                                        <button class="btn-solid">Write a review</button>
                                     </div>
 
                                 </div>
@@ -339,18 +474,19 @@
                                     <div class="line"></div>
                                     <div class="content-show d-flex align-items-center">
                                         <div class="review-img">
-                                            <img  src="/assets/images/Product-details/review1.png" alt=""></div>
-                                        <div>
-                                        <div class="quote">
-                                            <img src="/assets/images/Product-details/bxs_quote-alt-left.svg" alt="">
+                                            <img src="/assets/images/Product-details/review1.png" alt="">
                                         </div>
-                                        <p>Montluc claim to offer the finest diamond jewelry you can buy direct from
+                                        <div>
+                                            <div class="quote">
+                                                <img src="/assets/images/Product-details/bxs_quote-alt-left.svg" alt="">
+                                            </div>
+                                            <p>Montluc claim to offer the finest diamond jewelry you can buy direct from
                                                 the maker. I did my research, compared specifications with some of the
                                                 big brands.</p>
-                                        <div class="name-review d-flex align-items-center">
+                                            <div class="name-review d-flex align-items-center">
                                                 <img src="/assets/images/Product-details/line-small.svg" alt="">
                                                 <h5>Alexandra Seral</h5>
-                                        </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -368,16 +504,18 @@
                                     <div class="line"></div>
                                     <div class="content-show d-flex align-items-center">
                                         <div class="review-img">
-                                            <img  src="/assets/images/Product-details/review2.png" alt=""></div>
-                                        <div>
-                                        <div class="quote">
-                                            <img src="/assets/images/Product-details/bxs_quote-alt-left.svg" alt="">
+                                            <img src="/assets/images/Product-details/review2.png" alt="">
                                         </div>
-                                        <p>I’m very pleased with the things that I’ve purchased from pearleu and I'd probably do it again.</p>
-                                        <div class="name-review d-flex align-items-center">
+                                        <div>
+                                            <div class="quote">
+                                                <img src="/assets/images/Product-details/bxs_quote-alt-left.svg" alt="">
+                                            </div>
+                                            <p>I’m very pleased with the things that I’ve purchased from pearleu and I'd
+                                                probably do it again.</p>
+                                            <div class="name-review d-flex align-items-center">
                                                 <img src="/assets/images/Product-details/line-small.svg" alt="">
                                                 <h5>Rosie Lebsack</h5>
-                                        </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -395,16 +533,18 @@
                                     <div class="line"></div>
                                     <div class="content-show d-flex align-items-center">
                                         <div class="review-img">
-                                            <img  src="/assets/images/Product-details/review3.png" alt=""></div>
-                                        <div>
-                                        <div class="quote">
-                                            <img src="/assets/images/Product-details/bxs_quote-alt-left.svg" alt="">
+                                            <img src="/assets/images/Product-details/review3.png" alt="">
                                         </div>
-                                        <p>I purchased the earrings and bracelet set; I have been eyeing it for quite a while now. I'm glad I did</p>
-                                        <div class="name-review d-flex align-items-center">
+                                        <div>
+                                            <div class="quote">
+                                                <img src="/assets/images/Product-details/bxs_quote-alt-left.svg" alt="">
+                                            </div>
+                                            <p>I purchased the earrings and bracelet set; I have been eyeing it for
+                                                quite a while now. I'm glad I did</p>
+                                            <div class="name-review d-flex align-items-center">
                                                 <img src="/assets/images/Product-details/line-small.svg" alt="">
                                                 <h5>Ellen Prosacco</h5>
-                                        </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -422,16 +562,18 @@
                                     <div class="line"></div>
                                     <div class="content-show d-flex align-items-center">
                                         <div class="review-img">
-                                            <img  src="/assets/images/Product-details/review4.png" alt=""></div>
-                                        <div>
-                                        <div class="quote">
-                                            <img src="/assets/images/Product-details/bxs_quote-alt-left.svg" alt="">
+                                            <img src="/assets/images/Product-details/review4.png" alt="">
                                         </div>
-                                        <p>I am a Fairly new Platinum Plus Member and I just wanted to thank the Staff for their kindness, professionalism and knowledge.</p>
-                                        <div class="name-review d-flex align-items-center">
+                                        <div>
+                                            <div class="quote">
+                                                <img src="/assets/images/Product-details/bxs_quote-alt-left.svg" alt="">
+                                            </div>
+                                            <p>I am a Fairly new Platinum Plus Member and I just wanted to thank the
+                                                Staff for their kindness, professionalism and knowledge.</p>
+                                            <div class="name-review d-flex align-items-center">
                                                 <img src="/assets/images/Product-details/line-small.svg" alt="">
                                                 <h5>Nina Rowe</h5>
-                                        </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -468,7 +610,7 @@
                                     <button class="btn-solid">
                                         Add to cart
                                     </button>
-                                    <button class="btn-outline">
+                                    <button class="btn-outlineblock">
                                         <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
                                     </button>
                                 </div>
@@ -504,7 +646,7 @@
                                     <button class="btn-solid">
                                         Add to cart
                                     </button>
-                                    <button class="btn-outline">
+                                    <button class="btn-outlineblock">
                                         <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
                                     </button>
                                 </div>
@@ -540,7 +682,7 @@
                                     <button class="btn-solid">
                                         Add to cart
                                     </button>
-                                    <button class="btn-outline">
+                                    <button class="btn-outlineblock">
                                         <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
                                     </button>
                                 </div>
@@ -575,7 +717,7 @@
                                     <button class="btn-solid">
                                         Add to cart
                                     </button>
-                                    <button class="btn-outline">
+                                    <button class="btn-outlineblock">
                                         <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
                                     </button>
                                 </div>

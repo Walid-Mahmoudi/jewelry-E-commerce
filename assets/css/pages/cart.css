@@ -1,0 +1,111 @@
+.shop-head .shop-bg2 {
+  background-image: url(/assets/images/Cart/cart-bg.png);
+}
+.title-bg h5 {
+  font-weight: 500 !important;
+}
+.shopping-cart p {
+  font-size: 13.5px !important;
+  color: var(--bg-graydark);
+  padding-left: 10px;
+}
+.shopping-cart .btn-outline {
+  width: 165px;
+  font-size: 13.5px;
+  font-weight: 500;
+}
+.items {
+  border: 1px solid var(--bg-gray1);
+  padding: 20px;
+}
+.items-cart .item-img img{
+    width: 138px;
+}
+.items-cart .title-item {
+  padding-left: 20px;
+}
+.items-cart .title-item span {
+  font-size: 13.5px !important;
+  font-weight: 500;
+}
+.prices {
+  padding-bottom: 13.5px;
+}
+.prices p {
+  font-size: 19px !important;
+  font-weight: 500;
+  color: var(--bg-primary);
+}
+.prices small {
+  font-size: 11px !important;
+}
+.quantity-select {
+  padding-top: 5px;
+}
+.quantity-detales p{
+    font-size: 12px !important;
+    font-weight: 500;
+}
+.quantity-detales p span{
+    font-size: 12px !important;
+    font-weight: 400 !important;
+}
+.quantity-select img {
+  width: 20px;
+}
+.quantity-select span {
+  padding: 0 15px;
+  font-size: 12px;
+  font-weight: 400;
+}
+.items-cart .btn-outline{
+    height: 27px;
+    font-size: 12px;
+    font-weight: 400;
+}
+.items-cart .btn-brown{
+    width: 160px !important;
+    font-size: 14px;
+    font-weight: 600;
+}
+.summary{
+    border: 1px solid var(--bg-gray1);
+    padding: 20px;
+}
+.summary h5{
+    font-size: 16px;
+}
+.summary .line{
+    border-bottom: 1px solid var(--bg-gray1);
+    margin: 13.5px 0 ;
+}
+.summary p{
+    font-size: 14px !important;
+    font-weight: 500;
+}
+.summary span{
+    font-size: 14px !important;
+    font-weight: 400;
+}
+.summary .discount{
+    padding: 13.5px 0;
+    color: var(--bg-Red);
+}
+.summary .shipping-fees span{
+    color: var(--bg-Success);
+}
+input{
+    border: none;
+    outline: none;
+    margin-bottom: 54px;
+}
+.summary .btn-brown{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+.summary .btn-solid{
+justify-content: center;
+align-items: center;
+font-size: 14px;
+}
