@@ -93,7 +93,7 @@
         </div>
     </header>
     <!-- MAIN -->
-    <section class="container">
+    <main class="container">
         <div class="row buy-shop">
             <div class="col-lg-9">
                 <div class="row position-relative">
@@ -174,23 +174,23 @@
                         <p>Color: <span>Antique</span></p>
                         <div class="color-select">
                             <label for="red">
-                                <input type="radio" name="color" id="red">
+                                <input class="check" type="radio" name="color" id="red">
                                 <span class="color1"></span>
                             </label>
                             <label for="green">
-                                <input type="radio" name="color" id="green">
+                                <input class="check" type="radio" name="color" id="green">
                                 <span class="color2"></span>
                             </label>
                             <label for="blue">
-                                <input type="radio" name="color" id="blue">
+                                <input class="check" type="radio" name="color" id="blue">
                                 <span class="color3"></span>
                             </label>
                             <label for="pink">
-                                <input type="radio" name="color" id="pink">
+                                <input class="check" type="radio" name="color" id="pink">
                                 <span class="color4"></span>
                             </label>
-                            <label for="pink">
-                                <input type="radio" name="color" id="pink">
+                            <label for="broo">
+                                <input class="check" type="radio" name="color" id="broo">
                                 <span class="color5"></span>
                             </label>
                         </div>
@@ -209,9 +209,11 @@
                     <div class="quantity-detales">
                         <p>Quantity: <span>2</span> </p>
                         <div class="quantity-select d-flex align-items-center">
-                            <img src="/assets/images/Product-details/mins.svg" alt="">
-                            <label for="quantity">2</label>
-                            <img src="/assets/images/Product-details/plus.svg" alt="">
+                            <img role="button" id="mins" src="/assets/images/Product-details/mins.svg" alt=""
+                                >
+                            <input type="text" value="1" name="" class="num">
+                            <img role="button" id="plus" src="/assets/images/Product-details/plus.svg" alt=""
+                                >
                         </div>
                     </div>
                     <div class="line"></div>
@@ -258,17 +260,20 @@
                                                             <div class="quantity-detales">
                                                                 <p>Quantity: <span>2</span> </p>
                                                                 <div class="quantity-select d-flex align-items-center">
-                                                                    <img src="/assets/images/Product-details/mins.svg" alt="">
+                                                                    <img src="/assets/images/Product-details/mins.svg"
+                                                                        alt="">
                                                                     <span>2</span>
-                                                                    <img src="/assets/images/Product-details/plus.svg" alt="">
+                                                                    <img src="/assets/images/Product-details/plus.svg"
+                                                                        alt="">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3">
-                                                    <div class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
-                                                        <button class="btn-outline">Remove</button>                            
+                                                    <div
+                                                        class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
+                                                        <button class="btn-outline">Remove</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -291,17 +296,20 @@
                                                             <div class="quantity-detales">
                                                                 <p>Quantity: <span>2</span> </p>
                                                                 <div class="quantity-select d-flex align-items-center">
-                                                                    <img src="/assets/images/Product-details/mins.svg" alt="">
+                                                                    <img src="/assets/images/Product-details/mins.svg"
+                                                                        alt="">
                                                                     <span>2</span>
-                                                                    <img src="/assets/images/Product-details/plus.svg" alt="">
+                                                                    <img src="/assets/images/Product-details/plus.svg"
+                                                                        alt="">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3">
-                                                    <div class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
-                                                        <button class="btn-outline">Remove</button>                            
+                                                    <div
+                                                        class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
+                                                        <button class="btn-outline">Remove</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -324,17 +332,20 @@
                                                             <div class="quantity-detales">
                                                                 <p>Quantity: <span>2</span> </p>
                                                                 <div class="quantity-select d-flex align-items-center">
-                                                                    <img src="/assets/images/Product-details/mins.svg" alt="">
+                                                                    <img src="/assets/images/Product-details/mins.svg"
+                                                                        alt="">
                                                                     <span>2</span>
-                                                                    <img src="/assets/images/Product-details/plus.svg" alt="">
+                                                                    <img src="/assets/images/Product-details/plus.svg"
+                                                                        alt="">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-3">
-                                                    <div class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
-                                                        <button class="btn-outline">Remove</button>                            
+                                                    <div
+                                                        class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
+                                                        <button class="btn-outline">Remove</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -345,11 +356,14 @@
                                             <div>Subtotal</div>
                                             <div>$120.23</div>
                                         </button>
+                                        <p class="taxes">Taxes and shipping calculated at checkout</p>
+                                        <div class="line"></div>
+
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Keep Shopping</button>
-                                        <button type="button" class="btn btn-primary">View Cart</button>
+                                        <button type="button" class="btn-outline" data-bs-dismiss="modal">Keep
+                                            Shopping</button>
+                                        <button type="button" class="btn-solid">View Cart</button>
                                     </div>
                                 </div>
                             </div>
@@ -430,7 +444,8 @@
                                         </div>
                                     </div>
                                     <div class="write-buton">
-                                        <button class="btn-solid">Write a review</button>
+                                        <button class="btn-solid" id="write-review" onclick="writeReviews()">Write a
+                                            review</button>
                                     </div>
 
                                 </div>
@@ -735,7 +750,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </main>
     <!-- FOOTER -->
     <footer class="detals">
         <div class="container">
@@ -815,12 +830,13 @@
     </footer>
 
 
-
-
+    <!-- BOOTSTRAP -->
     <script src="/assets/js/bootstrap/bootstrap.bundle.js"></script>
     <script src="/assets/js/bootstrap/all.min.js"></script>
-    <script src="/assets/js/pages/product details.js"></script>
-    <script src="/assets/js/pages/shop.js"></script>
+    <!-- MAIN JS -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/pages/product-details.js"></script>
+
 </body>
 
 

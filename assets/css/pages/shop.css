@@ -111,7 +111,7 @@ header .shop-head h5{
   position: relative;
   cursor: pointer;
 }
-input {
+.check {
   padding: 0;
   height: initial;
   width: initial;
@@ -140,9 +140,12 @@ label:before {
   left: 4px;
   width: 5px;
   height: 10px;
-  border: solid var(--bg-primary);
+  border: solid #fff;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
+}
+.form-group input:checked + label::before {
+background-color: var(--bg-primary);
 }
 .reset img {
   width: 20px;

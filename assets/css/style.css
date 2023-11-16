@@ -24,7 +24,7 @@
   --font-Secondary2: Meow Script;
 }
 /* CLASSIS BUTTON */
-.btn-solid{
+.btn-solid {
   border: none;
   outline: none;
   background: var(--bg-primary);
@@ -45,7 +45,7 @@
   background: transparent;
   transition: all 0.5s ease-in-out;
 }
-.btn-solidspace{
+.btn-solidspace {
   border: none;
   outline: none;
   background: var(--bg-primary);
@@ -71,7 +71,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px;
+  font-size: 14px;
+  padding: 10px;
   border: 1px solid var(--bg-primary);
   background: transparent;
   cursor: pointer;
@@ -87,7 +88,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 12px;
+  font-size: 14px;
+  padding: 10px;
   border: 1px solid var(--bg-primary);
   background: transparent;
   cursor: pointer;
@@ -387,9 +389,12 @@ li {
 .product-photo {
   overflow: hidden;
 }
+.product-photo img {
+  transition: all 1s ease-in-out;
+}
 .product-photo:hover img {
-  transform: scale3d(1, 1, 1.1);
-  transition: all 0.5s ease-in-out;
+  transform: scale(1.5);
+  transform-origin: bottom left;
 }
 .product-veiw {
   display: flex;
@@ -605,7 +610,10 @@ li {
   height: 215px;
 }
 .instgarm-slide img {
-  animation: slide 4s infinite alternate;
+  animation: slide 4s alternate infinite;
+}
+.instgarm-slide img {
+  /* animation-play-state: paused; */
 }
 @keyframes slide {
   0% {

@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="/assets/css/pages/shop.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/pages/cart.css">
+    <link rel="stylesheet" href="/assets/css/pages/Product details.css">
     <title>Cart</title>
 </head>
 
@@ -126,9 +127,11 @@
                                     <div class="quantity-detales">
                                         <p>Quantity: <span>2</span> </p>
                                         <div class="quantity-select d-flex align-items-center">
-                                            <img src="/assets/images/Product-details/mins.svg" alt="">
-                                            <span>2</span>
-                                            <img src="/assets/images/Product-details/plus.svg" alt="">
+                                            <img role="button" id="mins" src="/assets/images/Product-details/mins.svg"
+                                                alt="" onclick="Min()">
+                                            <input type="text" value="1" name="" class="num">
+                                            <img role="button" id="plus" src="/assets/images/Product-details/plus.svg"
+                                                alt="" onclick="Plus()">
                                         </div>
                                     </div>
                                 </div>
@@ -161,9 +164,11 @@
                                     <div class="quantity-detales">
                                         <p>Quantity: <span>2</span> </p>
                                         <div class="quantity-select d-flex align-items-center">
-                                            <img src="/assets/images/Product-details/mins.svg" alt="">
-                                            <span>2</span>
-                                            <img src="/assets/images/Product-details/plus.svg" alt="">
+                                            <img role="button" id="mins" src="/assets/images/Product-details/mins.svg"
+                                                alt="" >
+                                            <input type="text" value="1" name="" class="num">
+                                            <img role="button" id="plus" src="/assets/images/Product-details/plus.svg"
+                                                alt="" >
                                         </div>
                                     </div>
                                 </div>
@@ -196,9 +201,11 @@
                                     <div class="quantity-detales">
                                         <p>Quantity: <span>2</span> </p>
                                         <div class="quantity-select d-flex align-items-center">
-                                            <img src="/assets/images/Product-details/mins.svg" alt="">
-                                            <span>2</span>
-                                            <img src="/assets/images/Product-details/plus.svg" alt="">
+                                            <img role="button" id="mins" src="/assets/images/Product-details/mins.svg"
+                                                alt="" onclick="Min()">
+                                            <input type="text" value="1" name="" class="num">
+                                            <img role="button" id="plus" src="/assets/images/Product-details/plus.svg"
+                                                alt="" onclick="Plus()">
                                         </div>
                                     </div>
                                 </div>
@@ -329,6 +336,7 @@
 
     <script src="/assets/js/bootstrap/bootstrap.bundle.js"></script>
     <script src="/assets/js/bootstrap/all.min.js"></script>
+    <script src="/assets/js/main.js"></script>
     <script src="/assets/js/pages/product details.js"></script>
     <script src="/assets/js/pages/shop.js"></script>
 </body>

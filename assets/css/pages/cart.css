@@ -19,7 +19,9 @@
   padding: 20px;
 }
 .items-cart .item-img img{
-    width: 138px;
+  width: 150px;
+  height: 112px;
+  object-fit: cover;
 }
 .items-cart .title-item {
   padding-left: 20px;
@@ -89,7 +91,9 @@
 }
 .summary .discount{
     padding: 13.5px 0;
-    color: var(--bg-Red);
+}
+.summary .discount p ,.summary .discount span{
+  color: var(--bg-Red);
 }
 .summary .shipping-fees span{
     color: var(--bg-Success);

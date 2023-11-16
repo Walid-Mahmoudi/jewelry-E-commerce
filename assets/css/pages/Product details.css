@@ -236,8 +236,12 @@ label::before {
 .quantity-select img {
   width: 20px;
 }
-.quantity-select label {
-  padding: 0 15px;
+.quantity-select input {
+text-align: center;
+  background: transparent;
+  margin: 0;
+  width: 20px;
+  margin: 0 10px;
   font-size: 12px;
   font-weight: 400;
 }
@@ -484,7 +488,21 @@ border-bottom: 1px solid var(--bg-gray1);
 .modal-content .btn-brown{
   font-size: 17px !important;
   font-weight: 600;
+  margin-bottom: 10px;
 }
-/* .modal-body .items-cart .item-img img{
-  width: 0;
-} */
+.modal-body .taxes{
+  font-size: 13.5px !important;
+  font-weight: 400;
+  color: var(--bg-graydark);
+  padding-bottom: 20px;
+}
+.modal-footer{
+padding-top: 20px;
+padding-bottom: 27px;
+}
+.modal-footer .btn-outline{
+  width: 164px;
+}
+.modal-footer .btn-solid{
+  width: 164px;
+}

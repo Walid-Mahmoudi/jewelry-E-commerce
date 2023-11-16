@@ -1,19 +1,4 @@
-//------------ Change Icon Heart ------------//
-let heartChange = document.querySelectorAll(".heart");
-let hearToggle = false;
-for (let i = 0; i <= heartChange.length; i++) {
-  heartChange[i].addEventListener("click", () => {
-    hearToggle = !hearToggle;
-    if (hearToggle) {
-      heartChange[i].src = "http://127.0.0.1:5500/assets/images/heart-red.svg";
-    } else {
-      heartChange[i].src = "http://127.0.0.1:5500/assets/images/heart.svg";
-    }
-  });
-}
-
 //------------ Toglle Sort ------------//
-
 function sort2() {
   let showThree = document.getElementById("shop3");
   let showTwo = document.getElementById("shop2");
@@ -35,6 +20,3 @@ function sort3() {
   btnSort3.classList.add("active");
   btnSort2.classList.remove("active");
 }
-
-
-
