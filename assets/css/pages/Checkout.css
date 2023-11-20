@@ -1,0 +1,83 @@
+header nav .logo{
+    padding: 0 0 0 16%;
+}
+header nav .profil .dropdown .dropdown-toggle{
+    color: var(--bg-primary);
+    text-decoration: none;
+    font-size: 14px !important;
+    padding-right: 0;
+}
+header nav .profil .dropdown img{
+    width: 27px;
+}
+header nav .profil .dropdown .arrow-down{
+    width: 20px;
+}
+header nav .profil .dropdown .dropdown-menu .dropdown-item{
+    font-size: 12px !important;
+    font-family: Montserrat;
+    padding: 7px 14px;
+} 
+header nav .profil .dropdown .dropdown-menu .line{
+    border-bottom: 1px solid var(--bg-gray1);
+    width: 80%;
+    margin: auto;
+}
+header nav .profil .dropdown .dropdown-menu .logout{
+    color: var(--bg-Red);
+}
+.dropdown-menu.show{
+    border-radius: 0;
+    border-color: var(--bg-gray1);
+    inset: 45% auto auto -30% !important;
+    padding: 0;
+}
+ .dropdown-item:hover {
+    color: var(--bs-dropdown-link-hover-color);
+    background-color: rgba(237, 227, 217, 0.5);
+}
+.shop-head .title-bg h2{
+ font-size: 33px;
+}
+input , select{
+    margin-bottom: 20px;
+}
+
+.shipping-information{
+    border: 1px solid var(--bg-gray1);
+    padding: 27px;
+}
+.shipping-information h5{
+    font-size: 14px;
+    padding-left: 14px;
+}
+.shipping-information .contact{
+    background: rgba(237, 227, 217, 0.40);
+    padding: 0 20px;
+}
+.shipping-information .contact-information , .shipping-address{
+    padding: 33px 0;
+}
+.shipping-information .btn-solid{
+    width: 30%;
+}
+.contact-information .Pickup{
+    background-image: url(/assets/images/Checkout/shop.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+    padding-left: 27px;
+}
+.contact-information .Ship{
+    background-image: url(/assets/images/Checkout/truck.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+    padding-left: 27px;
+}
+.contact-information .Pickup:focus::-webkit-input-placeholder{
+    transform: translateY(0) translateX(0);
+}
+.contact-information .Ship:focus::-webkit-input-placeholder{
+    transform: translateY(0) translateX(0);
+}

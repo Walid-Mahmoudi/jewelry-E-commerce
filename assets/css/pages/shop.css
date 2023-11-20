@@ -111,7 +111,7 @@ header .shop-head h5{
   position: relative;
   cursor: pointer;
 }
-.check {
+.accordion-body form .form-group input {
   padding: 0;
   height: initial;
   width: initial;

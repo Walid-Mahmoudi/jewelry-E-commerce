@@ -104,15 +104,36 @@
   border: none;
   color: var(--bg-primary);
 }
-
-/* input {
-  width: 384px;
-  height: 48px;
+/* CLASSIS INPUT */
+input{
   border: none;
   outline: none;
-  background: transparent;
-  border-bottom: 1px solid var(--bg-primary);
-} */
+  border-bottom: 1px solid;
+  width: 100%;
+  padding: 13px 0;
+  cursor: pointer;
+}
+
+input::placeholder{
+  font-size: 12px;
+  color: var(--bg-primary);
+  font-family: Montserrat;
+  transition: all 1s ease-in-out;
+}
+input:focus::-webkit-input-placeholder{
+  transform: translateY(-100%) translateX(0);
+  transition: all 1s ease-in-out;
+}
+select{
+  border: none;
+  border-bottom: 1px solid;
+  width: 100%;
+  font-size: 12px;
+  padding: 13px 0;
+  cursor: pointer;
+}
+
+
 a {
   font-size: 14px !important;
   font-weight: 400;

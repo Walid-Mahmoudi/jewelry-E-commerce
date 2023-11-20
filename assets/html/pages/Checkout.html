@@ -26,8 +26,8 @@
     <link rel="stylesheet" href="/assets/css/pages/shop.css">
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/pages/cart.css">
-    <link rel="stylesheet" href="/assets/css/pages/Product details.css">
-    <title>Cart</title>
+    <link rel="stylesheet" href="/assets/css/pages/Checkout.css">
+    <title>Checkout</title>
 </head>
 
 <body>
@@ -41,10 +41,31 @@
                 <div class="logo">
                     <a href="#"><img src="/assets/images/logo.svg" alt=""></a>
                 </div>
-                <div class="profil">
+                <div class="profil d-flex align-items-center">
                     <a href="#"><img class="heart" id="imgheart" src="/assets/images/heart.svg" alt=""></a>
-                    <a class="mx-3" href="#"><img src="/assets/images/bag-2.svg" alt=""></a>
-                    <a href="#"><img src="/assets/images/user.svg" alt=""></a>
+                    <a class="mx-3" href="/assets/html/pages/Cart.html"><img src="/assets/images/bag-2.svg" alt=""></a>
+
+                    <div class="dropdown d-flex align-items-center">
+                    <a href="#"><img src="/assets/images/profile/profile-pic.svg" alt=""></a>
+                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Loaa Hany
+                            <img class="arrow-down" src="/assets/images/profile/arrow-down-small.svg" alt="">
+                        </a>
+                        
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">My Profile</a></li>
+                            <li><a class="dropdown-item" href="#">My Orders</a></li>
+                            <li><a class="dropdown-item" href="#">My Addresses</a></li>
+                            <li><a class="dropdown-item" href="#">My Wishlist</a></li>
+                            <li><a class="dropdown-item" href="#">Payments</a></li>
+                            <li><a class="dropdown-item" href="#">Wallet</a></li>
+                            <li><a class="dropdown-item" href="#">Returns</a></li>
+                            <div class="line"></div>
+                            <li><a class="dropdown-item logout" href="#">Logout</a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
             <nav class="navbar navbar-expand-lg bg-second f-14 justify-content-center py-1 mt-3">
@@ -60,7 +81,7 @@
                                 <a class="nav-link" aria-current="page" href="/index.html">Home</a>
                             </li>
                             <li class="nav-item me-4">
-                                <a class="nav-link active" href="/assets/html/pages/shop.html">Shop</a>
+                                <a class="nav-link" href="/assets/html/pages/shop.html">Shop</a>
                             </li>
                             <li class="nav-item me-4">
                                 <a class="nav-link" href="#">Blogs</a>
@@ -78,7 +99,7 @@
             <div class="shop-head">
                 <div class="shop-bg2 d-flex justify-content-center align-items-center">
                     <div class="title-bg">
-                        <h2>Cart</h2>
+                        <h2>Checkout Process</h2>
                         <div class="d-flex">
                             <img class="me-2" src="/assets/images/shop/home-2.svg" alt="">
                             <img class="me-2" src="/assets/images/shop/arrow-right.svg" alt="">
@@ -87,6 +108,8 @@
                             <h5>Product details</h5>
                             <img class="me-2" src="/assets/images/shop/arrow-right.svg" alt="">
                             <h5>Cart</h5>
+                            <img class="me-2" src="/assets/images/shop/arrow-right.svg" alt="">
+                            <h5>Checkout</h5>
                         </div>
                     </div>
                 </div>
@@ -98,129 +121,96 @@
     <main class="container">
         <div class="row">
             <div class="col-lg-9">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="shopping-cart d-flex align-items-center">
-                            <h5>Shopping Cart</h5>
-                            <p>(3 items)</p>
-                        </div>
+                <div class="shipping-steps d-flex align-items-end">
+                    <div>
+                        <p>Step 1</p>
+                        <h5>Shipping Information</h5>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="shopping-cart d-flex align-items-center justify-content-end">
-                            <button class="btn-outline">Keep Shopping</button>
-                        </div>
+                    <div>
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                        <i class="fa-solid fa-arrow-right-long"></i>
                     </div>
                 </div>
-                <div class="items mt-4">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="items-cart d-flex align-items-center">
-                                <div class="item-img">
-                                    <img src="/assets/images/Cart/item-cart1.svg" alt="">
-                                </div>
-                                <div class="title-item">
-                                    <span>Colette Shaker Statement Necklace- Gold</span>
-                                    <div class="prices d-flex align-items-center">
-                                        <p class="pe-1">$125.00</p>
-                                        <small> $150.00</small>
-                                    </div>
-                                    <div class="quantity-detales">
-                                        <p>Quantity: <span>2</span> </p>
-                                        <div class="quantity-select d-flex align-items-center">
-                                            <img role="button" id="mins" src="/assets/images/Product-details/mins.svg"
-                                                alt="" onclick="Min()">
-                                            <input type="text" value="1" name="" class="num">
-                                            <img role="button" id="plus" src="/assets/images/Product-details/plus.svg"
-                                                alt="" onclick="Plus()">
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="shipping-information">
+                    <div class="contact d-flex align-items-center">
+                        <img src="/assets/images/Checkout/Line 28.svg" alt="">
+                        <h5>Contact Information</h5>
+                    </div>
+                    <div class="contact-information">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="First Name">
                             </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
-                                <button class="btn-outline">Remove</button>
-                                <button class="btn-brown">
-                                    <div>Subtotal:</div>
-                                    <div>$250.00</div>
-                                </button>
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="Last Name">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="number" placeholder="Phone Number">
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="items mt-4">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="items-cart d-flex align-items-center">
-                                <div class="item-img">
-                                    <img src="/assets/images/Cart/item-cart2.svg" alt="">
-                                </div>
-                                <div class="title-item">
-                                    <span>Baby Amalfi Tube Hoops- Gold (Ships Late March)</span>
-                                    <div class="prices d-flex align-items-center">
-                                        <p class="pe-1">$25.00</p>
-                                        <small> $150.00</small>
-                                    </div>
-                                    <div class="quantity-detales">
-                                        <p>Quantity: <span>2</span> </p>
-                                        <div class="quantity-select d-flex align-items-center">
-                                            <img role="button" id="mins" src="/assets/images/Product-details/mins.svg"
-                                                alt="" >
-                                            <input type="text" value="1" name="" class="num">
-                                            <img role="button" id="plus" src="/assets/images/Product-details/plus.svg"
-                                                alt="" >
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="contact d-flex align-items-center">
+                        <img src="/assets/images/Checkout/Line 28.svg" alt="">
+                        <h5>Shipping Address</h5>
+                    </div>
+                    <div class="shipping-address">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <select name="country" id="country" >
+                                    <option value="" selected disabled>Country/Region</option>
+                                    <option value="">Option 2</option>
+                                    <option value="">Option 3</option>
+                                    <option value="">Option 4</option>
+                                  </select>
                             </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
-                                <button class="btn-outline">Remove</button>
-                                <button class="btn-brown">
-                                    <div>Subtotal:</div>
-                                    <div>$250.00</div>
-                                </button>
+                            <div class="col-lg-4">
+                                <select name="country" id="country" >
+                                    <option value="" selected disabled>City</option>
+                                    <option value="">Option 2</option>
+                                    <option value="">Option 3</option>
+                                    <option value="">Option 4</option>
+                                  </select>
+                            </div>
+                            <div class="col-lg-4">
+                                <select name="country" id="country" >
+                                    <option value="" selected disabled>Postal code / ZIP (Optional)</option>
+                                    <option value="">Option 2</option>
+                                    <option value="">Option 3</option>
+                                    <option value="">Option 4</option>
+                                  </select>
+                            </div>
+                            <div class="col-lg-12">
+                                <input type="text" placeholder="Street">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="text" placeholder="Apartment, Suite, etc.. (Optional)">
+                            </div>
+                            <div class="col-lg-6">
+                                <input type="number" placeholder="Flat Number">
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="items mt-4">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="items-cart d-flex align-items-center">
-                                <div class="item-img">
-                                    <img src="/assets/images/Cart/item-cart3.svg" alt="">
-                                </div>
-                                <div class="title-item">
-                                    <span>Mini Bezel Stone Cross Studs- Gold</span>
-                                    <div class="prices d-flex align-items-center">
-                                        <p class="pe-1">$74.00</p>
-                                        <small> $150.00</small>
-                                    </div>
-                                    <div class="quantity-detales">
-                                        <p>Quantity: <span>2</span> </p>
-                                        <div class="quantity-select d-flex align-items-center">
-                                            <img role="button" id="mins" src="/assets/images/Product-details/mins.svg"
-                                                alt="" onclick="Min()">
-                                            <input type="text" value="1" name="" class="num">
-                                            <img role="button" id="plus" src="/assets/images/Product-details/plus.svg"
-                                                alt="" onclick="Plus()">
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="contact d-flex align-items-center">
+                        <img src="/assets/images/Checkout/Line 28.svg" alt="">
+                        <h5>Shipping Method</h5>
+                    </div>
+                    <div class="contact-information">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <input class="Pickup" type="text" placeholder="Pickup">
                             </div>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
-                                <button class="btn-outline">Remove</button>
-                                <button class="btn-brown">
-                                    <div>Subtotal:</div>
-                                    <div>$250.00</div>
-                                </button>
+                            <div class="col-lg-6">
+                                <input class="Ship" type="text" placeholder="Ship">
                             </div>
                         </div>
                     </div>
+                    <div class="d-flex justify-content-end">
+                        <button class="btn-solid">Next</button>
+                    </div>
+                    
                 </div>
             </div>
 
@@ -241,18 +231,21 @@
                         <span>Free</span>
                     </div>
                     <div class="line"></div>
-                    <input type="text" placeholder="Have a promo code?">
+                    <input  type="text" placeholder="Have a promo code?">
                     <button class="btn-brown w-100">
                         <div>Total</div>
                         <div>$250.00</div>
                     </button>
                     <button class="btn-solid w-100">
-                        Checkout
+                        Place Order
                     </button>
                 </div>
             </div>
         </div>
     </main>
+
+
+    
     <!-- FOOTER -->
     <footer class="detals">
         <div class="container">

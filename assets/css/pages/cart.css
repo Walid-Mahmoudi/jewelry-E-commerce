@@ -98,9 +98,7 @@
 .summary .shipping-fees span{
     color: var(--bg-Success);
 }
-input{
-    border: none;
-    outline: none;
+.summary input{
     margin-bottom: 54px;
 }
 .summary .btn-brown{
