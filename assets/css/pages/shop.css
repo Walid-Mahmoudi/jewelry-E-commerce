@@ -119,7 +119,7 @@ header .shop-head h5{
   display: none;
   cursor: pointer;
 }
-label:before {
+.form-group label:before {
   content: "";
   width: 13.5px;
   height: 13.5px;

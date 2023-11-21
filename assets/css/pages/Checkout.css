@@ -1,83 +1,221 @@
-header nav .logo{
-    padding: 0 0 0 16%;
+header nav .logo {
+  padding: 0 0 0 16%;
 }
-header nav .profil .dropdown .dropdown-toggle{
-    color: var(--bg-primary);
-    text-decoration: none;
-    font-size: 14px !important;
-    padding-right: 0;
+header nav .profil .dropdown .dropdown-toggle {
+  color: var(--bg-primary);
+  text-decoration: none;
+  font-size: 14px !important;
+  padding-right: 0;
 }
-header nav .profil .dropdown img{
-    width: 27px;
+header nav .profil .dropdown img {
+  width: 27px;
 }
-header nav .profil .dropdown .arrow-down{
-    width: 20px;
+header nav .profil .dropdown .arrow-down {
+  width: 20px;
 }
-header nav .profil .dropdown .dropdown-menu .dropdown-item{
-    font-size: 12px !important;
-    font-family: Montserrat;
-    padding: 7px 14px;
-} 
-header nav .profil .dropdown .dropdown-menu .line{
-    border-bottom: 1px solid var(--bg-gray1);
-    width: 80%;
-    margin: auto;
+header nav .profil .dropdown .dropdown-menu .dropdown-item {
+  font-size: 12px !important;
+  font-family: Montserrat;
+  padding: 7px 14px;
 }
-header nav .profil .dropdown .dropdown-menu .logout{
-    color: var(--bg-Red);
+header nav .profil .dropdown .dropdown-menu .line {
+  border-bottom: 1px solid var(--bg-gray1);
+  width: 80%;
+  margin: auto;
 }
-.dropdown-menu.show{
-    border-radius: 0;
-    border-color: var(--bg-gray1);
-    inset: 45% auto auto -30% !important;
-    padding: 0;
+header nav .profil .dropdown .dropdown-menu .logout {
+  color: var(--bg-Red);
 }
- .dropdown-item:hover {
-    color: var(--bs-dropdown-link-hover-color);
-    background-color: rgba(237, 227, 217, 0.5);
+.dropdown-menu.show {
+  border-radius: 0;
+  border-color: var(--bg-gray1);
+  inset: 45% auto auto -30% !important;
+  padding: 0;
 }
-.shop-head .title-bg h2{
- font-size: 33px;
+.dropdown-item:hover {
+  color: var(--bs-dropdown-link-hover-color);
+  background-color: rgba(237, 227, 217, 0.5);
 }
-input , select{
-    margin-bottom: 20px;
+.shop-head .title-bg h2 {
+  font-size: 33px;
+}
+input,
+select {
+  margin-bottom: 20px;
+}
+.shipping-steps h5 {
+  font-size: 17px !important;
+}
+.shipping-steps p {
+  font-size: 12px !important;
+}
+.shipping-information {
+  border: 1px solid var(--bg-gray1);
+  padding: 27px;
+}
+.shipping-information h5 {
+  font-size: 14px;
+  padding-left: 14px;
+}
+.shipping-information .contact {
+  background: rgba(237, 227, 217, 0.4);
+  padding: 0 20px;
+}
+.shipping-information .contact-information,
+.shipping-address {
+  padding: 33px 0;
+}
+/* Floating Label Animation  */
+.shipping-information .field {
+  position: relative;
+}
+.shipping-information .field label {
+  font-size: 12px;
+  color: var(--bg-primary);
+  font-family: Montserrat;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+  transition: all 1s ease-in-out;
+  pointer-events: none;
+}
+.shipping-information .field input:focus-visible + label,
+.shipping-information .field input:not(:placeholder-shown) + label {
+  top: -5px;
+}
+.shipping-information .field select:placeholder-shown + label {
+  top: -5px;
 }
 
-.shipping-information{
-    border: 1px solid var(--bg-gray1);
-    padding: 27px;
+.shipping-information .field select:focus + label,
+.shipping-information .field select:valid + label {
+  top: -5px;
 }
-.shipping-information h5{
-    font-size: 14px;
-    padding-left: 14px;
+
+.shipping-information .btn-solid {
+  width: 30%;
 }
-.shipping-information .contact{
-    background: rgba(237, 227, 217, 0.40);
-    padding: 0 20px;
+
+.contact-information .Pickup {
+  background-image: url(/assets/images/Checkout/shop.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+  padding-left: 27px;
 }
-.shipping-information .contact-information , .shipping-address{
-    padding: 33px 0;
+.contact-information .Ship {
+  background-image: url(/assets/images/Checkout/truck.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 20px;
+  padding-left: 27px;
 }
-.shipping-information .btn-solid{
-    width: 30%;
+.contact-information .Pickup:focus::-webkit-input-placeholder {
+  transform: translateY(0) translateX(0);
 }
-.contact-information .Pickup{
-    background-image: url(/assets/images/Checkout/shop.svg);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 20px;
-    padding-left: 27px;
+.contact-information .Ship:focus::-webkit-input-placeholder {
+  transform: translateY(0) translateX(0);
 }
-.contact-information .Ship{
-    background-image: url(/assets/images/Checkout/truck.svg);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 20px;
-    padding-left: 27px;
+
+/* Progress */
+.progress {
+  width: 87px;
+  height: 87px !important;
+  float: left;
+  line-height: 150px;
+  background: none;
+  margin: 20px;
+  box-shadow: none;
+  position: relative;
 }
-.contact-information .Pickup:focus::-webkit-input-placeholder{
-    transform: translateY(0) translateX(0);
+.progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 12px solid var(--bg-Secondary);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.contact-information .Ship:focus::-webkit-input-placeholder{
-    transform: translateY(0) translateX(0);
+.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.progress .progress-left {
+  left: 0;
+}
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 12px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+}
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+.progress .progress-right {
+  right: 0;
+}
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+  animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 14px;
+  color: var(--bg-primary);
+  line-height: 135px;
+  text-align: center;
+  position: absolute;
+  top: -24%;
+  left: 6%;
+}
+.progress.blue .progress-bar {
+  border-color: var(--bg-Secondary2);
+}
+.progress.blue .progress-left .progress-bar {
+  animation: loading-2 1.5s linear forwards 1.8s;
+}
+
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
 }

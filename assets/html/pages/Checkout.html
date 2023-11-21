@@ -46,13 +46,13 @@
                     <a class="mx-3" href="/assets/html/pages/Cart.html"><img src="/assets/images/bag-2.svg" alt=""></a>
 
                     <div class="dropdown d-flex align-items-center">
-                    <a href="#"><img src="/assets/images/profile/profile-pic.svg" alt=""></a>
+                        <a href="#"><img src="/assets/images/profile/profile-pic.svg" alt=""></a>
                         <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Loaa Hany
                             <img class="arrow-down" src="/assets/images/profile/arrow-down-small.svg" alt="">
                         </a>
-                        
+
 
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">My Profile</a></li>
@@ -121,14 +121,28 @@
     <main class="container">
         <div class="row">
             <div class="col-lg-9">
-                <div class="shipping-steps d-flex align-items-end">
-                    <div>
-                        <p>Step 1</p>
-                        <h5>Shipping Information</h5>
+
+                <div class="shipping-steps d-flex align-items-center">
+                    <!-- Progress -->
+                    <div class="progress blue">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div class="progress-value">1 of 3</div>
                     </div>
-                    <div>
-                        <i class="fa-solid fa-arrow-left-long"></i>
-                        <i class="fa-solid fa-arrow-right-long"></i>
+                    <div class="ms-3">
+                        <div>
+                            <p>Step 1</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <h5>Shipping Information</h5>
+                            <i class="fa-solid fa-arrow-left-long m-3"></i>
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+
                     </div>
                 </div>
                 <div class="shipping-information">
@@ -139,16 +153,28 @@
                     <div class="contact-information">
                         <div class="row">
                             <div class="col-lg-6">
-                                <input type="text" placeholder="First Name">
+                                <div class="field">
+                                    <input type="text" name="firstname" id="firstname" placeholder="">
+                                    <label for="firstname">First Name</label>
+                                </div>
                             </div>
                             <div class="col-lg-6">
-                                <input type="text" placeholder="Last Name">
+                                <div class="field">
+                                    <input type="text" name="lastname" id="lastname" placeholder="">
+                                    <label for="lastname">Last Name</label>
+                                </div>
                             </div>
                             <div class="col-lg-6">
-                                <input type="email" placeholder="Email">
+                                <div class="field">
+                                    <input type="email" name="email" id="email" placeholder="">
+                                    <label for="email">Email</label>
+                                </div>
                             </div>
                             <div class="col-lg-6">
-                                <input type="number" placeholder="Phone Number">
+                                <div class="field">
+                                    <input type="number" name="phonenumber" id="phonenumber" placeholder="">
+                                    <label for="phonenumber">Phone Number</label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -159,37 +185,50 @@
                     <div class="shipping-address">
                         <div class="row">
                             <div class="col-lg-4">
-                                <select name="country" id="country" >
-                                    <option value="" selected disabled>Country/Region</option>
-                                    <option value="">Option 2</option>
-                                    <option value="">Option 3</option>
-                                    <option value="">Option 4</option>
-                                  </select>
+                                <div class="field">
+                                    <select required>
+                                        <option value="" disabled selected hidden></option>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                    </select>
+                                    <label for="select">Country/Region</label>
+                                </div>
                             </div>
                             <div class="col-lg-4">
-                                <select name="country" id="country" >
-                                    <option value="" selected disabled>City</option>
-                                    <option value="">Option 2</option>
-                                    <option value="">Option 3</option>
-                                    <option value="">Option 4</option>
-                                  </select>
+                                <div class="field">
+                                    <select required>
+                                        <option value="" disabled selected hidden></option>
+                                        <option value="option1">Option 1</option>
+                                        <option value="option2">Option 2</option>
+                                        <option value="option3">Option 3</option>
+                                    </select>
+                                    <label for="select">City</label>
+                                </div>
                             </div>
                             <div class="col-lg-4">
-                                <select name="country" id="country" >
-                                    <option value="" selected disabled>Postal code / ZIP (Optional)</option>
-                                    <option value="">Option 2</option>
-                                    <option value="">Option 3</option>
-                                    <option value="">Option 4</option>
-                                  </select>
+                                <div class="field">
+                                    <input type="text" name="postalcode" id="postalcode" placeholder="">
+                                    <label for="postalcode">Postal code / ZIP (Optional)</label>
+                                </div>
                             </div>
                             <div class="col-lg-12">
-                                <input type="text" placeholder="Street">
+                                <div class="field">
+                                    <input type="text" name="street" id="street" placeholder="">
+                                    <label for="street">Street</label>
+                                </div>
                             </div>
                             <div class="col-lg-6">
-                                <input type="text" placeholder="Apartment, Suite, etc.. (Optional)">
+                                <div class="field">
+                                    <input type="text" name="apartment" id="apartment" placeholder="">
+                                    <label for="apartment">Apartment, Suite, etc.. (Optional)</label>
+                                </div>
                             </div>
                             <div class="col-lg-6">
-                                <input type="number" placeholder="Flat Number">
+                                <div class="field">
+                                    <input type="text" name="flatnumber" id="flatnumber" placeholder="">
+                                    <label for="flatnumber">Flat Number</label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -210,7 +249,7 @@
                     <div class="d-flex justify-content-end">
                         <button class="btn-solid">Next</button>
                     </div>
-                    
+
                 </div>
             </div>
 
@@ -231,7 +270,7 @@
                         <span>Free</span>
                     </div>
                     <div class="line"></div>
-                    <input  type="text" placeholder="Have a promo code?">
+                    <input type="text" placeholder="Have a promo code?">
                     <button class="btn-brown w-100">
                         <div>Total</div>
                         <div>$250.00</div>
@@ -245,7 +284,7 @@
     </main>
 
 
-    
+
     <!-- FOOTER -->
     <footer class="detals">
         <div class="container">
