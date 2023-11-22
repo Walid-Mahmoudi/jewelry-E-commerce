@@ -16,17 +16,22 @@
 
 // }
 
-let num = document.querySelectorAll(".num");
-let qtyAdd = document.getElementById("plus");
 
-console.log(qtyAdd);
 
-qtyAdd.onclick=function pluss(e){
-  console.log(e.target);
-  for (let i = 0; i <= num.length; i++) {
-        num[i].value = parseInt(num[i].value) + 1;
-      }
-}
+// let num = document.querySelectorAll(".num");
+// let qtyAdd = document.getElementById("plus");
+
+// console.log(qtyAdd);
+
+// qtyAdd.onclick=function pluss(e){
+//   console.log(e.target);
+//   for (let i = 0; i <= num.length; i++) {
+//         num[i].value = parseInt(num[i].value) + 1;
+//       }
+// }
+
+
+
 
 // function Min() {
 //   for (let i = 0; i <= num.length; i++) {
