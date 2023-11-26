@@ -1,0 +1,267 @@
+
+
+
+.shop-head .shop-bg2 {
+  background-image: url(/assets/images/my-account/profile-bg.png) !important;
+}
+.nav-pills {
+  background: rgba(237, 227, 217, 0.5);
+  padding: 23.5px 20px;
+}
+.nav-pills .nav-link {
+  background: none;
+  color: var(--bg-primary);
+  font-size: 20px;
+  padding: 0;
+}
+.nav-pills .nav-link span {
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 5px;
+}
+.nav-pills .nav-link.active {
+  background: none;
+  color: var(--bg-Secondary2);
+  position: relative;
+}
+.nav-pills .nav-link.active span {
+  font-weight: 600;
+}
+.nav-pills .nav-item .nav-link.active::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1.5px;
+  left: 25%;
+  bottom: -23px;
+  background: var(--bg-Secondary2);
+}
+.account-tab {
+  padding: 27px 33px;
+  border: 1px solid var(--bg-gray1);
+}
+
+.account .photo-account .porofile img {
+  width: 74px;
+  margin-right: 13.5px;
+}
+.account .photo-account .porofile span {
+  font-size: 17px;
+  font-weight: 500;
+}
+.account .changepic-account button {
+  height: 33px;
+}
+.account .changepic-account .btn-solid {
+  margin-right: 10px;
+}
+.account .changepic-account .btn-outline {
+  color: var(--bg-Red);
+  border: 1px solid var(--bg-Red);
+}
+.account .changepic-account .btn-outline:hover {
+  color: #fff;
+  border: none;
+}
+.account-information {
+  background: rgba(237, 227, 217, 0.4);
+  padding: 0 5px 0 20px;
+  margin: 20px 0 27px 0;
+}
+.account-information h5,
+.Security h5 {
+  font-size: 14px;
+  padding-left: 14px;
+}
+.account-information .btn-outline {
+  padding: 3px;
+  width: 6%;
+  margin: 0;
+  font-family: Montserrat;
+  cursor: pointer;
+}
+.account-tab span {
+  font-size: 12px;
+  font-weight: 400;
+}
+.account-tab .fullname p,
+.account-tab .phone p {
+  margin-right: 5px;
+}
+.account-tab .email p {
+  margin-right: 33.5px;
+}
+.account-tab p {
+  font-size: 12px;
+  font-weight: 500;
+}
+.Security {
+  background: rgba(237, 227, 217, 0.4);
+  padding: 0 5px 0 20px;
+  margin: 40px 0 20px 0;
+}
+.reset-password {
+  padding: 17px 20px;
+  border: 1px solid var(--bg-gray1);
+}
+.reset-password p {
+  font-size: 14px !important;
+  margin-left: 5px;
+}
+.my-account .field {
+  position: relative;
+}
+.my-account .field label {
+  font-size: 12px;
+  color: var(--bg-primary);
+  font-family: Montserrat;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+  transition: all 1s ease-in-out;
+  pointer-events: none;
+}
+.my-account .field input:focus-visible + label,
+.my-account .field input:not(:placeholder-shown) + label {
+  top: -5px;
+}
+.update {
+  margin-top: 30px;
+}
+.update .btn-outline {
+  width: 10%;
+  margin-right: 13.5px;
+}
+.update .btn-solid {
+  width: 20%;
+}
+.update-password .field input{
+    background-image: url(/assets/images/my-account/eye-slash.svg) ;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 3%;
+}
+.account-info{
+    height: 100%;
+    opacity: 1;
+    transition: opacity .3s ease;
+    transition: height .3s ease;
+}
+.update-information{
+
+    height: 100%;
+    opacity: 1;
+    transition: opacity .3s ease;
+    transition: height .3s ease;
+
+}
+.update-password{
+
+    height: 100%;
+    opacity: 1;
+    transition: opacity .3s ease;
+    transition: height .3s ease;
+
+}
+.update-information.disable , .profile.disable , .update-password.disable{
+    height: 0;
+    opacity: 0;
+    transition: all .3s ease;
+}
+#back , #back-reset{
+    z-index: 333;
+}
+.my-addresses{
+    padding: 33px 27px;
+    border: 1px solid var(--bg-gray1);
+}
+.my-addresses .address{
+    padding: 13.5px 20px;
+    border: 1px solid var(--bg-gray1);
+    margin-bottom: 20px;
+}
+.my-addresses .address h5{
+font-size: 12px;
+font-weight: 600;
+color: var(--bg-gray3);
+}
+.my-addresses .address h5 span ,.my-addresses .address p{
+    font-size: 12px;
+font-weight: 400;
+color: var(--bg-gray2);
+}
+.my-addresses .address.active{
+    border: 1px solid var(--bg-primary);
+}
+.my-addresses .address.active p{
+    color: var(--bg-primary);
+}
+.my-addresses .address.active h5{
+    color: var(--bg-primary);
+}
+.my-addresses .address.active h5 span{
+    color: var(--bg-Secondary2);
+}
+.my-addresses .btn-outline{
+    width: 21%;
+}
+.my-addresses .address input{
+    width: 13.5px;
+}
+.my-addresses .modal .modal-content{
+    border-radius: 0;
+    padding: 27px;
+}
+.my-addresses .modal .modal-content .modals-header h5{
+    font-size: 17px;
+}
+.my-addresses .modal .modal-content  .line{
+    border-bottom: 1px solid var(--bg-gray1);
+    margin: 13.5px 0 23.5px 0;
+}
+.modal{
+   --bs-modal-width: 60%;
+}
+.modal-main label{
+font-size: 12px;
+font-weight: 400;
+}
+
+.modal-main .field {
+    position: relative;
+  }
+  .modal-main .field label {
+    font-size: 12px;
+    color: var(--bg-primary);
+    font-family: Montserrat;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+    transition: all 1s ease-in-out;
+    pointer-events: none;
+  }
+  .modal-main .field input:focus-visible + label,
+  .modal-main .field input:not(:placeholder-shown) + label {
+    top: -5px;
+  }
+  .modal-main .field select:placeholder-shown + label {
+    top: -5px;
+  }
+  
+  .modal-main .field select:focus + label,
+  .modal-main .field select:valid + label {
+    top: -5px;
+  }
+  .my-addresses .modal .modal-content  .line2{
+    border-bottom: 1px solid var(--bg-gray1);
+    margin: 20px 0;
+}
+.modal-foote .btn-outline{
+    width: 15%;
+    margin-right: 13.5px;
+}
+.modal-foote .btn-solid{
+    width: 30%;
+}
