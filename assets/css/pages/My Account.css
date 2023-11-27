@@ -484,6 +484,7 @@
 .all-orders table thead .Order-id{
   padding-left: 27px;
 }
-.all-orders table tbody{
-  margin-top: 20px;
+.all-orders table .bodr{
+border: 1px solid var(--bg-gray1);
+padding: 20px;
 }
