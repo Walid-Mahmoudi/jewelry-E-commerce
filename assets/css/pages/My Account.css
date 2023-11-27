@@ -1,6 +1,3 @@
-
-
-
 .shop-head .shop-bg2 {
   background-image: url(/assets/images/my-account/profile-bg.png) !important;
 }
@@ -136,132 +133,357 @@
 .update .btn-solid {
   width: 20%;
 }
-.update-password .field input{
-    background-image: url(/assets/images/my-account/eye-slash.svg) ;
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: 3%;
+.update-password .field input {
+  background-image: url(/assets/images/my-account/eye-slash.svg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 3%;
 }
-.account-info{
-    height: 100%;
-    opacity: 1;
-    transition: opacity .3s ease;
-    transition: height .3s ease;
+.account-info {
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  transition: height 0.3s ease;
 }
-.update-information{
+.update-information {
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  transition: height 0.3s ease;
+}
+.update-password {
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  transition: height 0.3s ease;
+}
+.update-information.disable,
+.profile.disable,
+.update-password.disable {
+  height: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+#back,
+#back-reset {
+  z-index: 333;
+}
+.my-addresses {
+  padding: 33px 27px;
+  border: 1px solid var(--bg-gray1);
+}
+.my-addresses .address {
+  padding: 13.5px 20px;
+  border: 1px solid var(--bg-gray1);
+  margin-bottom: 20px;
+}
+.my-addresses .address h5 {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--bg-gray3);
+}
+.my-addresses .address h5 span,
+.my-addresses .address p {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--bg-gray2);
+}
+.my-addresses .btn-outline {
+  width: 21%;
+}
+.my-addresses .address input {
+  width: 13.5px;
+}
+.my-addresses .address:has(:checked) {
+  border: 1px solid var(--bg-primary);
+}
+.my-addresses .address:has(:checked) h5 {
+  color: var(--bg-primary);
+}
+.my-addresses .address:has(:checked) h5 {
+  color: var(--bg-primary);
+}
+.my-addresses .address:has(:checked) h5 span {
+  color: var(--bg-Secondary2);
+}
+.my-addresses .address:has(:checked) p {
+  color: var(--bg-primary);
+}
 
-    height: 100%;
-    opacity: 1;
-    transition: opacity .3s ease;
-    transition: height .3s ease;
-
+/* modal */
+.my-addresses .modal .modal-content {
+  border-radius: 0;
+  padding: 27px;
 }
-.update-password{
-
-    height: 100%;
-    opacity: 1;
-    transition: opacity .3s ease;
-    transition: height .3s ease;
-
+.my-addresses .modal .modal-content .modals-header h5 {
+  font-size: 17px;
 }
-.update-information.disable , .profile.disable , .update-password.disable{
-    height: 0;
-    opacity: 0;
-    transition: all .3s ease;
+.my-addresses .modal .modal-content .line {
+  border-bottom: 1px solid var(--bg-gray1);
+  margin: 13.5px 0 23.5px 0;
 }
-#back , #back-reset{
-    z-index: 333;
+.modal {
+  --bs-modal-width: 60%;
 }
-.my-addresses{
-    padding: 33px 27px;
-    border: 1px solid var(--bg-gray1);
-}
-.my-addresses .address{
-    padding: 13.5px 20px;
-    border: 1px solid var(--bg-gray1);
-    margin-bottom: 20px;
-}
-.my-addresses .address h5{
-font-size: 12px;
-font-weight: 600;
-color: var(--bg-gray3);
-}
-.my-addresses .address h5 span ,.my-addresses .address p{
-    font-size: 12px;
-font-weight: 400;
-color: var(--bg-gray2);
-}
-.my-addresses .address.active{
-    border: 1px solid var(--bg-primary);
-}
-.my-addresses .address.active p{
-    color: var(--bg-primary);
-}
-.my-addresses .address.active h5{
-    color: var(--bg-primary);
-}
-.my-addresses .address.active h5 span{
-    color: var(--bg-Secondary2);
-}
-.my-addresses .btn-outline{
-    width: 21%;
-}
-.my-addresses .address input{
-    width: 13.5px;
-}
-.my-addresses .modal .modal-content{
-    border-radius: 0;
-    padding: 27px;
-}
-.my-addresses .modal .modal-content .modals-header h5{
-    font-size: 17px;
-}
-.my-addresses .modal .modal-content  .line{
-    border-bottom: 1px solid var(--bg-gray1);
-    margin: 13.5px 0 23.5px 0;
-}
-.modal{
-   --bs-modal-width: 60%;
-}
-.modal-main label{
-font-size: 12px;
-font-weight: 400;
+.modal-main label {
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .modal-main .field {
-    position: relative;
-  }
-  .modal-main .field label {
-    font-size: 12px;
-    color: var(--bg-primary);
-    font-family: Montserrat;
-    position: absolute;
-    top: 15px;
-    left: 0;
-    pointer-events: none;
-    transition: all 1s ease-in-out;
-    pointer-events: none;
-  }
-  .modal-main .field input:focus-visible + label,
-  .modal-main .field input:not(:placeholder-shown) + label {
-    top: -5px;
-  }
-  .modal-main .field select:placeholder-shown + label {
-    top: -5px;
-  }
-  
-  .modal-main .field select:focus + label,
-  .modal-main .field select:valid + label {
-    top: -5px;
-  }
-  .my-addresses .modal .modal-content  .line2{
-    border-bottom: 1px solid var(--bg-gray1);
-    margin: 20px 0;
+  position: relative;
 }
-.modal-foote .btn-outline{
-    width: 15%;
-    margin-right: 13.5px;
+.modal-main .field label {
+  font-size: 12px;
+  color: var(--bg-primary);
+  font-family: Montserrat;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+  transition: all 1s ease-in-out;
+  pointer-events: none;
 }
-.modal-foote .btn-solid{
-    width: 30%;
+.modal-main .field input:focus-visible + label,
+.modal-main .field input:not(:placeholder-shown) + label {
+  top: -5px;
+}
+.modal-main .field select:placeholder-shown + label {
+  top: -5px;
+}
+
+.modal-main .field select:focus + label,
+.modal-main .field select:valid + label {
+  top: -5px;
+}
+.my-addresses .modal .modal-content .line2 {
+  border-bottom: 1px solid var(--bg-gray1);
+  margin: 20px 0;
+}
+.modal-foote .btn-outline {
+  width: 15%;
+  margin-right: 13.5px;
+}
+.modal-foote .btn-solid {
+  width: 30%;
+}
+
+/* .my wishlist */
+.my-wishlist {
+  padding: 27px 33px;
+  border: 1px solid var(--bg-gray1);
+}
+.my-wishlist .title-wishlist {
+  margin-bottom: 20px;
+}
+.my-wishlist .title-wishlist h5 {
+  font-size: 17px;
+  font-weight: 600;
+}
+.my-wishlist .title-wishlist h5 span {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--bg-gray3);
+}
+.my-wishlist .overlay-data ul li {
+  font-size: 12px !important;
+}
+.my-wishlist .overlay-data {
+  padding: 20px;
+}
+.my-wishlist .overlay-btn {
+  margin: 12.5px 0 0 0;
+}
+.text-cont .prices img {
+  width: 20px;
+}
+
+.out-stock .text-cont .prices p {
+  color: var(--bg-Red);
+  font-size: 12px !important;
+  font-weight: 500;
+}
+.out-stock .img-out {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+}
+
+/* payments */
+.payments {
+  padding: 27px 33px;
+  border: 1px solid var(--bg-gray1);
+}
+.my-payments {
+  padding: 20px;
+  border: 1px solid var(--bg-gray1);
+  margin-bottom: 20px;
+}
+.my-payments input {
+  width: 13.5px;
+}
+.my-payments:has(:checked) {
+  border: 1px solid var(--bg-primary);
+}
+.my-payments:has(:checked) h5 {
+  color: var(--bg-primary);
+}
+.my-payments:has(:checked) h5 {
+  color: var(--bg-primary);
+}
+.my-payments:has(:checked) h5 span {
+  color: var(--bg-Secondary2);
+}
+.my-payments:has(:checked) p {
+  color: var(--bg-primary);
+}
+.payments-cridet .payments-title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 13.5px;
+}
+.payments-cridet .payments-title span {
+  font-size: 12px;
+  color: var(--bg-Secondary2);
+  margin-left: 5px;
+}
+.payments-cridet .payments-title p {
+  margin-top: 9px;
+}
+.payments .right-payments {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.payments .right-payments .btn-outline {
+  color: var(--bg-Red);
+  border: 1px solid var(--bg-Red);
+  width: 100%;
+  padding: 2px 6px;
+}
+.payments .right-payments .btn-outline:hover {
+  color: #fff;
+  border: none;
+}
+.payments .btn-outline {
+  width: 21%;
+}
+
+.payments .modal .modal-content {
+  border-radius: 0;
+  padding: 27px;
+}
+.payments .modal .modal-content .modals-header h5 {
+  font-size: 17px;
+}
+.payments .modal .modal-content .line {
+  border-bottom: 1px solid var(--bg-gray1);
+  margin: 13.5px 0 23.5px 0;
+}
+.payments .modal .modal-content .line2 {
+  border-bottom: 1px solid var(--bg-gray1);
+  margin: 20px 0;
+}
+/* my-orders */
+.my-orders {
+  padding: 27px 33px;
+  border: 1px solid var(--bg-gray1);
+}
+.my-orders ul {
+  width: 70%;
+  background: none;
+  padding: 13.5px 0;
+}
+.my-orders .nav-pills .nav-link span {
+  font-size: 13.5px;
+  color: var(--bg-gray3);
+}
+.my-orders .nav-pills .nav-link.active span {
+  font-weight: 600;
+  color: var(--bg-primary);
+}
+.my-orders .nav-pills .nav-item .nav-link.active::after {
+  content: "";
+  position: absolute;
+  width: 57%;
+  height: 2.5px;
+  left: 21%;
+  bottom: -13px;
+  background: var(--bg-primary);
+}
+
+.my-orders .all-orders input{
+  border: 1px solid var(--bg-gray1);
+  width: 30%;
+  padding: 7px 13.5px;
+  background: url(/assets/images/my-account/search-normal.svg) no-repeat left 13.5px center ;
+  background-size: 20px;
+  text-indent: 33.5px;
+  margin: 0;
+}
+.my-orders .all-orders input::placeholder{
+ font-size: 12px ;
+ font-weight: 400;
+ color: var(--bg-grey-light) ;
+}
+.my-orders .all-orders .sorted .dropdown .btn-outline{
+  padding: 10px 13.5px;
+  border: 1px solid var(--bg-gray1);
+  font-size: 12px;
+  font-weight: 400;
+}
+.my-orders .all-orders .sorted .dropdown .btn-outline{
+  background: none;
+  color: var(--bg-primary);
+}
+.my-orders .all-orders .sorted .dropdown .btn-outline img{
+  margin-left: 13.5px;
+  width: 14px;
+}
+
+.my-orders .all-orders .sorted .dropdown .dropdown-menu .dropdown-item {
+  font-size: 12px !important;
+  font-family: Montserrat;
+  padding: 7px 14px;
+}
+.my-orders .all-orders .sorted .dropdown .dropdown-menu .line {
+  border-bottom: 1px solid var(--bg-gray1);
+  width: 80%;
+  margin: auto;
+}
+.my-orders .all-orders .sorted .dropdown .dropdown-menu .logout {
+  color: var(--bg-Red);
+}
+.my-orders .all-orders .sorted .dropdown-menu.show {
+  border-radius: 0;
+  border-color: var(--bg-gray1);
+  inset: 20% auto auto 0% !important;
+  padding: 0;
+}
+.my-orders .all-orders .sorted .dropdown-item:hover {
+  color: var(--bs-dropdown-link-hover-color);
+  background-color: rgba(237, 227, 217, 0.5);
+}
+.my-orders table{
+  width: 100%;
+  margin-top: 13.5px;
+}
+.all-orders table thead{
+  background: rgba(237, 227, 217, 0.30);
+  height: 45px;
+  font-size: 13.5px;
+  font-weight: 500;
+}
+.all-orders table thead .Order-id{
+  padding-left: 27px;
+}
+.all-orders table tbody{
+  margin-top: 20px;
 }

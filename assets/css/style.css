@@ -17,6 +17,7 @@
   --bg-gray1: #e9eaec;
   --bg-gray2: #cbcccf;
   --bg-gray3: #95989d;
+  --bg-grey-light: #BABABA;
 
   /* ------FONTS------ */
   --font-primary: Montserrat Alternates;
@@ -80,7 +81,7 @@
 }
 .btn-outline:hover {
   background: var(--bg-primary);
-  border: none;
+  /* border: none; */
   color: #fff;
   transition: all 0.5s ease-in-out;
 }

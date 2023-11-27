@@ -194,7 +194,7 @@
 .color5 {
   background: #9d2236;
 }
-label::before {
+.color-detales .color-select input {
   display: none;
 }
 .color-select input:checked + span {
@@ -439,7 +439,7 @@ margin-right: 10px;
   padding: 10px 20px;
   margin: 27px 27px 0 27px;
 }
-.modal-content .cart-sucsses .tick{
+ .ticks{
   font-size: 27px;
   color: #fff;
 }
