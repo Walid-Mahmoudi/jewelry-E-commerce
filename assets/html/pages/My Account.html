@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
     <link rel="stylesheet" href="/assets/css/pages/cart.css" />
     <link rel="stylesheet" href="/assets/css/pages/Checkout.css" />
-    
+
     <title>My Account</title>
 </head>
 
@@ -374,44 +374,33 @@
                     <div class="sorted d-flex justify-content-between align-items-center">
                         <input type="text" placeholder="Search for orders">
                         <div class="dropdown">
-                            <button class="btn-outline dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn-outline dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Last 3 months
                                 <img src="/assets/images/my-account/arrow-down.svg" alt="">
                             </button>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Last 1 months</a></li>
-                              <li><a class="dropdown-item" href="#">Last 2 months</a></li>
-                              <li><a class="dropdown-item" href="#">Last 4 months</a></li>
+                                <li><a class="dropdown-item" href="#">Last 1 months</a></li>
+                                <li><a class="dropdown-item" href="#">Last 2 months</a></li>
+                                <li><a class="dropdown-item" href="#">Last 4 months</a></li>
                             </ul>
-                          </div>
+                        </div>
                     </div>
-                    <!-- Table -->
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="Order-id">Order ID</th>
-                                <th>Placed on</th>
-                                <th># of Items</th>
-                                <th>Payment Method</th>
-                                <th>Total</th>
-                                <th>Status</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody class="mt-5">
-                            <tr>
-                                <td>#32859739636</td>
-                                <td>12 Feb 2023 - 04:30 pm</td>
-                                <td>3</td>
-                                <td>Cash</td>
-                                <td>$ 234.56</td>
-                                <td>Delivered</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!-- <table>
-                        <div class="bodr">
+                    
+                    <!-- Tables -->
+                    <div class="data-tables">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="Order-id">Order ID</th>
+                                    <th>Placed on</th>
+                                    <th># of Items</th>
+                                    <th>Payment Method</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
                             <tbody>
                                 <tr>
                                     <td>#32859739636</td>
@@ -419,12 +408,25 @@
                                     <td>3</td>
                                     <td>Cash</td>
                                     <td>$ 234.56</td>
-                                    <td>Delivered</td>
-                                    <td></td>
+                                    <td class="delivered">
+                                        <p>Delivered</p>
+                                    </td>
+                                    <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#32859739636</td>
+                                    <td>12 Feb 2023 - 04:30 pm</td>
+                                    <td>3</td>
+                                    <td>Cash</td>
+                                    <td>$ 234.56</td>
+                                    <td class="delivered">Delivered</td>
+                                    <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg" alt="">
+                                    </td>
                                 </tr>
                             </tbody>
-                        </div>
-                    </table> -->
+                        </table>
+                    </div>
                 </div>
 
 
@@ -947,7 +949,7 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.min.js"></script>
 
-    
+
 </body>
 
 </html>

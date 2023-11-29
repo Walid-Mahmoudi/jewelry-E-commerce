@@ -471,20 +471,62 @@
   color: var(--bs-dropdown-link-hover-color);
   background-color: rgba(237, 227, 217, 0.5);
 }
-.my-orders table{
-  width: 100%;
-  margin-top: 13.5px;
+.all-orders .table1{
+  margin: 13.5px 0;
 }
-.all-orders table thead{
+.all-orders .table1 .head-table th{
   background: rgba(237, 227, 217, 0.30);
-  height: 45px;
+  padding: 12px 27px;
+}
+.all-orders .table1 .head-table th{
   font-size: 13.5px;
   font-weight: 500;
 }
-.all-orders table thead .Order-id{
-  padding-left: 27px;
+.data-tables {
+  margin-top: 20px;
+  /* padding: 0 27px 23.5px 27px;
+  border: 1px solid var(--bg-gray1); */
 }
-.all-orders table .bodr{
-border: 1px solid var(--bg-gray1);
-padding: 20px;
+.my-orders table{
+  width: 100%;
+  /* background-color: blue; */
+  /* border-collapse: separate;
+  border-spacing: 0 7px; */
+  /* border-collapse: collapse; */
+  padding: 40px;
+  
+}
+
+.my-orders table thead tr{
+  background: rgba(237, 227, 217, 0.30);
+  font-size: 13.5px;
+  font-weight: 500;
+}
+.my-orders table thead tr th{
+  padding: 17px 27px;
+}
+.my-orders table thead::after  {
+    content: "-";
+    display: block;
+    line-height: 13.5px;
+    color: transparent;
+}
+.my-orders table tbody{
+    padding: 0 27px 23.5px 27px;
+  border: 1px solid var(--bg-gray1);
+}
+.my-orders table tbody tr td{
+  padding: 23.5px 27px;
+  font-size: 12px;
+  font-weight: 400;
+  border-bottom: 1px solid red;
+}
+
+.my-orders table tbody tr td img{
+  width: 20px;
+}
+.my-orders table tbody tr   p{
+  background: var(--bg-greenwihte);
+  
+  color: var(--bg-greendark);
 }
