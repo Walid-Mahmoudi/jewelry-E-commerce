@@ -58,7 +58,7 @@
 }
 .account .changepic-account .btn-outline:hover {
   color: #fff;
-  border: none;
+  border-color: var(--bg-primary);
 }
 .account-information {
   background: rgba(237, 227, 217, 0.4);
@@ -370,7 +370,7 @@
 }
 .payments .right-payments .btn-outline:hover {
   color: #fff;
-  border: none;
+  border-color: var(--bg-primary);
 }
 .payments .btn-outline {
   width: 21%;
@@ -392,24 +392,27 @@
   margin: 20px 0;
 }
 /* my-orders */
-.my-orders {
-  padding: 27px 33px;
+.orders-veiw  ,.returns-veiw{
+  padding: 15px 33px 27px 33px;
   border: 1px solid var(--bg-gray1);
 }
-.my-orders ul {
+.my-orders ul ,.returns ul {
   width: 70%;
   background: none;
   padding: 13.5px 0;
 }
-.my-orders .nav-pills .nav-link span {
+.returns ul{
+  width: 52%;
+}
+.my-orders .nav-pills .nav-link span ,.returns .nav-pills .nav-link span {
   font-size: 13.5px;
   color: var(--bg-gray3);
 }
-.my-orders .nav-pills .nav-link.active span {
+.my-orders .nav-pills .nav-link.active span,.returns .nav-pills .nav-link.active span {
   font-weight: 600;
   color: var(--bg-primary);
 }
-.my-orders .nav-pills .nav-item .nav-link.active::after {
+.my-orders .nav-pills .nav-item .nav-link.active::after ,.returns .nav-pills .nav-item .nav-link.active::after{
   content: "";
   position: absolute;
   width: 57%;
@@ -419,114 +422,345 @@
   background: var(--bg-primary);
 }
 
-.my-orders .all-orders input{
+.my-orders  .search , .returns .search{
   border: 1px solid var(--bg-gray1);
   width: 30%;
   padding: 7px 13.5px;
-  background: url(/assets/images/my-account/search-normal.svg) no-repeat left 13.5px center ;
+  background: url(/assets/images/my-account/search-normal.svg) no-repeat left
+    13.5px center;
   background-size: 20px;
   text-indent: 33.5px;
   margin: 0;
 }
-.my-orders .all-orders input::placeholder{
- font-size: 12px ;
- font-weight: 400;
- color: var(--bg-grey-light) ;
+.my-orders  .search , .returns::placeholder {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--bg-grey-light);
 }
-.my-orders .all-orders .sorted .dropdown .btn-outline{
+.my-orders  .sorted .dropdown .btn-outline , .returns .sorted .dropdown .btn-outline {
   padding: 10px 13.5px;
   border: 1px solid var(--bg-gray1);
   font-size: 12px;
   font-weight: 400;
 }
-.my-orders .all-orders .sorted .dropdown .btn-outline{
+.my-orders  .sorted .dropdown .btn-outline , .returns .sorted .dropdown .btn-outline{
   background: none;
   color: var(--bg-primary);
 }
-.my-orders .all-orders .sorted .dropdown .btn-outline img{
+.my-orders  .sorted .dropdown .btn-outline img , .returns .sorted .dropdown .btn-outline img{
   margin-left: 13.5px;
   width: 14px;
 }
 
-.my-orders .all-orders .sorted .dropdown .dropdown-menu .dropdown-item {
+.my-orders  .sorted .dropdown .dropdown-menu .dropdown-item , .returns .sorted .dropdown .dropdown-menu .dropdown-item {
   font-size: 12px !important;
   font-family: Montserrat;
   padding: 7px 14px;
 }
-.my-orders .all-orders .sorted .dropdown .dropdown-menu .line {
+.my-orders  .sorted .dropdown .dropdown-menu .line ,.returns .sorted .dropdown .dropdown-menu .line {
   border-bottom: 1px solid var(--bg-gray1);
   width: 80%;
   margin: auto;
 }
-.my-orders .all-orders .sorted .dropdown .dropdown-menu .logout {
+.my-orders  .sorted .dropdown .dropdown-menu .logout ,.returns  .sorted .dropdown .dropdown-menu .logout{
   color: var(--bg-Red);
 }
-.my-orders .all-orders .sorted .dropdown-menu.show {
+.my-orders  .sorted .dropdown-menu.show ,.returns .sorted .dropdown-menu.show{
   border-radius: 0;
   border-color: var(--bg-gray1);
   inset: 20% auto auto 0% !important;
   padding: 0;
 }
-.my-orders .all-orders .sorted .dropdown-item:hover {
+.my-orders .sorted .dropdown-item:hover ,.returns .sorted .dropdown-item:hover{
   color: var(--bs-dropdown-link-hover-color);
   background-color: rgba(237, 227, 217, 0.5);
 }
-.all-orders .table1{
-  margin: 13.5px 0;
-}
-.all-orders .table1 .head-table th{
-  background: rgba(237, 227, 217, 0.30);
-  padding: 12px 27px;
-}
-.all-orders .table1 .head-table th{
-  font-size: 13.5px;
-  font-weight: 500;
-}
-.data-tables {
-  margin-top: 20px;
-  /* padding: 0 27px 23.5px 27px;
-  border: 1px solid var(--bg-gray1); */
-}
-.my-orders table{
+
+
+.my-orders table ,.returns table{
   width: 100%;
   /* background-color: blue; */
   /* border-collapse: separate;
   border-spacing: 0 7px; */
-  /* border-collapse: collapse; */
+  margin-top: 13.5px;
+  border-collapse: collapse;
   padding: 40px;
-  
 }
 
-.my-orders table thead tr{
-  background: rgba(237, 227, 217, 0.30);
+.my-orders table thead tr ,.returns table thead tr{
+  background: rgba(237, 227, 217, 0.3);
   font-size: 13.5px;
   font-weight: 500;
 }
-.my-orders table thead tr th{
+
+.my-orders table thead tr th ,.returns table thead tr th{
   padding: 17px 27px;
 }
-.my-orders table thead::after  {
-    content: "-";
-    display: block;
-    line-height: 13.5px;
-    color: transparent;
+.my-orders table thead::after ,.returns table thead::after {
+  content: "-";
+  display: block;
+  line-height: 13.5px;
+  color: transparent;
 }
-.my-orders table tbody{
-    padding: 0 27px 23.5px 27px;
+.my-orders table tbody ,.returns table tbody{
+  padding: 0 27px 23.5px 27px;
   border: 1px solid var(--bg-gray1);
 }
-.my-orders table tbody tr td{
+.my-orders table tbody tr ,.returns table tbody tr{
+  position: relative;
+}
+.my-orders .main-body .bott::after, .returns .main-body .bott::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 2.5%;
+  width: 95%;
+  height: 1px;
+  background: var(--bg-gray1);
+}
+.my-orders table tbody tr td ,.returns table tbody tr td {
   padding: 23.5px 27px;
   font-size: 12px;
   font-weight: 400;
-  border-bottom: 1px solid red;
+  /* border-bottom: 1px solid red; */
 }
-
-.my-orders table tbody tr td img{
+.my-orders table tbody tr td:last-child ,.returns table tbody tr td:last-child{
+  cursor: pointer;
+}
+.my-orders table tbody tr td img ,.returns table tbody tr td img {
   width: 20px;
 }
-.my-orders table tbody tr   p{
-  background: var(--bg-greenwihte);
-  
+.my-orders .pagination ,.returns .pagination {
+  margin-top: 13.5px;
+}
+.my-orders .pagination .pagination-number ,.returns .pagination .pagination-number{
+  gap: 5px;
+}
+.my-orders .pagination .pagination-number a ,.returns .pagination .pagination-number a{
+  color: var(--bg-primary);
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27px;
+  height: 27px;
+  border: 1px solid var(--bg-gray1);
+}
+.my-orders .pagination .pagination-number a img ,.returns .pagination .pagination-number a img{
+  width: 13.5px;
+}
+.my-orders .pagination .pagination-number a.active ,.returns .pagination .pagination-number a.active{
+  background: var(--bg-primary);
+  color: #fff;
+  font-weight: 600;
+}
+.my-orders .pagination .pagination-text p ,.returns .pagination .pagination-text p{
+  font-size: 12px !important;
+  font-weight: 400;
+  color: var(--bg-gray3);
+}
+
+/* order-status */
+.order-status .information .items-cart .btn-outline{
+  border-color: var(--bg-primary);
+  color: var(--bg-primary);
+  font-size: 12px;
+}
+.order-status .information .items-cart .btn-outline:hover{
+  border-color: var(--bg-primary);
+  background: var(--bg-primary);
+  color: #fff;
+  font-size: 12px;
+}
+.my-orders .order-status .order-number , .order-number{
+  margin-bottom: 23.5px;
+}
+.my-orders .order-status .order-number img , .order-number img{
+  width: 20px;
+  margin-right: 13.5px;
+}
+.my-orders .order-status .order-number p , .order-number p{
+  font-size: 15px;
+  font-weight: 600;
+}
+.my-orders .order-status .order-number span , .order-number span{
+  font-size: 12px;
+  font-weight: 400;
   color: var(--bg-greendark);
+  background: var(--bg-greenwihte);
+  padding: 5px;
+}
+.my-orders .order-status .track-order ,.returning-method , .address{
+  padding: 20px;
+  border: 1px solid var(--bg-gray1);
+  margin-bottom: 20px;
+}
+.my-orders .order-status .track-order h5{
+  font-size: 16px;
+}
+
+
+/* -------------------------------------------------------------------------
+  VERTICAL STEPPERS
+-------------------------------------------------------------------------- */
+
+/* Steps */
+.step {
+  position: relative;
+  min-height: 1em;
+  color: var(--bg-primary);
+}
+.step + .step {
+  margin-top: 27px
+}
+.step > div:first-child {
+  position: static;
+  height: 0;
+}
+.step > div:not(:first-child) {
+  margin-left: 1.5em;
+  padding-left: 10px;
+}
+.step.step-active {
+  color: var(--bg-primary)
+}
+.step.step-active .circle {
+  background-color: var(--bg-Secondary2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+
+/* Circle */
+.circle {
+  background: var(--bg-gray1);
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  border-radius: 100%;
+}
+
+/* Vertical Line */
+.circle:after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  top: 1px;
+  right: 50%;
+  bottom: 1px;
+  left: 50%;
+  height: 100%;
+  width: 1px;
+  transform: scale(1, 2);
+  transform-origin: 50% -100%;
+  background-color: var(--bg-gray1);
+  z-index: -1;
+}
+.circle.active:after{
+  background-color: var(--bg-Secondary2);
+
+}
+.step:last-child .circle:after {
+  display: none
+}
+
+/* Stepper Titles */
+.title {
+  line-height: 1.5em;
+  font-size: 12px;
+  font-weight: 500;
+}
+.caption {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--bg-graydark);
+}
+
+/* Returns */
+ .returning-method .contact,.address .contact{
+  background: rgba(237, 227, 217, 0.40);
+  padding: 8px 13.5px;
+  margin-bottom: 17px;
+}
+ .returning-method .contact img,.address .contact img {
+  width: 27px;
+}
+ .returning-method .contact h5,.address .contact h5{
+  font-size: 13.5px;
+font-weight: 600;
+margin-left: 13.5px;
+}
+ .returning-method .visa p{
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+ .returning-method .visa p span{
+  font-size: 12px;
+  font-weight: 600;
+}
+ .returning-method .total{
+  margin-top: 27px;
+}
+ .returning-method .total p{
+font-size: 13.5px;
+font-weight: 600;
+}
+ .address p{
+  font-size: 12px;
+  font-weight: 500;
+}
+ .address span{
+  font-size: 12px;
+  font-weight: 300;
+}
+ .information .items-veiw .title-item .prices {
+  padding: 0;
+}
+ .information .items-veiw .title-item .quantity-detales p{
+  font-size: 12px !important;
+  font-weight: 500;
+}
+ .information .items-veiw .title-item .quantity-detales p span{
+  font-size: 12px !important;
+  font-weight: 300 !important;
+}
+ .information .items-veiw .title-item .quantity-detales .parg{
+  font-size: 12px !important;
+  font-weight: 300 !important;
+  color: var(--bg-graydark);
+}
+.reviewing-items .order-number span{
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--bg-orange);
+  background: var(--bg-orange-light);
+  padding: 5px;
+}
+.information .items-veiw .btn-outline{
+  width: 20%;
+  height: 36px;
+  font-size: 12px;
+  margin: 0;
+  border-color: var(--bg-Red);
+  color: var(--bg-Red);
+}
+.information .items-veiw .btn-outline:hover{
+  background: none;
+}
+.reviewing-items .information .contact-info .items-cart .item-img img {
+  width: 80px;
+  height: 89px !important;
+  object-fit: cover;
+}
+.address .btn-outline{
+  font-size: 12px !important;
 }

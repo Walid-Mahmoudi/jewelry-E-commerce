@@ -243,7 +243,6 @@
                                     onclick="resetPassword()">
                             </div>
                         </div>
-
                     </div>
                     <!-- Update information account -->
                     <div class="update-information disable">
@@ -322,115 +321,845 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
-
-
             </div>
             <!-- My orders -->
             <div class="tab-pane fade my-orders" id="pills-my-orders" role="tabpanel"
                 aria-labelledby="pills-my-orders-tab" tabindex="0">
-
-                <ul class="nav nav-pills mb-3 justify-content-between" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active d-flex align-items-normal justify-content-between"
-                            id="pills-all-orders-tab" data-bs-toggle="pill" data-bs-target="#pills-all-orders"
-                            type="button" role="tab" aria-controls="pills-all-orders" aria-selected="true">
-                            <span>All Orders (34)</span>
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link d-flex align-items-normal" id="pills-in-progress-tab"
-                            data-bs-toggle="pill" data-bs-target="#pills-in-progress" type="button" role="tab"
-                            aria-controls="pills-in-progress" aria-selected="true">
-                            <span>In Progress (12)</span>
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link d-flex align-items-normal" id="pills-completed-tab"
-                            data-bs-toggle="pill" data-bs-target="#pills-completed" type="button" role="tab"
-                            aria-controls="pills-completed" aria-selected="true">
-                            <span>Completed (6)</span>
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link d-flex align-items-normal" id="pills-returned-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-returned" type="button" role="tab" aria-controls="pills-returned"
-                            aria-selected="true">
-                            <span>Returned (2)</span>
-                        </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link d-flex align-items-normal" id="pills-cancelled-tab"
-                            data-bs-toggle="pill" data-bs-target="#pills-cancelled" type="button" role="tab"
-                            aria-controls="pills-cancelled" aria-selected="true">
-                            <span>Cancelled (7)</span>
-                        </button>
-                    </li>
-                </ul>
-
-                <div class="tab-pane fade show active all-orders" id="pills-all-orders" role="tabpanel"
-                    aria-labelledby="pills-all-orders-tab" tabindex="0">
-                    <div class="sorted d-flex justify-content-between align-items-center">
-                        <input type="text" placeholder="Search for orders">
-                        <div class="dropdown">
-                            <button class="btn-outline dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Last 3 months
-                                <img src="/assets/images/my-account/arrow-down.svg" alt="">
+                <div class="orders-veiw ">
+                    <ul class="nav nav-pills mb-3 justify-content-between" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active d-flex align-items-normal justify-content-between"
+                                id="pills-all-orders-tab" data-bs-toggle="pill" data-bs-target="#pills-all-orders"
+                                type="button" role="tab" aria-controls="pills-all-orders" aria-selected="true">
+                                <span>All Orders (34)</span>
                             </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Last 1 months</a></li>
-                                <li><a class="dropdown-item" href="#">Last 2 months</a></li>
-                                <li><a class="dropdown-item" href="#">Last 4 months</a></li>
-                            </ul>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link d-flex align-items-normal" id="pills-in-progress-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-in-progress" type="button" role="tab"
+                                aria-controls="pills-in-progress" aria-selected="true">
+                                <span>In Progress (12)</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link d-flex align-items-normal" id="pills-completed-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-completed" type="button" role="tab"
+                                aria-controls="pills-completed" aria-selected="true">
+                                <span>Completed (6)</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link d-flex align-items-normal" id="pills-returned-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-returned" type="button" role="tab"
+                                aria-controls="pills-returned" aria-selected="true">
+                                <span>Returned (2)</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link d-flex align-items-normal" id="pills-cancelled-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-cancelled" type="button" role="tab"
+                                aria-controls="pills-cancelled" aria-selected="true">
+                                <span>Cancelled (7)</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active all-orders" id="pills-all-orders" role="tabpanel"
+                            aria-labelledby="pills-all-orders-tab" tabindex="0">
+                            <div class="sorted d-flex justify-content-between align-items-center">
+                                <input class="search" type="text" placeholder="Search for orders">
+                                <div class="dropdown">
+                                    <button class="btn-outline dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Last 3 months
+                                        <img src="/assets/images/my-account/arrow-down.svg" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Last 1 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 2 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 4 months</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Tables -->
+                            <table>
+                                <thead>
+                                    <tr class="head-h">
+                                        <th class="Order-id">Order ID</th>
+                                        <th>Placed on</th>
+                                        <th># of Items</th>
+                                        <th>Payment Method</th>
+                                        <th>Total</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="main-body">
+                                    <tr>
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>3</td>
+                                        <td>Cash</td>
+                                        <td>$ 234.56</td>
+                                        <td class="delivered">
+                                            <p>Delivered</p>
+                                        </td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>1</td>
+                                        <td>Visa</td>
+                                        <td>$ 234.56</td>
+                                        <td class="in-progress">In Progress</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>5</td>
+                                        <td>Visa</td>
+                                        <td>$ 234.56</td>
+                                        <td class="cancelled">Cancelled</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>4</td>
+                                        <td>Cash</td>
+                                        <td>$ 234.56</td>
+                                        <td class="delivered">
+                                            <p>Delivered</p>
+                                        </td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>1</td>
+                                        <td>Wallet</td>
+                                        <td>$ 234.56</td>
+                                        <td class="returned">
+                                            <p>Returned</p>
+                                        </td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>2</td>
+                                        <td>PayPal</td>
+                                        <td>$ 234.56</td>
+                                        <td class="in-progress">
+                                            <p>In Progress</p>
+                                        </td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagination d-flex justify-content-between">
+                                <div class="pagination-number d-flex">
+                                    <a href=""><img src="/assets/images/my-account/arrow-back.svg" alt=""></a>
+                                    <a href="" class="active">1</a>
+                                    <a href="">2</a>
+                                    ...
+                                    <a href=""><img src="/assets/images/my-account/arrow-next.svg" alt=""></a>
+                                </div>
+                                <div class="pagination-text">
+                                    <p>1 - 6 of 34 Orders</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <!-- Tables -->
-                    <div class="data-tables">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th class="Order-id">Order ID</th>
-                                    <th>Placed on</th>
-                                    <th># of Items</th>
-                                    <th>Payment Method</th>
-                                    <th>Total</th>
-                                    <th>Status</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>#32859739636</td>
-                                    <td>12 Feb 2023 - 04:30 pm</td>
-                                    <td>3</td>
-                                    <td>Cash</td>
-                                    <td>$ 234.56</td>
-                                    <td class="delivered">
-                                        <p>Delivered</p>
-                                    </td>
-                                    <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg" alt="">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>#32859739636</td>
-                                    <td>12 Feb 2023 - 04:30 pm</td>
-                                    <td>3</td>
-                                    <td>Cash</td>
-                                    <td>$ 234.56</td>
-                                    <td class="delivered">Delivered</td>
-                                    <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg" alt="">
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="tab-pane fade in-progress" id="pills-in-progress" role="tabpanel"
+                            aria-labelledby="pills-in-progress-tab" tabindex="0">
+                            <div class="sorted d-flex justify-content-between align-items-center">
+                                <input class="search" type="text" placeholder="Search for orders">
+                                <div class="dropdown">
+                                    <button class="btn-outline dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Last 3 months
+                                        <img src="/assets/images/my-account/arrow-down.svg" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Last 1 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 2 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 4 months</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Tables -->
+                            <table>
+                                <thead>
+                                    <tr class="head-h">
+                                        <th class="Order-id">Order ID</th>
+                                        <th>Placed on</th>
+                                        <th># of Items</th>
+                                        <th>Payment Method</th>
+                                        <th>Total</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="main-body">
+                                    <tr>
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>3</td>
+                                        <td>Cash</td>
+                                        <td>$ 234.56</td>
+                                        <td class="in-progress">In Progress</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>1</td>
+                                        <td>Visa</td>
+                                        <td>$ 234.56</td>
+                                        <td class="in-progress">In Progress</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>5</td>
+                                        <td>Visa</td>
+                                        <td>$ 234.56</td>
+                                        <td class="in-progress">In Progress</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>4</td>
+                                        <td>Cash</td>
+                                        <td>$ 234.56</td>
+                                        <td class="in-progress">In Progress</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>1</td>
+                                        <td>Wallet</td>
+                                        <td>$ 234.56</td>
+                                        <td class="in-progress">In Progress</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>2</td>
+                                        <td>PayPal</td>
+                                        <td>$ 234.56</td>
+                                        <td class="in-progress">In Progress</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagination d-flex justify-content-between">
+                                <div class="pagination-number d-flex">
+                                    <a href=""><img src="/assets/images/my-account/arrow-back.svg" alt=""></a>
+                                    <a href="" class="active">1</a>
+                                    <a href="">2</a>
+                                    ...
+                                    <a href=""><img src="/assets/images/my-account/arrow-next.svg" alt=""></a>
+                                </div>
+                                <div class="pagination-text">
+                                    <p>1 - 6 of 34 Orders</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade completed" id="pills-completed" role="tabpanel"
+                            aria-labelledby="pills-completed-tab" tabindex="0">
+                            <div class="sorted d-flex justify-content-between align-items-center">
+                                <input class="search" type="text" placeholder="Search for orders">
+                                <div class="dropdown">
+                                    <button class="btn-outline dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Last 3 months
+                                        <img src="/assets/images/my-account/arrow-down.svg" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Last 1 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 2 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 4 months</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Tables -->
+                            <table>
+                                <thead>
+                                    <tr class="head-h">
+                                        <th class="Order-id">Order ID</th>
+                                        <th>Placed on</th>
+                                        <th># of Items</th>
+                                        <th>Payment Method</th>
+                                        <th>Total</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="main-body">
+                                    <tr>
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>3</td>
+                                        <td>Cash</td>
+                                        <td>$ 234.56</td>
+                                        <td class="delivered">Delivered</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>1</td>
+                                        <td>Visa</td>
+                                        <td>$ 234.56</td>
+                                        <td class="delivered">Delivered</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>5</td>
+                                        <td>Visa</td>
+                                        <td>$ 234.56</td>
+                                        <td class="delivered">Delivered</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>4</td>
+                                        <td>Cash</td>
+                                        <td>$ 234.56</td>
+                                        <td class="delivered">Delivered</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>1</td>
+                                        <td>Wallet</td>
+                                        <td>$ 234.56</td>
+                                        <td class="delivered">Delivered</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>2</td>
+                                        <td>PayPal</td>
+                                        <td>$ 234.56</td>
+                                        <td class="delivered">Delivered</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagination d-flex justify-content-between">
+                                <div class="pagination-number d-flex">
+                                    <a href=""><img src="/assets/images/my-account/arrow-back.svg" alt=""></a>
+                                    <a href="" class="active">1</a>
+                                    <a href="">2</a>
+                                    ...
+                                    <a href=""><img src="/assets/images/my-account/arrow-next.svg" alt=""></a>
+                                </div>
+                                <div class="pagination-text">
+                                    <p>1 - 6 of 34 Orders</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade returned" id="pills-returned" role="tabpanel"
+                            aria-labelledby="pills-returned-tab" tabindex="0">
+                            <div class="sorted d-flex justify-content-between align-items-center">
+                                <input class="search" type="text" placeholder="Search for orders">
+                                <div class="dropdown">
+                                    <button class="btn-outline dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Last 3 months
+                                        <img src="/assets/images/my-account/arrow-down.svg" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Last 1 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 2 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 4 months</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Tables -->
+                            <table>
+                                <thead>
+                                    <tr class="head-h">
+                                        <th class="Order-id">Order ID</th>
+                                        <th>Placed on</th>
+                                        <th># of Items</th>
+                                        <th>Payment Method</th>
+                                        <th>Total</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="main-body">
+                                    <tr>
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>3</td>
+                                        <td>Cash</td>
+                                        <td>$ 234.56</td>
+                                        <td class="returned">Returned</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>1</td>
+                                        <td>Visa</td>
+                                        <td>$ 234.56</td>
+                                        <td class="returned">Returned</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagination d-flex justify-content-between">
+                                <div class="pagination-number d-flex">
+                                    <a href=""><img src="/assets/images/my-account/arrow-back.svg" alt=""></a>
+                                    <a href="" class="active">1</a>
+                                    <a href="">2</a>
+                                    ...
+                                    <a href=""><img src="/assets/images/my-account/arrow-next.svg" alt=""></a>
+                                </div>
+                                <div class="pagination-text">
+                                    <p>1 - 6 of 34 Orders</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade cancelled" id="pills-cancelled" role="tabpanel"
+                            aria-labelledby="pills-cancelled-tab" tabindex="0">
+                            <div class="sorted d-flex justify-content-between align-items-center">
+                                <input class="search" type="text" placeholder="Search for orders">
+                                <div class="dropdown">
+                                    <button class="btn-outline dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Last 3 months
+                                        <img src="/assets/images/my-account/arrow-down.svg" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Last 1 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 2 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 4 months</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Tables -->
+                            <table>
+                                <thead>
+                                    <tr class="head-h">
+                                        <th class="Order-id">Order ID</th>
+                                        <th>Placed on</th>
+                                        <th># of Items</th>
+                                        <th>Payment Method</th>
+                                        <th>Total</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="main-body">
+                                    <tr>
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>3</td>
+                                        <td>Cash</td>
+                                        <td>$ 234.56</td>
+                                        <td class="cancelled">Cancelled</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>1</td>
+                                        <td>Visa</td>
+                                        <td>$ 234.56</td>
+                                        <td class="cancelled">Cancelled</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>5</td>
+                                        <td>Visa</td>
+                                        <td>$ 234.56</td>
+                                        <td class="cancelled">Cancelled</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>4</td>
+                                        <td>Cash</td>
+                                        <td>$ 234.56</td>
+                                        <td class="cancelled">Cancelled</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>1</td>
+                                        <td>Wallet</td>
+                                        <td>$ 234.56</td>
+                                        <td class="cancelled">Cancelled</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>2</td>
+                                        <td>PayPal</td>
+                                        <td>$ 234.56</td>
+                                        <td class="cancelled">Cancelled</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="pagination d-flex justify-content-between">
+                                <div class="pagination-number d-flex">
+                                    <a href=""><img src="/assets/images/my-account/arrow-back.svg" alt=""></a>
+                                    <a href="" class="active">1</a>
+                                    <a href="">2</a>
+                                    ...
+                                    <a href=""><img src="/assets/images/my-account/arrow-next.svg" alt=""></a>
+                                </div>
+                                <div class="pagination-text">
+                                    <p>1 - 6 of 34 Orders</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+                <div class="order-status ">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="order-number d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/images/my-account/arrow-left.svg" alt="">
+                                    <p>Order #32859739636</p>
+                                </div>
+                                <div>
+                                    <span>Delivered on 12 Mar 2023 - 05:23 pm</span>
+                                </div>
+                            </div>
+                            <div class="review-order ">
+                                <div class="shipping-information">
+                                    <div class="contact d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <img src="/assets/images/Checkout/Line 28.svg" alt="">
+                                            <h5>Shipping Information</h5>
+                                        </div>
+
+                                    </div>
+                                    <div class="information">
+                                        <div class="contact-info">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <h5>Contact</h5>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="fullname d-flex align-items-center mb-3">
+                                                        <p>Full Name</p>
+                                                        <span>Loaa Hany Mohamed</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="phone d-flex align-items-center">
+                                                        <p>Phone</p>
+                                                        <span>+01234215735</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="email d-flex align-items-center">
+                                                        <p>Email</p>
+                                                        <span>Loaahany209@gmail.com</span>
+                                                    </div>
+                                                </div>
+                                                <div class="line"></div>
+                                                <div class="col-lg-6">
+                                                    <h5>Address</h5>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <h5>Shipping Method</h5>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="warehouse">
+                                                        <p>The LCO warehouse. </p>
+                                                        <span>251 Eastern Baseline road, suite 107, gilbert aZ</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="Pickup d-flex align-items-center">
+                                                        <img src="/assets/images/Checkout/shop.svg" alt="">
+                                                        <span>Pickup</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Payment Method Info -->
+                                    <div class="contact d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <img src="/assets/images/Checkout/Line 28.svg" alt="">
+                                            <h5>Payment Method</h5>
+                                        </div>
+
+                                    </div>
+                                    <div class="information">
+                                        <div class="contact-info">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="method d-flex align-items-center">
+                                                        <i class="fa-regular fa-credit-card"></i>
+                                                        <h5>Card</h5>
+                                                    </div>
+                                                    <p class="card-num">**** **** **** 4643</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Items -->
+                                    <div class="contact d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <img src="/assets/images/Checkout/Line 28.svg" alt="">
+                                            <h5>Items</h5>
+                                        </div>
+
+                                    </div>
+                                    <div class="information">
+                                        <div class="contact-info">
+                                            <div class="items-veiw">
+                                                <div class="row">
+                                                    <div class="col-lg-7">
+                                                        <div class="items-cart d-flex align-items-center">
+                                                            <div class="item-img">
+                                                                <img src="/assets/images/Cart/item-cart1.svg" alt="">
+                                                            </div>
+                                                            <div class="title-item">
+                                                                <span>Colette Shaker Statement Necklace- Gold</span>
+                                                                <div class="prices d-flex align-items-center">
+                                                                    <p class="pe-1">$125.00</p>
+                                                                    <small> $150.00</small>
+                                                                </div>
+                                                                <div class="quantity-detales">
+                                                                    <p>Quantity: <span>2</span> </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="items-cart d-flex gap-2">
+                                                            <button class="btn-outline w-50">Review Product</button>
+                                                            <button class="btn-outline w-50">Request Return</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="items-veiw">
+                                                <div class="row">
+                                                    <div class="col-lg-7">
+                                                        <div class="items-cart d-flex align-items-center">
+                                                            <div class="item-img">
+                                                                <img src="/assets/images/Cart/item-cart1.svg" alt="">
+                                                            </div>
+                                                            <div class="title-item">
+                                                                <span>Colette Shaker Statement Necklace- Gold</span>
+                                                                <div class="prices d-flex align-items-center">
+                                                                    <p class="pe-1">$125.00</p>
+                                                                    <small> $150.00</small>
+                                                                </div>
+                                                                <div class="quantity-detales">
+                                                                    <p>Quantity: <span>2</span> </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="items-cart d-flex gap-2">
+                                                            <button class="btn-outline w-50">Review Product</button>
+                                                            <button class="btn-outline w-50">Request Return</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="items-veiw">
+                                                <div class="row">
+                                                    <div class="col-lg-7">
+                                                        <div class="items-cart d-flex align-items-center">
+                                                            <div class="item-img">
+                                                                <img src="/assets/images/Cart/item-cart1.svg" alt="">
+                                                            </div>
+                                                            <div class="title-item">
+                                                                <span>Colette Shaker Statement Necklace- Gold</span>
+                                                                <div class="prices d-flex align-items-center">
+                                                                    <p class="pe-1">$125.00</p>
+                                                                    <small> $150.00</small>
+                                                                </div>
+                                                                <div class="quantity-detales">
+                                                                    <p>Quantity: <span>2</span> </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-5">
+                                                        <div class="items-cart d-flex gap-2">
+                                                            <button class="btn-outline w-50">Review Product</button>
+                                                            <button class="btn-outline w-50">Request Return</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
 
 
+                        <div class="col-lg-3">
+                            <!-- track order -->
+                            <div class="track-order">
+                                <h5>Track Order</h5>
+                                <div class="Scriptcontent">
+                                    <!-- Stepper HTML -->
+                                    <div class="step step-active">
+                                        <div>
+                                            <div class="circle active"><i class="fa fa-check"
+                                                    style="color: #ffffff;"></i></div>
+                                        </div>
+                                        <div>
+                                            <div class="title">Order placed and accepted</div>
+                                            <div class="caption">09:30 PM. Friday, 28 Jan</div>
+                                        </div>
+                                    </div>
+                                    <div class="step step-active">
+                                        <div>
+                                            <div class="circle"><i class="fa-solid fa-circle fa-sm"
+                                                    style="color: #ffffff;"></i></div>
+                                        </div>
+                                        <div>
+                                            <div class="title">Order Shipped</div>
+                                            <div class="caption">02:30 PM. Mon, 31 Jan</div>
+                                        </div>
+                                    </div>
+                                    <div class="step">
+                                        <div>
+                                            <div class="circle"><i class="fa-solid fa-circle fa-sm"
+                                                    style="color: #ffffff;"></i></div>
+                                        </div>
+                                        <div>
+                                            <div class="title">Order picked-up</div>
+                                            <div class="caption">11:30 AM. Wed, 2 Feb</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="step">
+                                        <div>
+                                            <div class="circle"><i class="fa-solid fa-circle fa-sm"
+                                                    style="color: #ffffff;"></i></div>
+                                        </div>
+                                        <div>
+                                            <div class="title">Order Delivered</div>
+                                            <div class="caption">05:45 PM. Mon, 31 Jan</div>
+                                        </div>
+                                    </div>
+                                    <!-- End Stepper HTML -->
+
+
+                                </div>
+                            </div>
+                            <!-- Summary -->
+                            <div class="summary">
+                                <h5>Summary</h5>
+                                <div class="line"></div>
+                                <div class="subtotal d-flex justify-content-between align-items-center">
+                                    <p>Subtotal</p>
+                                    <span>$500.00</span>
+                                </div>
+                                <div class="discount d-flex justify-content-between align-items-center">
+                                    <p>Discount</p>
+                                    <span>- $16.50</span>
+                                </div>
+                                <div class="shipping-fees d-flex justify-content-between align-items-center">
+                                    <p>Shipping Fees</p>
+                                    <span>Free</span>
+                                </div>
+                                <div class="line"></div>
+                                <input type="text" placeholder="Have a promo code?">
+                                <button class="btn-brown w-100">
+                                    <div>Total</div>
+                                    <div>$250.00</div>
+                                </button>
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- My addresses -->
             <div class="tab-pane fade my-addresses" id="pills-my-addresses" role="tabpanel"
@@ -841,10 +1570,551 @@
                     </div>
                 </div>
             </div>
+            <!-- returns -->
             <div class="tab-pane fade returns" id="pills-returns" role="tabpanel" aria-labelledby="pills-returns-tab"
                 tabindex="0">
-                returns
+                <div class="returns-veiw ">
+                    <ul class="nav nav-pills mb-3 justify-content-between" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active d-flex align-items-normal justify-content-between"
+                                id="pills-refunded-returns-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-refunded-returns" type="button" role="tab"
+                                aria-controls="pills-refunded-returns" aria-selected="true">
+                                <span>Refunded Returns (3)</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link d-flex align-items-normal" id="pills-reviewing-returns-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-reviewing-returns" type="button" role="tab"
+                                aria-controls="pills-reviewing-returns" aria-selected="true">
+                                <span>Reviewing Returns (4)</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link d-flex align-items-normal" id="pills-rejected-returns-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-rejected-returns" type="button" role="tab"
+                                aria-controls="pills-rejected-returns" aria-selected="true">
+                                <span>Rejected Returns (1)</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active refunded-returns" id="pills-refunded-returns"
+                            role="tabpanel" aria-labelledby="pills-refunded-returns-tab" tabindex="0">
+                            <div class="sorted d-flex justify-content-between align-items-center">
+                                <input class="search" type="text" placeholder="Search for orders">
+                                <div class="dropdown">
+                                    <button class="btn-outline dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Last 3 months
+                                        <img src="/assets/images/my-account/arrow-down.svg" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Last 1 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 2 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 4 months</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Tables -->
+                            <table>
+                                <thead>
+                                    <tr class="head-h">
+                                        <th class="Order-id">Return ID</th>
+                                        <th>Created on</th>
+                                        <th># of Items</th>
+                                        <th>Return Payment Method</th>
+                                        <th>Total</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="main-body">
+                                    <tr>
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>3</td>
+                                        <td>Cash</td>
+                                        <td>$ 234.56</td>
+                                        <td class="accepted">Accepted</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>1</td>
+                                        <td>Visa</td>
+                                        <td>$ 234.56</td>
+                                        <td class="accepted">Accepted</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>5</td>
+                                        <td>Visa</td>
+                                        <td>$ 234.56</td>
+                                        <td class="accepted">Accepted</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <!-- <div class="pagination d-flex justify-content-between">
+                                <div class="pagination-number d-flex">
+                                    <a href=""><img src="/assets/images/my-account/arrow-back.svg" alt=""></a>
+                                    <a href="" class="active">1</a>
+                                    <a href="">2</a>
+                                    ...
+                                    <a href=""><img src="/assets/images/my-account/arrow-next.svg" alt=""></a>
+                                </div>
+                                <div class="pagination-text">
+                                    <p>1 - 6 of 34 Orders</p>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="tab-pane fade reviewing-returns" id="pills-reviewing-returns" role="tabpanel"
+                            aria-labelledby="pills-in-progress-tab" tabindex="0">
+                            <div class="sorted d-flex justify-content-between align-items-center">
+                                <input class="search" type="text" placeholder="Search for orders">
+                                <div class="dropdown">
+                                    <button class="btn-outline dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Last 3 months
+                                        <img src="/assets/images/my-account/arrow-down.svg" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Last 1 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 2 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 4 months</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Tables -->
+                            <table>
+                                <thead>
+                                    <tr class="head-h">
+                                        <th class="Order-id">Return ID</th>
+                                        <th>Created on</th>
+                                        <th># of Items</th>
+                                        <th>Return Payment Method</th>
+                                        <th>Total</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="main-body">
+                                    <tr>
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>3</td>
+                                        <td>Cash</td>
+                                        <td>$ 234.56</td>
+                                        <td class="in-progress">In Progress</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>1</td>
+                                        <td>Visa</td>
+                                        <td>$ 234.56</td>
+                                        <td class="in-progress">In Progress</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>5</td>
+                                        <td>Visa</td>
+                                        <td>$ 234.56</td>
+                                        <td class="in-progress">In Progress</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+                                    <tr class="bott">
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>4</td>
+                                        <td>Cash</td>
+                                        <td>$ 234.56</td>
+                                        <td class="in-progress">In Progress</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <!-- <div class="pagination d-flex justify-content-between">
+                                <div class="pagination-number d-flex">
+                                    <a href=""><img src="/assets/images/my-account/arrow-back.svg" alt=""></a>
+                                    <a href="" class="active">1</a>
+                                    <a href="">2</a>
+                                    ...
+                                    <a href=""><img src="/assets/images/my-account/arrow-next.svg" alt=""></a>
+                                </div>
+                                <div class="pagination-text">
+                                    <p>1 - 6 of 34 Orders</p>
+                                </div>
+                            </div> -->
+                        </div>
+                        <div class="tab-pane fade rejected-returns" id="pills-rejected-returns" role="tabpanel"
+                            aria-labelledby="pills-completed-tab" tabindex="0">
+                            <div class="sorted d-flex justify-content-between align-items-center">
+                                <input class="search" type="text" placeholder="Search for orders">
+                                <div class="dropdown">
+                                    <button class="btn-outline dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Last 3 months
+                                        <img src="/assets/images/my-account/arrow-down.svg" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Last 1 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 2 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 4 months</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Tables -->
+                            <table>
+                                <thead>
+                                    <tr class="head-h">
+                                        <th class="Order-id">Return ID</th>
+                                        <th>Created on</th>
+                                        <th># of Items</th>
+                                        <th>Return Payment Method</th>
+                                        <th>Total</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="main-body">
+                                    <tr>
+                                        <td>#32859739636</td>
+                                        <td>12 Feb 2023 - 04:30 pm</td>
+                                        <td>3</td>
+                                        <td>Cash</td>
+                                        <td>$ 234.56</td>
+                                        <td class="delivered">Delivered</td>
+                                        <td class="text-end"><img src="/assets/images/my-account/arrow.right.svg"
+                                                alt="">
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <!-- <div class="pagination d-flex justify-content-between">
+                                <div class="pagination-number d-flex">
+                                    <a href=""><img src="/assets/images/my-account/arrow-back.svg" alt=""></a>
+                                    <a href="" class="active">1</a>
+                                    <a href="">2</a>
+                                    ...
+                                    <a href=""><img src="/assets/images/my-account/arrow-next.svg" alt=""></a>
+                                </div>
+                                <div class="pagination-text">
+                                    <p>1 - 6 of 34 Orders</p>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Refunded Items -->
+                <div class="refunded-items d-none">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="order-number d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/images/my-account/arrow-left.svg" alt="">
+                                    <p>Return #32859739636</p>
+                                </div>
+                                <div>
+                                    <span>Delivered on 12 Mar 2023 - 05:23 pm</span>
+                                </div>
+                            </div>
+                            <div class="review-order ">
+                                <div class="shipping-information">
+                                    <!-- Items -->
+                                    <div class="contact d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <img src="/assets/images/Checkout/Line 28.svg" alt="">
+                                            <h5>Refunded Items</h5>
+                                        </div>
+                                    </div>
+                                    <div class="information">
+                                        <div class="contact-info">
+                                            <div class="items-veiw">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="items-cart d-flex align-items-center">
+                                                            <div class="item-img">
+                                                                <img src="/assets/images/Cart/item-cart1.svg" alt="">
+                                                            </div>
+                                                            <div class="title-item">
+                                                                <span>Colette Shaker Statement Necklace- Gold</span>
+                                                                <div class="prices d-flex align-items-center">
+                                                                    <p class="pe-1">$125.00</p>
+                                                                    <small> $150.00</small>
+                                                                </div>
+                                                                <div class="quantity-detales">
+                                                                    <p>Reason:<span>Received damaged item - Item
+                                                                            damaged, packaging undamaged</span> </p>
+                                                                    <span class="parg">I need to replace it with another
+                                                                        one. I think it is damaged because of
+                                                                        shipping</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="items-veiw">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="items-cart d-flex align-items-center">
+                                                            <div class="item-img">
+                                                                <img src="/assets/images/Cart/item-cart2.svg" alt="">
+                                                            </div>
+                                                            <div class="title-item">
+                                                                <span>Colette Shaker Statement Necklace- Gold</span>
+                                                                <div class="prices d-flex align-items-center">
+                                                                    <p class="pe-1">$125.00</p>
+                                                                    <small> $150.00</small>
+                                                                </div>
+                                                                <div class="quantity-detales">
+                                                                    <p>Reason:<span>Received damaged item - Item
+                                                                            damaged, packaging undamaged</span> </p>
+                                                                    <span class="parg">I need to replace it with another
+                                                                        one. I think it is damaged because of
+                                                                        shipping</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="items-veiw">
+                                                <div class="row">
+                                                    <div class="col-lg-12">
+                                                        <div class="items-cart d-flex align-items-center">
+                                                            <div class="item-img">
+                                                                <img src="/assets/images/Cart/item-cart3.svg" alt="">
+                                                            </div>
+                                                            <div class="title-item">
+                                                                <span>Colette Shaker Statement Necklace- Gold</span>
+                                                                <div class="prices d-flex align-items-center">
+                                                                    <p class="pe-1">$125.00</p>
+                                                                    <small> $150.00</small>
+                                                                </div>
+                                                                <div class="quantity-detales">
+                                                                    <p>Reason:<span>Received damaged item - Item
+                                                                            damaged, packaging undamaged</span> </p>
+                                                                    <span class="parg">I need to replace it with another
+                                                                        one. I think it is damaged because of
+                                                                        shipping</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <!-- Returning Method -->
+                            <div class="returning-method">
+                                <div class="contact d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img src="/assets/images/Checkout/Line 28.svg" alt="">
+                                        <h5>Refunded Items</h5>
+                                    </div>
+                                </div>
+                                <div class="visa d-flex align-items-start">
+                                    <img src="/assets/images/my-account/logos_visa.svg" alt="">
+                                    <p>Refund to your Visa ending in <span>5831</span></p>
+                                </div>
+                                <div class="total btn-brown">
+                                    <p>Total</p>
+                                    <p>$250.00</p>
+                                </div>
+                            </div>
+                            <div class="address">
+                                <div class="contact d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img src="/assets/images/Checkout/Line 28.svg" alt="">
+                                        <h5>Address</h5>
+                                    </div>
+                                </div>
+                                <p>The LCO warehouse. </p>
+                                <span>251 Eastern Baseline road, suite 107, gilbert aZ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reviewing Items -->
+                <div class="reviewing-items d-none">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="order-number d-flex justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/images/my-account/arrow-left.svg" alt="">
+                                    <p>Return #32859739636</p>
+                                </div>
+                                <div>
+                                    <span>Reviewing</span>
+                                </div>
+                            </div>
+                            <div class="review-order ">
+                                <div class="shipping-information">
+                                    <!-- Items -->
+                                    <div class="contact d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <img src="/assets/images/Checkout/Line 28.svg" alt="">
+                                            <h5>Reviewing Items</h5>
+                                        </div>
+                                    </div>
+                                    <div class="information">
+                                        <div class="contact-info">
+                                            <div class="items-veiw d-flex justify-content-between">
+                                                <div class="items-cart d-flex align-items-center">
+                                                    <div class="item-img">
+                                                        <img src="/assets/images/Cart/item-cart1.svg" alt="">
+                                                    </div>
+                                                    <div class="title-item">
+                                                        <div class="title-reason">
+                                                            <span>Colette Shaker Statement Necklace- Gold</span>
+                                                            <div class="prices d-flex align-items-center">
+                                                                <p class="pe-1">$125.00</p>
+                                                                <small> $150.00</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="quantity-detales">
+                                                            <p>Reason:<span>Received damaged item - Item
+                                                                    damaged, packaging undamaged</span> </p>
+                                                            <span class="parg">I need to replace it with another
+                                                                one. I think it is damaged because of
+                                                                shipping</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="btn-outline">Cancel Return Item</button>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="items-veiw d-flex justify-content-between">
+                                                <div class="items-cart d-flex align-items-center">
+                                                    <div class="item-img">
+                                                        <img src="/assets/images/Cart/item-cart1.svg" alt="">
+                                                    </div>
+                                                    <div class="title-item">
+                                                        <div class="title-reason">
+                                                            <span>Colette Shaker Statement Necklace- Gold</span>
+                                                            <div class="prices d-flex align-items-center">
+                                                                <p class="pe-1">$125.00</p>
+                                                                <small> $150.00</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="quantity-detales">
+                                                            <p>Reason:<span>Received damaged item - Item
+                                                                    damaged, packaging undamaged</span> </p>
+                                                            <span class="parg">I need to replace it with another
+                                                                one. I think it is damaged because of
+                                                                shipping</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="btn-outline">Cancel Return Item</button>
+                                            </div>
+                                            <div class="line"></div>
+                                            <div class="items-veiw d-flex justify-content-between">
+                                                <div class="items-cart d-flex align-items-center">
+                                                    <div class="item-img">
+                                                        <img src="/assets/images/Cart/item-cart1.svg" alt="">
+                                                    </div>
+                                                    <div class="title-item">
+                                                        <div class="title-reason">
+                                                            <span>Colette Shaker Statement Necklace- Gold</span>
+                                                            <div class="prices d-flex align-items-center">
+                                                                <p class="pe-1">$125.00</p>
+                                                                <small> $150.00</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="quantity-detales">
+                                                            <p>Reason:<span>Received damaged item - Item
+                                                                    damaged, packaging undamaged</span> </p>
+                                                            <span class="parg">I need to replace it with another
+                                                                one. I think it is damaged because of
+                                                                shipping</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="btn-outline">Cancel Return Item</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+
+
+                        </div>
+                        <div class="col-lg-3">
+                            <!-- Returning Method -->
+                            <div class="returning-method">
+                                <div class="contact d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center">
+                                        <img src="/assets/images/Checkout/Line 28.svg" alt="">
+                                        <h5>Refunded Items</h5>
+                                    </div>
+                                </div>
+                                <div class="visa d-flex align-items-start">
+                                    <img src="/assets/images/my-account/logos_visa.svg" alt="">
+                                    <p>Refund to your Visa ending in <span>5831</span></p>
+                                </div>
+                                <div class="total btn-brown">
+                                    <p>Total</p>
+                                    <p>$250.00</p>
+                                </div>
+                            </div>
+                            <div class="address">
+                                <div class="contact d-flex align-items-center justify-content-between">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="d-flex">
+                                            <img src="/assets/images/Checkout/Line 28.svg" alt="">
+                                            <h5>Address</h5>
+                                        </div>
+                                    </div>
+                                    <button class="btn-outline">Change</button>
+                                </div>
+                                <p>The LCO warehouse. </p>
+                                <span>251 Eastern Baseline road, suite 107, gilbert aZ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- My Wallet -->
             <div class="tab-pane fade my-wallet" id="pills-my-wallet" role="tabpanel"
                 aria-labelledby="pills-my-wallet-tab" tabindex="0">
                 my-wallet

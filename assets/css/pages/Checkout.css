@@ -43,6 +43,7 @@ header nav .profil .dropdown-item:hover {
 /* MAIN */
 .summary .btn-solid.disabeld {
   background: var(--bg-gray2);
+  border: none;
   color: var(--bg-gray1);
   cursor: default;
 }
