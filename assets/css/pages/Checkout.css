@@ -1,6 +1,6 @@
 /* HEADER */
 header nav .logo {
-  padding: 0 0 0 16%;
+  margin: 0 0 0 10%;
 }
 header nav .profil .dropdown .dropdown-toggle {
   color: var(--bg-primary);

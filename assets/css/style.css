@@ -209,7 +209,8 @@ body {
   width: 20px;
 }
 .logo img {
-  width: 122px;
+  width: 122.5px;
+  margin: 0 0 0 35%;
 }
 /* NAVBAR2 */
 .navbar {
@@ -501,11 +502,20 @@ li {
   bottom: 5%;
   left: 5%;
   right: 5%;
-  padding: 9px;
+  padding: 13.5px 20px;
   opacity: 0;
   transition: all 0.5s ease-out;
   z-index: 1;
   border: 1px solid var(--bg-primary);
+}
+.overlay-data ul{
+  padding: 0 13.5px;
+}
+.overlay-data ul li{
+  list-style: disc;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
 }
 .overlay-btn {
   margin: 22.5px 0 0 0;

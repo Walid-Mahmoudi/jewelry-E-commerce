@@ -45,6 +45,9 @@
   font-size: 20px;
   font-weight: 600;
 }
+.detales-item .prices{
+  padding: 0;
+}
 .prices p {
   font-size: 19px !important;
   font-weight: 500;
@@ -53,9 +56,9 @@
 .prices small {
   font-size: 11px !important;
 }
-.store {
+/* .store {
   padding-bottom: 16px;
-}
+} */
 .store p {
   color: var(--bg-primary);
   font-family: Montserrat Alternates;
@@ -98,11 +101,12 @@
   color: var(--bg-Success);
 }
 .detales-parg ul {
-  padding: 0;
+  padding: 0 0 0 13.5px;
 }
 .detales-parg ul li {
   font-size: 13.5px;
   font-weight: 400;
+  list-style: disc;
 }
 .slider {
   width: 90%;
@@ -269,12 +273,7 @@ text-align: center;
 .buy .btn-outline {
   width: 100%;
 }
-.buy .btn-outline:hover {
-  background: var(--bg-primary);
-  border: none;
-  color: #fff;
-}
-/*  */
+
 .menu-shape {
   width: 90%;
   padding: 67px 0 107.5px 0;
