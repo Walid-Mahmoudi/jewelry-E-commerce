@@ -30,7 +30,11 @@
     <link rel="stylesheet" href="/assets/css/pages/Checkout.css">
     <!-- OWEL CURSUAL -->
     <link rel="stylesheet" href="/assets/lib/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+
     <title>Contact Us</title>
+    <!-- MAP -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="/assets/js/pages/Contact.js"></script>
 </head>
 
 <body>
@@ -60,13 +64,13 @@
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav m-auto">
                             <li class="nav-item me-4">
-                                <a class="nav-link " aria-current="page" href="#">Home</a>
+                                <a class="nav-link " aria-current="page" href="/index.html">Home</a>
                             </li>
                             <li class="nav-item me-4">
                                 <a class="nav-link" href="/assets/html/pages/shop.html">Shop</a>
                             </li>
                             <li class="nav-item me-4">
-                                <a class="nav-link" href="#">Blogs</a>
+                                <a class="nav-link" href="/assets/html/pages/Blogs.html">Blogs</a>
                             </li>
                             <li class="nav-item me-4">
                                 <a class="nav-link active" href="#">Contact Us</a>
@@ -98,51 +102,97 @@
     <main>
         <!-- section talk  -->
         <section class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <h2>Let us talk</h2>
-                    <p>If you would like to say hello or ask a general question, please send an email to
-                        Elegantu@Xbuilt.com</p>
+            <div class="row  d-flex align-items-center position-relative">
+                <div class="box position-absolute"></div>
+
+                <div class="col-lg-7 ">
+                    <div class="talk ">
+                        <h2>Let us talk</h2>
+                        <p>If you would like to say hello or ask a general question, please send an email to
+                            Elegantu@Xbuilt.com</p>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="field">
                                     <input type="text" name="firstname" id="firstname" placeholder="">
                                     <label for="firstname">First Name</label>
-                                </div>   
+                                </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="field">
                                     <input type="text" name="lastname" id="lastname" placeholder="">
                                     <label for="lastname">Last Name</label>
-                                </div>   
+                                </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="field">
                                     <input type="email" name="email" id="email" placeholder="">
                                     <label for="email">Email</label>
-                                </div>   
+                                </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="field">
                                     <input type="number" name="phone" id="phone" placeholder="">
                                     <label for="phone">Phone Number</label>
-                                </div>   
+                                </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="field">
-                                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                                    <label for="">Your Message</label>
-                                </div>   
+                                    <textarea name="message" id="message" cols="30" rows="3" placeholder=""></textarea>
+                                    <label for="message">Your Message</label>
+                                </div>
                             </div>
                             <div class="col-lg-12">
-                                <button class="btn-solid w-100">Update</button>   
+                                <button class="btn-solid w-100">Update</button>
                             </div>
                         </div>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <h5>Address</h5>
+                <div class="col-lg-5">
+                    <div class="detals-talk">
+                        <div class="adress">
+                            <h5>Address</h5>
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>1431 W. Hubbard St. Suite 201 Chicago</p>
+                            </div>
+                        </div>
+                        <div class="phones">
+                            <h5>Phones</h5>
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+1 100 200 300</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+1 200 400 500</p>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <h5>Email</h5>
+                            <div class="d-flex align-items-center">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>Péarléu@Xbuilt.com</p>
+                            </div>
+                        </div>
+                        <div class="follow-us">
+                            <h5>Follow Us</h5>
+                            <div class="soial-icon d-flex">
+                                <div class="icon box-border text-center me-3"><a href="#"><i
+                                            class="fa-brands fa-instagram"></i></a></div>
+                                <div class="icon box-border text-center me-3"><a href="#"><i
+                                            class="fa-brands fa-facebook-f"></i></a></div>
+                                <div class="icon box-border text-center"><a href="#"><i
+                                            class="fa-brands fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
+        <!-- section map -->
+        <section class="container map">
+            <div id="map"></div>
         </section>
     </main>
     <!-- FOOTER -->
@@ -225,6 +275,12 @@
 
 
 
+    <!-- MAP -->
+    <script>(g => { var h, a, k, p = "The Google Maps JavaScript API", c = "google", l = "importLibrary", q = "__ib__", m = document, b = window; b = b[c] || (b[c] = {}); var d = b.maps || (b.maps = {}), r = new Set, e = new URLSearchParams, u = () => h || (h = new Promise(async (f, n) => { await (a = m.createElement("script")); e.set("libraries", [...r] + ""); for (k in g) e.set(k.replace(/[A-Z]/g, t => "_" + t[0].toLowerCase()), g[k]); e.set("callback", c + ".maps." + q); a.src = `https://maps.${c}apis.com/maps/api/js?` + e; d[q] = f; a.onerror = () => h = n(Error(p + " could not load.")); a.nonce = m.querySelector("script[nonce]")?.nonce || ""; m.head.append(a) })); d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n)) })
+            ({ key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly" });
+    </script>
+
+
 
     <!-- BOOTSTRAP -->
     <script src="/assets/js/bootstrap/bootstrap.bundle.js"></script>
@@ -235,6 +291,9 @@
     <!-- MAIN JS -->
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/pages/home.js"></script>
+
+
+
 </body>
 
 </html>

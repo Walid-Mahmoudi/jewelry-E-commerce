@@ -1,0 +1,168 @@
+.shop-bg2 {
+  background-image: url(/assets/images/Blogs/blogs-bg.png);
+}
+.image-meet .box {
+  left: 3%;
+  width: 94%;
+}
+.meet .content-custmer {
+  background: var(--bg-Secondary);
+  padding: 27px;
+  top: 9%;
+  left: 49%;
+}
+.meet .content-custmer h2 {
+  font-size: 33px;
+}
+.meet .content-custmer p {
+  font-size: 13.5px !important;
+}
+.meet .content-custmer h5 {
+  font-size: 15px;
+  margin-right: 96px;
+}
+.meet .content-custmer span {
+  font-size: 13.5px;
+  font-weight: 300;
+  color: var(--bg-graydark);
+  font-family: Josefin Sans;
+}
+.meet .content-custmer .swiper-pagination {
+  margin: 0;
+}
+.meet .content-custmer .swiper-pagination .line {
+  width: 50px;
+  height: auto;
+  margin-right: 7.5px;
+}
+
+.meet .content-custmer .swiper-pagination ul li {
+  margin: 0;
+  margin-right: 16px;
+  font-size: 16.8px;
+  font-weight: 400;
+}
+.meet .content-custmer .swiper-pagination ul li.active {
+  font-weight: 500;
+}
+.meet .content-custmer .swiper-pagination .arrow {
+  width: 85.5px;
+  margin-left: 4px !important;
+  margin: 0;
+}
+.meet .content-custmer .swiper-pagination {
+  flex-direction: row;
+}
+.detals {
+  margin-top: 114px;
+}
+.detals .photo {
+  margin-bottom: 13.5px;
+}
+.detals span {
+  font-family: Josefin Sans;
+  font-style: italic;
+  font-size: 13.5px;
+  font-weight: 300;
+  color: var(--bg-graydark);
+}
+.detals h5 {
+  font-size: 19px !important;
+  line-height: 27px;
+  margin-bottom: 22.5px;
+}
+.detals h4 {
+  margin: 0;
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.detals .soial-icon {
+  padding: 0;
+}
+.detals .soial-icon a {
+  color: var(--bg-primary);
+  font-size: 16px !important;
+}
+.detals .soial-icon .icon {
+  width: 27px;
+  height: 27px;
+}
+.detals .soial-icon .icon:nth-child(1) {
+  margin: 0 10px 0 0 !important;
+}
+.detals .soial-icon .icon:nth-child(2) {
+  margin: 0 10px 0 0 !important;
+}
+.detals .overlays {
+  background: var(--bg-Secondary);
+  top: 100%;
+  bottom: 0;
+  padding: 27px;
+  transition: all 1s ease-in-out;
+}
+.detals .photo {
+  overflow: hidden;
+}
+.detals .photo:hover .overlays {
+  top: 0;
+  bottom: 0;
+  padding: 27px;
+}
+.detals .overlays2 {
+  background: var(--bg-Secondary);
+  top: 0;
+  bottom: 0;
+  padding: 27px;
+  transition: all 1s ease-in-out;
+}
+.detals .overlays p,
+.detals .overlays2 p {
+  font-size: 13.5px !important;
+  line-height: 23.5px;
+}
+.detals .overlays .btn-solidspace,
+.detals .overlays2 .btn-solidspace {
+  margin-top: 24px;
+}
+
+.detals .search {
+  background: url(/assets/images/Blogs/search-normal.svg) no-repeat left center;
+  background-size: 20px;
+  text-indent: 33px;
+}
+.detals .categories {
+  margin-top: 27px;
+}
+.detals .categories h5 ,.recent-blogs h5 {
+  font-size: 16.8px !important;
+  margin-bottom: 5px;
+}
+.detals .categories .accessories,
+.diamonds,
+.earrings,
+.bracelets,
+.rings {
+  background: var(--bg-Secondary);
+  padding: 12px 13.5px;
+  margin-bottom: 13.5px;
+}
+.detals .categories .accessories p {
+  font-size: 13.5px !important;
+}
+.detals .line{
+    width: 100%;
+    border-bottom: 1px solid var(--bg-gray1);
+    margin: 20px 0 20px 0;
+}
+.detals .recent-blogs h5 {
+    font-size: 16.8px !important;
+    margin-bottom: 13.5px;
+  }
+  .detals .recent-blogs .data{
+    margin-bottom: 27px;
+  }
+.detals .recent-blogs .data img{
+    width: 80.5px;
+    margin-right: 13.5px;
+}

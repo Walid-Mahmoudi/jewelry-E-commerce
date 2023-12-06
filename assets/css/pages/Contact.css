@@ -1,29 +1,87 @@
-.shop-bg2{
-    background-image: url(/assets/images/contact/contact-bg.png);
+.shop-bg2 {
+  background-image: url(/assets/images/contact/contact-bg.png);
 }
- .field {
-    position: relative;
-  }
- .field label {
-    font-size: 12px;
-    color: var(--bg-primary);
-    font-family: Montserrat;
-    position: absolute;
-    top: 15px;
-    left: 0;
-    pointer-events: none;
-    transition: all 1s ease-in-out;
-    pointer-events: none;
-  }
- .field input:focus-visible + label,
+.box{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 65%;
+  left: 1%;
+  z-index: -1;
+}
+.talk{
+  padding: 40px;
+}
+.field {
+  position: relative;
+}
+.field label {
+  font-size: 12px;
+  color: var(--bg-primary);
+  font-family: Montserrat;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+  transition: all 1s ease-in-out;
+  pointer-events: none;
+}
+.field input:focus-visible + label,
 .field input:not(:placeholder-shown) + label {
-    top: -5px;
-  }
-  .field textarea:focus-visible + label,
-  .field textarea:not(:placeholder-shown) + label {
-      top: -5px;
-    }
-    .textarea{
-        border: 0;
-        border-bottom: 1px solid var(--bg-primary);
-    }
+  top: -5px;
+}
+
+.field textarea:focus + label,
+.field textarea:not(:placeholder-shown) + label{
+  top: -5px;
+}
+textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--bg-primary);
+  margin-bottom: 47px;
+}
+
+.detals-talk{
+  background: var(--bg-Secondary);
+  padding: 33px;
+}
+.detals-talk h5{
+  font-size: 17px;
+  font-weight: 500;
+}
+.detals-talk p{
+  font-size: 13.5px !important;
+  margin-left: 8px;
+}
+.detals-talk .phones{
+  margin: 33px 0;
+}
+.detals-talk .phones div:nth-child(2){
+  margin-bottom: 13.5px;
+}
+.detals-talk .email{
+  margin: 33px 0;
+}
+.detals-talk .follow-us .soial-icon{
+  padding: 0;
+}
+.detals-talk .follow-us .soial-icon a{
+  color: var(--bg-primary);
+  font-size: 16px !important;
+}
+.detals-talk .follow-us .soial-icon .icon{
+  width: 27px;
+  height: 27px;
+  margin: 0 10px 0 0 !important;
+}
+map{
+  margin-top: 67px;
+}
+#map{
+  height: 400px;
+  width: 100%;
+}
