@@ -465,6 +465,10 @@ li {
 .text-cont small {
   font-size: 11px !important;
 }
+.img-head{
+  overflow: hidden;
+}
+
 .img-head:hover .overlay {
   top: 0;
   right: 0;
@@ -501,6 +505,7 @@ li {
   opacity: 0;
   transition: all 0.5s ease-out;
   z-index: 1;
+  border: 1px solid var(--bg-primary);
 }
 .overlay-btn {
   margin: 22.5px 0 0 0;

@@ -4,6 +4,9 @@
 .image-meet .box {
   left: 3%;
   width: 94%;
+  top: 5%;
+  bottom: 5%;
+  border: 1px solid var(--bg-Secondary);
 }
 .meet .content-custmer {
   background: var(--bg-Secondary);
@@ -77,14 +80,14 @@
   font-size: 15px;
   font-weight: 600;
 }
-.detals .soial-icon {
+main .detals .soial-icon {
   padding: 0;
 }
-.detals .soial-icon a {
+main .detals .soial-icon a {
   color: var(--bg-primary);
   font-size: 16px !important;
 }
-.detals .soial-icon .icon {
+main .detals .soial-icon .icon {
   width: 27px;
   height: 27px;
 }
