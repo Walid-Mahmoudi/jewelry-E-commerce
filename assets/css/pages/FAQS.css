@@ -1,0 +1,66 @@
+main{
+    width: 70% !important;
+    margin: auto;
+}
+.faqs-accordion{
+    margin-top: 27px;
+}
+.faqs-accordion p{
+    margin: 0;
+}
+.faqs-accordion .accordion .accordion-button{
+    background: rgba(237, 227, 217, 0.50);
+}
+.categories .dropdown .btn-outline{
+    border-color: var(--bg-gray1);
+    font-size: 12px;
+    font-weight: 400;
+}
+.categories .dropdown .btn-outline span{
+    font-size: 12px;
+    font-weight: 500;
+}
+.categories .dropdown .btn-outline img{
+    margin-left: 12.5px;
+}
+.categories .dropdown .btn-outline:hover{
+    background: none;
+    color: var(--bg-primary);
+}
+.categories .search{
+    border-color: var(--bg-gray1);
+    width: 40% !important;
+    padding: 7px 13.5px;
+    background: url(/assets/images/my-account/search-normal.svg) no-repeat left
+      13.5px center;
+    background-size: 20px;
+    text-indent: 33.5px;
+    margin: 0;
+}
+.question{
+    border: 1px solid var(--bg-Secondary-light);
+    padding: 20px;
+    margin-top: 107.5px;
+}
+.question img{
+    margin-right: 13.5px;
+    width: 50px;
+}
+.question span{
+    font-size: 13.5px;
+    font-weight: 500;
+}
+.question p{
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0;
+}
+.question .btn-solid{
+    width: 60%;
+    height: 80%;
+    font-size: 13.5px;
+    font-weight: 500;
+} 
+.question .btn-solid:hover{
+    padding: 10px 27px;
+}

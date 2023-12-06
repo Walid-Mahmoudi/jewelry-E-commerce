@@ -1,0 +1,92 @@
+.shop-bg2{
+    background-image: url(/assets/images/about-us/about-bg.png);
+}
+.build-bridge-title{
+    padding-left: 33px;
+    flex-direction: column;
+}
+h2{
+    font-size: 33px;
+}
+.box{
+    top: 5%;
+    bottom: 5%;
+    width: 96.5%;
+    border: 1px solid var(--bg-Secondary);
+}
+.valus{
+    background: rgba(237, 227, 217, 0.80);
+    padding: 47px 250px  130px;
+    margin-top: 107.5px;
+    margin-bottom: 286.5px;
+}
+.valus p{
+    font-size: 13.5px !important;
+    font-weight: 400;
+}
+.valus .content{
+    background: #fff;
+    padding: 30px 20px;
+    border: 1px solid var(--bg-Secondary);
+}
+.valus .content h5{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.valus .content p{
+    font-size: 12px !important;
+    font-weight: 400;
+}
+.valus .content img{
+    width: 87px;
+    margin-bottom: 15px;
+}
+.valus-boxs{
+    top: 205px;
+    left: 153px;
+    right: 153px;
+    
+}
+.valus-boxs .col-lg-4{
+    padding: 0 32px;
+}
+.team .box{
+    top: 5%;
+    bottom: 5%;
+    width: 93%;
+    left: 3%;
+    border: 1px solid var(--bg-Secondary);
+}
+.our-team{
+    margin: 87px 0 107.5px;
+}
+.our-team .title-team{
+    margin-bottom: 33px;
+
+}
+.our-team .content-team .content-title{
+    margin-top: 20px;
+}
+.our-team .content-team .content-title span{
+    font-size: 17px;
+    font-weight: 700;
+}
+.our-team .content-team .soial-icon a{
+    color: var(--bg-primary);
+    font-size: 18px !important;
+}
+.our-team .content-team .soial-icon .icon{
+    width: 30px;
+    height: 30px;
+    margin: 0 0 0 10px !important;
+}
+.our-team .content-team .box{
+    top: 5%;
+    bottom: 19%;
+    width: 94%;
+    left: 3%;
+}
+.custemrs{
+    padding-top: 0;
+}

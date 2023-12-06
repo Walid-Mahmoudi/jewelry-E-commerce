@@ -22,6 +22,7 @@
   --bg-greendark: #1D9838;
   --bg-orange: #F2AB63;
   --bg-orange-light: rgba(242, 171, 99 ,0.2);
+  --bg-Secondary-light: rgba(221, 186, 152,0.4);
 
   /* ------FONTS------ */
   --font-primary: Montserrat Alternates;
@@ -51,7 +52,7 @@
   transition: all 0.5s ease-in-out;
 }
 .btn-solidspace {
-  border: none;
+  border: 1px solid var(--bg-primary);
   outline: none;
   background: var(--bg-primary);
   padding: 10px 14px;
