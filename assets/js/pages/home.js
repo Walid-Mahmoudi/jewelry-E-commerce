@@ -5,11 +5,12 @@ $(document).ready(function () {
       loop: true, // Infinite loop
       // Autoplay
       autoplay: true, // Autoplay interval in milliseconds
-      autoplayTimeout: 3000,
+      // autoplayTimeout: 3000,
       autoplayHoverPause: true,
       // Pause autoplay on hover,
       nav: false,
-      dots: false,
+      // dots: true,
+      // dotsData: true,
       margin: 0,
       mouseDrag: false,
       // Enable navigation
@@ -39,7 +40,7 @@ $(document).ready(function () {
       autoplayHoverPause: true,
       // Pause autoplay on hover,
       nav: false,
-      dots: false,
+      dots: true,
       margin: 0,
       mouseDrag: false,
       // Enable navigation

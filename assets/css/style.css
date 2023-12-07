@@ -17,12 +17,12 @@
   --bg-gray1: #e9eaec;
   --bg-gray2: #cbcccf;
   --bg-gray3: #95989d;
-  --bg-grey-light: #BABABA;
-  --bg-greenwihte: rgba(18, 186, 54,0.1);
-  --bg-greendark: #1D9838;
-  --bg-orange: #F2AB63;
-  --bg-orange-light: rgba(242, 171, 99 ,0.2);
-  --bg-Secondary-light: rgba(221, 186, 152,0.4);
+  --bg-grey-light: #bababa;
+  --bg-greenwihte: rgba(18, 186, 54, 0.1);
+  --bg-greendark: #1d9838;
+  --bg-orange: #f2ab63;
+  --bg-orange-light: rgba(242, 171, 99, 0.2);
+  --bg-Secondary-light: rgba(221, 186, 152, 0.4);
 
   /* ------FONTS------ */
   --font-primary: Montserrat Alternates;
@@ -110,8 +110,13 @@
   border: none;
   color: var(--bg-primary);
 }
+.btn-embty {
+  background: none;
+  border: none;
+  outline: 0;
+}
 /* CLASSIS INPUT */
-input{
+input {
   border: none;
   outline: none;
   font-size: 14px;
@@ -123,7 +128,7 @@ input{
   cursor: pointer;
 }
 
-input::placeholder{
+input::placeholder {
   font-size: 12px;
   color: var(--bg-primary);
   font-family: Montserrat;
@@ -133,7 +138,7 @@ input::placeholder{
   transform: translateY(-100%) translateX(0);
   transition: all 1s ease-in-out;
 } */
-select{
+select {
   border: none;
   border-bottom: 1px solid;
   width: 100%;
@@ -141,7 +146,6 @@ select{
   padding: 15.5px 0;
   cursor: pointer;
 }
-
 
 a {
   font-size: 14px !important;
@@ -466,7 +470,7 @@ li {
 .text-cont small {
   font-size: 11px !important;
 }
-.img-head{
+.img-head {
   overflow: hidden;
 }
 
@@ -508,10 +512,10 @@ li {
   z-index: 1;
   border: 1px solid var(--bg-primary);
 }
-.overlay-data ul{
+.overlay-data ul {
   padding: 0 13.5px;
 }
-.overlay-data ul li{
+.overlay-data ul li {
   list-style: disc;
   font-size: 12px;
   font-weight: 400;
@@ -757,4 +761,26 @@ footer .creted p {
   text-decoration: none;
   color: var(--bg-primary);
   font-weight: 400;
+}
+
+.owl-dots{
+  position: absolute;
+  top: 59%;
+  left: 55%;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot {
+  width: 40px;
+  height: 40px;
+  /* background: red; */
+  border-radius: 50%;
+
+}
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel button.owl-dot.active {
+  /* border: 1px solid var(--bg-primary) !important; */
+  background: black !important;
 }

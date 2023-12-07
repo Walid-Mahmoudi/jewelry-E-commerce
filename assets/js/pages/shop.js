@@ -20,3 +20,13 @@ function sort3() {
   btnSort3.classList.add("active");
   btnSort2.classList.remove("active");
 }
+
+//------------ Add TO Cart ------------//
+
+let addCart = document.querySelector(".img-head");
+
+console.log(addCart);
+function added() {
+  window.location.href= "/assets/html/pages/Product details.html"
+}
+

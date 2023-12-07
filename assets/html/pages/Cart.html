@@ -107,7 +107,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="shopping-cart d-flex align-items-center justify-content-end">
-                            <button class="btn-outline">Keep Shopping</button>
+                            <a href="/assets/html/pages/shop.html"><button class="btn-outline">Keep Shopping</button></a>
                         </div>
                     </div>
                 </div>
@@ -125,13 +125,13 @@
                                         <small> $150.00</small>
                                     </div>
                                     <div class="quantity-detales">
-                                        <p>Quantity: <span>2</span> </p>
+                                        <p>Quantity: <span class="change-number"></span> </p>
                                         <div class="quantity-select d-flex align-items-center">
-                                            <img role="button" id="mins" src="/assets/images/Product-details/mins.svg"
-                                                alt="" onclick="Min()">
-                                                <span>2</span>
-                                            <img role="button" id="plus" src="/assets/images/Product-details/plus.svg"
-                                                alt="" onclick="Plus()">
+                                            <img role="button" id="mins" class="min" src="/assets/images/Product-details/mins.svg"
+                                                alt="" onclick="Mins(event)">
+                                                <span id="change-number">0</span>
+                                            <img role="button" id="plus" class="max" src="/assets/images/Product-details/plus.svg"
+                                                alt="" onclick="Plus(event)">
                                         </div>
                                     </div>
                                 </div>
@@ -162,13 +162,13 @@
                                         <small> $150.00</small>
                                     </div>
                                     <div class="quantity-detales">
-                                        <p>Quantity: <span>2</span> </p>
+                                        <p>Quantity: <span id="change-number">0</span> </p>
                                         <div class="quantity-select d-flex align-items-center">
-                                            <img role="button" id="mins" src="/assets/images/Product-details/mins.svg"
-                                                alt="" >
-                                            <span>2</span>
+                                            <img role="button" id="mins" class="min" src="/assets/images/Product-details/mins.svg"
+                                                alt="" onclick="Mins(event)">
+                                            <span id="change-number">0</span>
                                             <img role="button" id="plus" src="/assets/images/Product-details/plus.svg"
-                                                alt="" >
+                                                alt="" onclick="Plus(event)">
                                         </div>
                                     </div>
                                 </div>
@@ -199,13 +199,13 @@
                                         <small> $150.00</small>
                                     </div>
                                     <div class="quantity-detales">
-                                        <p>Quantity: <span>2</span> </p>
+                                        <p>Quantity: <span class="change-number"></span> </p>
                                         <div class="quantity-select d-flex align-items-center">
-                                            <img role="button" id="mins" src="/assets/images/Product-details/mins.svg"
-                                                alt="" onclick="Min()">
-                                            <span>2</span>
+                                            <img role="button" id="mins" class="min" src="/assets/images/Product-details/mins.svg"
+                                                alt="" onclick="Mins(event)">
+                                            <span id="change-number">0</span>
                                             <img role="button" id="plus" src="/assets/images/Product-details/plus.svg"
-                                                alt="" onclick="Plus()">
+                                                alt="" onclick="Plus(event)">
                                         </div>
                                     </div>
                                 </div>
@@ -246,9 +246,9 @@
                         <div>Total</div>
                         <div>$250.00</div>
                     </button>
-                    <button class="btn-solid w-100">
+                    <a href="/assets/html/pages/Checkout.html"><button class="btn-solid w-100">
                         Checkout
-                    </button>
+                    </button></a>
                 </div>
             </div>
         </div>
