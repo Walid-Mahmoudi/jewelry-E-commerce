@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap/all.min.css">
+    <!-- <link rel="stylesheet" href="/assets/css/bootstrap/all.min.css"> -->
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +27,9 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/pages/Product details.css">
     <link rel="stylesheet" href="/assets/css/pages/cart.css">
+    <!-- STARS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
     <title>Product details</title>
 </head>
 
@@ -449,26 +452,43 @@
                                 </div>
                                 <div class="write-data" id="review-input">
                                     <p>What would you rate this product</p>
-                                    <div class="rating-stars d-flex align-items-center">
-                                        <img src="/assets/images/Product-details/star-outline.svg" alt="">
-                                        <img src="/assets/images/Product-details/star-outline.svg" alt="">
-                                        <img src="/assets/images/Product-details/star-outline.svg" alt="">
-                                        <img src="/assets/images/Product-details/star-outline.svg" alt="">
-                                        <img src="/assets/images/Product-details/star-outline.svg" alt="">
+                                    <div class="rating-box d-flex align-items-center">
+                                      <div class="stars">
+                                        <i role="button" class="fa-regular fa-star"></i>
+                                        <i role="button" class="fa-regular fa-star"></i>
+                                        <i role="button" class="fa-regular fa-star"></i>
+                                        <i role="button" class="fa-regular fa-star"></i>
+                                        <i role="button" class="fa-regular fa-star"></i>
+                                    
+                                      </div>
                                     </div>
                                     <form>
                                         <div class="row">
                                             <div class="col-lg-6">
-                                                <input class="input" type="text" placeholder="Enter your name">
+                                                <div class="field">
+                                                    <input type="text" name="firstname" id="firstname" placeholder="">
+                                                    <label for="firstname">First Name</label>
+                                                </div>
                                             </div>
                                             <div class="col-lg-6">
-                                                <input class="input" type="email" placeholder="Enter your email">
+                                                <div class="field">
+                                                    <input type="text" name="firstname" id="firstname" placeholder="">
+                                                    <label for="firstname">First Name</label>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row">
+
                                             <div class="col-lg-12">
-                                                <textarea name="" id="" cols="30" rows="3"
-                                                    placeholder="Tell us your feedback"></textarea>
+                                                <div class="field">
+                                                    <textarea name="message" id="message" cols="30" rows="3"
+                                                        placeholder=""></textarea>
+                                                    <label for="message">Your Message</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 d-flex justify-content-end">
+                                                <div class="submit d-flex align-items-center gap-3">
+                                                    <button class="btn-outline">Cancel</button>
+                                                    <button class="btn-solid">Submit</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </form>
@@ -826,7 +846,7 @@
 
     <!-- BOOTSTRAP -->
     <script src="/assets/js/bootstrap/bootstrap.bundle.js"></script>
-    <script src="/assets/js/bootstrap/all.min.js"></script>
+    <!-- <script src="/assets/js/bootstrap/all.min.js"></script> -->
     <!-- MAIN JS -->
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/pages/product-details.js"></script>

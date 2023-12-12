@@ -1,10 +1,3 @@
-// let btnMin = document.querySelector(".min");
-// let btnMax = document.querySelector(".max");
-
-// btnMax.addEventListener("click", Plus);
-// btnMin.addEventListener("click" , Mins);
-
-
 //------------ plus and minus ------------//
 function Plus(e) {
   e.target.parentNode.children[1].innerText++;
@@ -22,13 +15,13 @@ function Mins(e) {
 //------------ Change Icon Heart ------------//
 let heartChange = document.querySelectorAll(".heart");
 let hearToggle = false;
-for (let i = 0; i <= heartChange.length; i++) {
-  heartChange[i].addEventListener("click", () => {
+for (const item of heartChange) {
+  item.addEventListener("click", function (e) {
     hearToggle = !hearToggle;
     if (hearToggle) {
-      heartChange[i].src = "http://127.0.0.1:5500/assets/images/heart-red.svg";
+      e.target.src = "http://127.0.0.1:5500/assets/images/heart-red.svg";
     } else {
-      heartChange[i].src = "http://127.0.0.1:5500/assets/images/heart.svg";
+      e.target.src = "http://127.0.0.1:5500/assets/images/heart.svg";
     }
   });
 }

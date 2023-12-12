@@ -10,8 +10,6 @@ let bagination = document.querySelectorAll(".bagination ul li");
 let imgSdetals = Array.from(document.querySelectorAll(".img-slide-detals img"));
 let baginationImgs = document.querySelector(".bagination-img");
 let ProductImg = document.querySelector(".Product-img");
-console.log(ProductImg);
-
 // get num of slide
 var countSlide = imgSdetals.length;
 // set curent slide
@@ -42,49 +40,66 @@ for (var i = 0; i < pagenationBullets.length; i++) {
 }
 // Col function
 theChecker();
-
-// Next
-// let next = document.getElementById("next").addEventListener("click", ()=>{
-//   removeAllActive()
-//   pagenationCreateUl.children[curentSlide++].classList.add("active");
-//   imgSdetals[curentSlide++].classList.add("active");
-
-//   console.log("lalallal");
-// })
+// Next BUTTON
+let next = document.getElementById("next").addEventListener("click", () => {
+  if (curentSlide == countSlide) {
+    return false;
+  }
+  curentSlide++;
+  theChecker();
+});
 
 
 // Change images on click
 let img_slider = document.getElementsByClassName("img-slide-detals");
-console.log(pagenationCreateUl.childNodes);
 for (const item of img_slider) {
   item.addEventListener("click", function (e) {
-    console.log(e.target);
     ProductImg.style.backgroundImage = `url(${e.target.currentSrc})`;
     removeAllActive();
     e.target.classList.add("active");
-    pagenationCreateUl.children[curentSlide].classList.add("active") = e.target
-      // pagenationBullets[curentSlide].classList.add("active");
-      // pagenationCreateUl.children[curentSlide++];
+    pagenationCreateUl.children[curentPagenation].classList.add("active")
+
   });
 }
 
+let curentPagenation 
+
+let iamges = document.querySelectorAll(".img-slide-detals img");
+iamges.forEach((evt, index) => {
+  evt.addEventListener("click", () => {
+    console.log(index);
+    curentPagenation=index
+  });
+});
+
+
+
+// let iamges = document.querySelectorAll(".img-slide-detals img");
+// iamges.forEach((evt, index) => {
+//   evt.addEventListener("click", () => {
+//     console.log(index);
+//     curentPagenation=index
+//   });
+// });
 function theChecker() {
   removeAllActive();
   // Set active classes
   imgSdetals[curentSlide - 1].classList.add("active");
   pagenationCreateUl.children[curentSlide - 1].classList.add("active");
   let imgActive = document.querySelector(".img-slide-detals img.active");
-  console.log(imgActive);
+  // console.log(imgActive);
   if (imgActive) {
     ProductImg.style.backgroundImage = `url(${imgActive.src})`;
   }
-  if (pagenationCreateUl.lastChild.classList.contains("active")||pagenationCreateUl.childNodes[3].classList.contains("active")) {
+  if (
+    pagenationCreateUl.lastChild.classList.contains("active") ||
+    pagenationCreateUl.childNodes[3].classList.contains("active")
+  ) {
     baginationImgs.scroll(300, 0);
   } else if (pagenationCreateUl.firstChild.classList.contains("active")) {
     baginationImgs.scroll(0, 0);
   }
 }
-
 // remove all active classes
 function removeAllActive() {
   imgSdetals.forEach(function (images) {
@@ -95,3 +110,30 @@ function removeAllActive() {
   });
 }
 
+
+
+
+
+
+
+
+
+
+
+// ************* STARS *****************//
+const stars = document.querySelectorAll(".stars i");
+// loop
+stars.forEach((star, index1) => {
+  star.addEventListener("click", () => {
+    stars.forEach((star, index2) => {
+      console.log(index2);
+      index1 >= index2
+        ? star.classList.add("active")
+        : star.classList.remove("active");
+      if (star.classList.contains("active")) {
+        star.classList.remove("fa-regular");
+        star.classList.add("fa-solid");
+      }
+    });
+  });
+});
