@@ -101,6 +101,37 @@
 .summary input{
     margin-bottom: 54px;
 }
+.summary .field {
+  position: relative;
+  margin-bottom: 47px;
+}
+.summary .field input{
+  background: url(/assets/images/Cart/ticket-discount.svg) no-repeat left center;
+}
+.summary .field label {
+  font-size: 12px;
+  color: var(--bg-primary);
+  font-family: Montserrat;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  pointer-events: none;
+  transition: all 1s ease-in-out;
+  pointer-events: none;
+  margin-left: 25px;
+}
+.summary .field input:focus{
+  background: transparent;
+  transition: all 1s ease-in-out;
+}
+.summary .field input:focus-visible + label,
+.summary .field input:not(:placeholder-shown) + label {
+  top: -5px;
+  margin-left: 0;
+}
+.summary .field input {
+  margin-bottom: 20px;
+}
 .summary .btn-brown{
     font-size: 14px;
     font-weight: 600;

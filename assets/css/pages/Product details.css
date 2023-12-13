@@ -232,6 +232,7 @@
   height: 20px;
   border: 1px solid var(--Primary, #121418);
   margin-right: 10px;
+  cursor: pointer;
 }
 .size-select ul li.active {
   background: #121418;
@@ -499,9 +500,18 @@
   padding: 10px 20px;
   margin: 27px 27px 0 27px;
 }
-.ticks {
-  font-size: 27px;
+.modal-content .cart-sucsses.disable{
+  transform: translateX(-100%);
+  opacity: 0 !important;
+  margin: 0;
+  padding: 0;
+  /* height: 0; */
+  transition: all 1s ease-in-out;
+}
+
+.ticks i{
   color: #fff;
+  font-size: 20px;
 }
 .modal-content .cart-sucsses p {
   color: #fff;

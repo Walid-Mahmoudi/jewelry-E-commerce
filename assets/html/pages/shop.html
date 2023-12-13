@@ -107,19 +107,19 @@
                                 <div class="accordion-body">
                                     <form>
                                         <div class="form-group">
-                                            <input  type="checkbox" id="Earrings">
+                                            <input type="checkbox" id="Earrings">
                                             <label for="Earrings">Earrings</label>
                                         </div>
                                         <div class="form-group">
-                                            <input  type="checkbox" id="Rings">
+                                            <input type="checkbox" id="Rings">
                                             <label for="Rings">Rings</label>
                                         </div>
                                         <div class="form-group">
-                                            <input  type="checkbox" id="Bracelets">
+                                            <input type="checkbox" id="Bracelets">
                                             <label for="Bracelets">Bracelets</label>
                                         </div>
                                         <div class="form-group">
-                                            <input  type="checkbox" id="Necklaces">
+                                            <input type="checkbox" id="Necklaces">
                                             <label for="Necklaces">Necklaces</label>
                                         </div>
                                     </form>
@@ -252,7 +252,30 @@
                             <div id="collapseSix" class="accordion-collapse collapse "
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    ....
+                                    
+                                    <!-- ######## -->
+                                    <div class="wrapper">
+                                        
+                                        <div class="slider">
+                                          <div class="progress"></div>
+                                        </div>
+                                        <div class="range-input">
+                                          <input type="range" class="range-min" min="0.00" max="10000" value="2500" step="100">
+                                          <input type="range" class="range-max" min="0.00" max="10000" value="7500" step="100">
+                                        </div>
+                                        <div class="price-input">
+                                            <div class="field">
+                                              <span>$</span>
+                                              <input type="number" class="input-min" value="2500">
+                                            </div>
+                                            <div class="separator">-</div>
+                                            <div class="field">
+                                              <span>$</span>
+                                              <input type="number" class="input-max" value="7500">
+                                            </div>
+                                          </div>
+                                      </div>
+
                                 </div>
                             </div>
                         </div>
@@ -268,15 +291,15 @@
                             <p>Shop All (2341 Products)</p>
                         </div>
                         <div class="sort d-flex ">
-                                <div class="sort-img " id="sort2"  role="button" onclick="sort2()">
-                                        <img  src="/assets/images/shop/sort2.svg" alt="">
-                                </div>
-                                <div class="sort-img active" id="sort3" role="button" onclick="sort3()">
-                                    <img   src="/assets/images/shop/sort3.svg" alt="">
+                            <div class="sort-img " id="sort2" role="button" onclick="sort2()">
+                                <img src="/assets/images/shop/sort2.svg" alt="">
+                            </div>
+                            <div class="sort-img active" id="sort3" role="button" onclick="sort3()">
+                                <img src="/assets/images/shop/sort3.svg" alt="">
                             </div>
                             <div class="dropdown sort-dropd ms-1">
-                                <button class="d-flex dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="d-flex dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     <img src="/assets/images/shop/sort.svg" alt="">
                                     <p class="mb-0 mx-3">Alphabetically: A- Z</p>
                                     <img src="/assets/images/shop/arrow-dowen.svg" alt="">
@@ -291,441 +314,447 @@
                     </div>
                     <!-- Sort Three Column -->
                     <div class="shop3" id="shop3">
-                       <div class="row">
-                        <div class="col-md-4 my-3">
-                            <div class="img-head position-relative" onclick="added()">
-                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new"><span>N</span>ew</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                <div class="overlay position-absolute">
-                                </div>
-                                <div class="overlay-data position-absolute">
-                                    <ul>
-                                        <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
-                                        <li>Chains are 18” and 16” long with 3” extender chain</li>
-                                        <li>Made from Brass with CZ Stones</li>
-                                        <li>Plated Silver</li>
-                                    </ul>
-                                    <div class="overlay-btn d-flex">
-                                        <button class="btn-solid add-cart"  >
-                                            Add to cart
-                                        </button>
-                                        <button class="btn-outlineblock">
-                                            <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
-                                        </button>
+                        <div class="row">
+                            <div class="col-md-4 my-3">
+                                <div class="img-head position-relative" onclick="added()">
+                                    <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                        <p class="p-new"><span>N</span>ew</p>
+                                        <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
                                     </div>
-                                </div>
-                                <img class="w-100" src="/assets/images/shop/shop1.png" alt="">
-                            </div>
-                            <div class="text-cont">
-                                <h4 class="mt-2 mb-1">Pyramid stud tennis necklace- gold</h4>
-                                <div class="prices d-flex align-items-center">
-                                    <p class="pe-1">$25.00</p>
-                                    <small> $50.00</small>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-4 my-3">
-                            <div class="img-head position-relative">
-                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new"><span>N</span>ew</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                <div class="overlay position-absolute">
-                                </div>
-                                <div class="overlay-data position-absolute">
-                                    <ul>
-                                        <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
-                                        <li>Chains are 18” and 16” long with 3” extender chain</li>
-                                        <li>Made from Brass with CZ Stones</li>
-                                        <li>Plated Silver</li>
-                                    </ul>
-                                    <div class="overlay-btn d-flex">
-                                        <button class="btn-solid">
-                                            Add to cart
-                                        </button>
-                                        <button class="btn-outlineblock">
-                                            <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
-                                        </button>
+                                    <div class="overlay position-absolute">
                                     </div>
-                                </div>
-                                <img class="w-100" src="/assets/images/shop/shop2.png" alt="">
-                            </div>
-                            <div class="text-cont">
-                                <h4 class="mt-2 mb-1">Bezel emerald ballier ring- sapphire- silver</h4>
-                                <div class="prices d-flex align-items-center">
-                                    <p class="pe-1">$25.00</p>
-                                    <small> $50.00</small>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-4 my-3">
-                            <div class="img-head position-relative">
-                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new"><span>N</span>ew</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                <div class="overlay position-absolute">
-                                </div>
-                                <div class="overlay-data position-absolute">
-                                    <ul>
-                                        <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
-                                        <li>Chains are 18” and 16” long with 3” extender chain</li>
-                                        <li>Made from Brass with CZ Stones</li>
-                                        <li>Plated Silver</li>
-                                    </ul>
-                                    <div class="overlay-btn d-flex">
-                                        <button class="btn-solid">
-                                            Add to cart
-                                        </button>
-                                        <button class="btn-outlineblock">
-                                            <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
-                                        </button>
+                                    <div class="overlay-data position-absolute">
+                                        <ul>
+                                            <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                            <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                            <li>Made from Brass with CZ Stones</li>
+                                            <li>Plated Silver</li>
+                                        </ul>
+                                        <div class="overlay-btn d-flex">
+                                            <button class="btn-solid add-cart">
+                                                Add to cart
+                                            </button>
+                                            <button class="btn-outlineblock">
+                                                <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                            </button>
+                                        </div>
                                     </div>
+                                    <img class="w-100" src="/assets/images/shop/shop1.png" alt="">
                                 </div>
-                                <img class="w-100" src="/assets/images/shop/shop3.png" alt="">
-                            </div>
-                            <div class="text-cont">
-                                <h4 class="mt-2 mb-1">Colette shaker statement necklace- gold</h4>
-                                <div class="prices d-flex align-items-center">
-                                    <p class="pe-1">$25.00</p>
-                                    <small> $50.00</small>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-4 my-3">
-                            <div class="img-head position-relative">
-                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new"><span>N</span>ew</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                <div class="overlay position-absolute">
-                                </div>
-                                <div class="overlay-data position-absolute">
-                                    <ul>
-                                        <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
-                                        <li>Chains are 18” and 16” long with 3” extender chain</li>
-                                        <li>Made from Brass with CZ Stones</li>
-                                        <li>Plated Silver</li>
-                                    </ul>
-                                    <div class="overlay-btn d-flex">
-                                        <button class="btn-solid">
-                                            Add to cart
-                                        </button>
-                                        <button class="btn-outlineblock">
-                                            <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
-                                        </button>
+                                <div class="text-cont">
+                                    <h4 class="mt-2 mb-1">Pyramid stud tennis necklace- gold</h4>
+                                    <div class="prices d-flex align-items-center">
+                                        <p class="pe-1">$25.00</p>
+                                        <small> $50.00</small>
                                     </div>
+
                                 </div>
-                                <img class="w-100" src="/assets/images/shop/shop4.png" alt="">
                             </div>
-                            <div class="text-cont">
-                                <h4 class="mt-2 mb-1">Baby amalfi tube hoops- gold (ships late march)</h4>
-                                <div class="prices d-flex align-items-center">
-                                    <p class="pe-1">$25.00</p>
-                                    <small> $50.00</small>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-4 my-3">
-                            <div class="img-head position-relative">
-                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new"><span>N</span>ew</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                <div class="overlay position-absolute">
-                                </div>
-                                <div class="overlay-data position-absolute">
-                                    <ul>
-                                        <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
-                                        <li>Chains are 18” and 16” long with 3” extender chain</li>
-                                        <li>Made from Brass with CZ Stones</li>
-                                        <li>Plated Silver</li>
-                                    </ul>
-                                    <div class="overlay-btn d-flex">
-                                        <button class="btn-solid">
-                                            Add to cart
-                                        </button>
-                                        <button class="btn-outlineblock">
-                                            <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
-                                        </button>
+                            <div class="col-md-4 my-3">
+                                <div class="img-head position-relative">
+                                    <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                        <p class="p-new"><span>N</span>ew</p>
+                                        <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
                                     </div>
-                                </div>
-                                <img class="w-100" src="/assets/images/shop/shop5.png" alt="">
-                            </div>
-                            <div class="text-cont">
-                                <h4 class="mt-2 mb-1">Colette shaker statement necklace- gold</h4>
-                                <div class="prices d-flex align-items-center">
-                                    <p class="pe-1">$25.00</p>
-                                    <small> $50.00</small>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-4 my-3">
-                            <div class="img-head position-relative">
-                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new"><span>N</span>ew</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                <div class="overlay position-absolute">
-                                </div>
-                                <div class="overlay-data position-absolute">
-                                    <ul>
-                                        <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
-                                        <li>Chains are 18” and 16” long with 3” extender chain</li>
-                                        <li>Made from Brass with CZ Stones</li>
-                                        <li>Plated Silver</li>
-                                    </ul>
-                                    <div class="overlay-btn d-flex">
-                                        <button class="btn-solid">
-                                            Add to cart
-                                        </button>
-                                        <button class="btn-outlineblock">
-                                            <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
-                                        </button>
+                                    <div class="overlay position-absolute">
                                     </div>
-                                </div>
-                                <img class="w-100" src="/assets/images/shop/shop6.png" alt="">
-                            </div>
-                            <div class="text-cont">
-                                <h4 class="mt-2 mb-1">Hanging pave chain link huggies- gold</h4>
-                                <div class="prices d-flex align-items-center">
-                                    <p class="pe-1">$25.00</p>
-                                    <small> $50.00</small>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-4 my-3">
-                            <div class="img-head position-relative">
-                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new"><span>N</span>ew</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                <div class="overlay position-absolute">
-                                </div>
-                                <div class="overlay-data position-absolute">
-                                    <ul>
-                                        <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
-                                        <li>Chains are 18” and 16” long with 3” extender chain</li>
-                                        <li>Made from Brass with CZ Stones</li>
-                                        <li>Plated Silver</li>
-                                    </ul>
-                                    <div class="overlay-btn d-flex">
-                                        <button class="btn-solid">
-                                            Add to cart
-                                        </button>
-                                        <button class="btn-outlineblock">
-                                            <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
-                                        </button>
+                                    <div class="overlay-data position-absolute">
+                                        <ul>
+                                            <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                            <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                            <li>Made from Brass with CZ Stones</li>
+                                            <li>Plated Silver</li>
+                                        </ul>
+                                        <div class="overlay-btn d-flex">
+                                            <button class="btn-solid">
+                                                Add to cart
+                                            </button>
+                                            <button class="btn-outlineblock">
+                                                <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                            </button>
+                                        </div>
                                     </div>
+                                    <img class="w-100" src="/assets/images/shop/shop2.png" alt="">
                                 </div>
-                                <img class="w-100" src="/assets/images/shop/shop7.png" alt="">
-                            </div>
-                            <div class="text-cont">
-                                <h4 class="mt-2 mb-1">Mini bezel stone cross studs- gold</h4>
-                                <div class="prices d-flex align-items-center">
-                                    <p class="pe-1">$25.00</p>
-                                    <small> $50.00</small>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-4 my-3">
-                            <div class="img-head position-relative">
-                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new"><span>N</span>ew</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                <div class="overlay position-absolute">
-                                </div>
-                                <div class="overlay-data position-absolute">
-                                    <ul>
-                                        <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
-                                        <li>Chains are 18” and 16” long with 3” extender chain</li>
-                                        <li>Made from Brass with CZ Stones</li>
-                                        <li>Plated Silver</li>
-                                    </ul>
-                                    <div class="overlay-btn d-flex">
-                                        <button class="btn-solid">
-                                            Add to cart
-                                        </button>
-                                        <button class="btn-outlineblock">
-                                            <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
-                                        </button>
+                                <div class="text-cont">
+                                    <h4 class="mt-2 mb-1">Bezel emerald ballier ring- sapphire- silver</h4>
+                                    <div class="prices d-flex align-items-center">
+                                        <p class="pe-1">$25.00</p>
+                                        <small> $50.00</small>
                                     </div>
+
                                 </div>
-                                <img class="w-100" src="/assets/images/shop/shop8.png" alt="">
                             </div>
-                            <div class="text-cont">
-                                <h4 class="mt-2 mb-1">Zipper shaker pendant necklace- silver</h4>
-                                <div class="prices d-flex align-items-center">
-                                    <p class="pe-1">$25.00</p>
-                                    <small> $50.00</small>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-4 my-3">
-                            <div class="img-head position-relative">
-                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new"><span>N</span>ew</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                <div class="overlay position-absolute">
-                                </div>
-                                <div class="overlay-data position-absolute">
-                                    <ul>
-                                        <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
-                                        <li>Chains are 18” and 16” long with 3” extender chain</li>
-                                        <li>Made from Brass with CZ Stones</li>
-                                        <li>Plated Silver</li>
-                                    </ul>
-                                    <div class="overlay-btn d-flex">
-                                        <button class="btn-solid">
-                                            Add to cart
-                                        </button>
-                                        <button class="btn-outlineblock">
-                                            <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
-                                        </button>
+                            <div class="col-md-4 my-3">
+                                <div class="img-head position-relative">
+                                    <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                        <p class="p-new"><span>N</span>ew</p>
+                                        <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
                                     </div>
+                                    <div class="overlay position-absolute">
+                                    </div>
+                                    <div class="overlay-data position-absolute">
+                                        <ul>
+                                            <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                            <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                            <li>Made from Brass with CZ Stones</li>
+                                            <li>Plated Silver</li>
+                                        </ul>
+                                        <div class="overlay-btn d-flex">
+                                            <button class="btn-solid">
+                                                Add to cart
+                                            </button>
+                                            <button class="btn-outlineblock">
+                                                <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <img class="w-100" src="/assets/images/shop/shop3.png" alt="">
                                 </div>
-                                <img class="w-100" src="/assets/images/shop/shop9.png" alt="">
-                            </div>
-                            <div class="text-cont">
-                                <h4 class="mt-2 mb-1">Bezel emerald ballier ring- emerald- gold</h4>
-                                <div class="prices d-flex align-items-center">
-                                    <p class="pe-1">$25.00</p>
-                                    <small> $50.00</small>
+                                <div class="text-cont">
+                                    <h4 class="mt-2 mb-1">Colette shaker statement necklace- gold</h4>
+                                    <div class="prices d-flex align-items-center">
+                                        <p class="pe-1">$25.00</p>
+                                        <small> $50.00</small>
+                                    </div>
+
                                 </div>
-                                
                             </div>
+                            <div class="col-md-4 my-3">
+                                <div class="img-head position-relative">
+                                    <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                        <p class="p-new"><span>N</span>ew</p>
+                                        <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                    </div>
+                                    <div class="overlay position-absolute">
+                                    </div>
+                                    <div class="overlay-data position-absolute">
+                                        <ul>
+                                            <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                            <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                            <li>Made from Brass with CZ Stones</li>
+                                            <li>Plated Silver</li>
+                                        </ul>
+                                        <div class="overlay-btn d-flex">
+                                            <button class="btn-solid">
+                                                Add to cart
+                                            </button>
+                                            <button class="btn-outlineblock">
+                                                <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <img class="w-100" src="/assets/images/shop/shop4.png" alt="">
+                                </div>
+                                <div class="text-cont">
+                                    <h4 class="mt-2 mb-1">Baby amalfi tube hoops- gold (ships late march)</h4>
+                                    <div class="prices d-flex align-items-center">
+                                        <p class="pe-1">$25.00</p>
+                                        <small> $50.00</small>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 my-3">
+                                <div class="img-head position-relative">
+                                    <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                        <p class="p-new"><span>N</span>ew</p>
+                                        <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                    </div>
+                                    <div class="overlay position-absolute">
+                                    </div>
+                                    <div class="overlay-data position-absolute">
+                                        <ul>
+                                            <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                            <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                            <li>Made from Brass with CZ Stones</li>
+                                            <li>Plated Silver</li>
+                                        </ul>
+                                        <div class="overlay-btn d-flex">
+                                            <button class="btn-solid">
+                                                Add to cart
+                                            </button>
+                                            <button class="btn-outlineblock">
+                                                <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <img class="w-100" src="/assets/images/shop/shop5.png" alt="">
+                                </div>
+                                <div class="text-cont">
+                                    <h4 class="mt-2 mb-1">Colette shaker statement necklace- gold</h4>
+                                    <div class="prices d-flex align-items-center">
+                                        <p class="pe-1">$25.00</p>
+                                        <small> $50.00</small>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 my-3">
+                                <div class="img-head position-relative">
+                                    <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                        <p class="p-new"><span>N</span>ew</p>
+                                        <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                    </div>
+                                    <div class="overlay position-absolute">
+                                    </div>
+                                    <div class="overlay-data position-absolute">
+                                        <ul>
+                                            <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                            <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                            <li>Made from Brass with CZ Stones</li>
+                                            <li>Plated Silver</li>
+                                        </ul>
+                                        <div class="overlay-btn d-flex">
+                                            <button class="btn-solid">
+                                                Add to cart
+                                            </button>
+                                            <button class="btn-outlineblock">
+                                                <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <img class="w-100" src="/assets/images/shop/shop6.png" alt="">
+                                </div>
+                                <div class="text-cont">
+                                    <h4 class="mt-2 mb-1">Hanging pave chain link huggies- gold</h4>
+                                    <div class="prices d-flex align-items-center">
+                                        <p class="pe-1">$25.00</p>
+                                        <small> $50.00</small>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 my-3">
+                                <div class="img-head position-relative">
+                                    <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                        <p class="p-new"><span>N</span>ew</p>
+                                        <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                    </div>
+                                    <div class="overlay position-absolute">
+                                    </div>
+                                    <div class="overlay-data position-absolute">
+                                        <ul>
+                                            <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                            <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                            <li>Made from Brass with CZ Stones</li>
+                                            <li>Plated Silver</li>
+                                        </ul>
+                                        <div class="overlay-btn d-flex">
+                                            <button class="btn-solid">
+                                                Add to cart
+                                            </button>
+                                            <button class="btn-outlineblock">
+                                                <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <img class="w-100" src="/assets/images/shop/shop7.png" alt="">
+                                </div>
+                                <div class="text-cont">
+                                    <h4 class="mt-2 mb-1">Mini bezel stone cross studs- gold</h4>
+                                    <div class="prices d-flex align-items-center">
+                                        <p class="pe-1">$25.00</p>
+                                        <small> $50.00</small>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 my-3">
+                                <div class="img-head position-relative">
+                                    <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                        <p class="p-new"><span>N</span>ew</p>
+                                        <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                    </div>
+                                    <div class="overlay position-absolute">
+                                    </div>
+                                    <div class="overlay-data position-absolute">
+                                        <ul>
+                                            <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                            <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                            <li>Made from Brass with CZ Stones</li>
+                                            <li>Plated Silver</li>
+                                        </ul>
+                                        <div class="overlay-btn d-flex">
+                                            <button class="btn-solid">
+                                                Add to cart
+                                            </button>
+                                            <button class="btn-outlineblock">
+                                                <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <img class="w-100" src="/assets/images/shop/shop8.png" alt="">
+                                </div>
+                                <div class="text-cont">
+                                    <h4 class="mt-2 mb-1">Zipper shaker pendant necklace- silver</h4>
+                                    <div class="prices d-flex align-items-center">
+                                        <p class="pe-1">$25.00</p>
+                                        <small> $50.00</small>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4 my-3">
+                                <div class="img-head position-relative">
+                                    <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                        <p class="p-new"><span>N</span>ew</p>
+                                        <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                    </div>
+                                    <div class="overlay position-absolute">
+                                    </div>
+                                    <div class="overlay-data position-absolute">
+                                        <ul>
+                                            <li>Set of two chain necklaces with bezel-set CZ stone charms</li>
+                                            <li>Chains are 18” and 16” long with 3” extender chain</li>
+                                            <li>Made from Brass with CZ Stones</li>
+                                            <li>Plated Silver</li>
+                                        </ul>
+                                        <div class="overlay-btn d-flex">
+                                            <button class="btn-solid">
+                                                Add to cart
+                                            </button>
+                                            <button class="btn-outlineblock">
+                                                <div><img class="heart" src="/assets/images/heart.svg" alt=""></div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <img class="w-100" src="/assets/images/shop/shop9.png" alt="">
+                                </div>
+                                <div class="text-cont">
+                                    <h4 class="mt-2 mb-1">Bezel emerald ballier ring- emerald- gold</h4>
+                                    <div class="prices d-flex align-items-center">
+                                        <p class="pe-1">$25.00</p>
+                                        <small> $50.00</small>
+                                    </div>
+
+                                </div>
+                            </div>
+
                         </div>
-                        
-                    </div> 
                     </div>
                     <!-- Sort Two Column -->
                     <div class="shop2" id="shop2">
-                       <div class="row" >
-                        <div class="col-md-6 my-3">
-                            <div class="img-head position-relative">
-                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new"><span>N</span>ew</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                
-                                <div class="img-show" style="background-image: url(/assets/images/shop/shop1-show2.png);"></div>
-                            </div>
-                            <div class="text-cont">
-                                <h4 class="mt-2 mb-1">Pyramid stud tennis necklace- gold</h4>
-                                <div class="prices d-flex align-items-center">
-                                    <p class="pe-1">$25.00</p>
-                                    <small> $50.00</small>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-6 my-3">
-                            <div class="img-head position-relative">
-                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new"><span>N</span>ew</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                                
-                                <div class="img-show" style="background-image: url(/assets/images/shop/shop2-show2.png);"></div>
-                            </div>
-                            <div class="text-cont">
-                                <h4 class="mt-2 mb-1">Bezel emerald ballier ring- sapphire- silver</h4>
-                                <div class="prices d-flex align-items-center">
-                                    <p class="pe-1">$25.00</p>
-                                    <small> $50.00</small>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-6 my-3">
-                            <div class="img-head position-relative">
-                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new"><span>N</span>ew</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                               
-                                <div class="img-show" style="background-image: url(/assets/images/shop/shop3-show2.png);"></div>
-                            </div>
-                            <div class="text-cont">
-                                <h4 class="mt-2 mb-1">Colette shaker statement necklace- gold</h4>
-                                <div class="prices d-flex align-items-center">
-                                    <p class="pe-1">$25.00</p>
-                                    <small> $50.00</small>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-6 my-3">
-                            <div class="img-head position-relative">
-                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new"><span>N</span>ew</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                              
-                                <div class="img-show" style="background-image: url(/assets/images/shop/shop4-show2.png);"></div>
-                            </div>
-                            <div class="text-cont">
-                                <h4 class="mt-2 mb-1">Baby amalfi tube hoops- gold (ships late march)</h4>
-                                <div class="prices d-flex align-items-center">
-                                    <p class="pe-1">$25.00</p>
-                                    <small> $50.00</small>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-6 my-3">
-                            <div class="img-head position-relative">
-                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new"><span>N</span>ew</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                            
-                                <div class="img-show" style="background-image: url(/assets/images/shop/shop5-show2.png);"></div>
-                            </div>
-                            <div class="text-cont">
-                                <h4 class="mt-2 mb-1">Colette shaker statement necklace- gold</h4>
-                                <div class="prices d-flex align-items-center">
-                                    <p class="pe-1">$25.00</p>
-                                    <small> $50.00</small>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-6 my-3">
-                            <div class="img-head position-relative">
-                                <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
-                                    <p class="p-new"><span>N</span>ew</p>
-                                    <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
-                                </div>
-                        
-                                <div class="img-show" style="background-image: url(/assets/images/shop/shop6-show2.png);"></div>
-                            </div>
-                            <div class="text-cont">
-                                <h4 class="mt-2 mb-1">Hanging pave chain link huggies- gold</h4>
-                                <div class="prices d-flex align-items-center">
-                                    <p class="pe-1">$25.00</p>
-                                    <small> $50.00</small>
-                                </div>
-                                
-                            </div>
-                        </div>
+                        <div class="row">
+                            <div class="col-md-6 my-3">
+                                <div class="img-head position-relative">
+                                    <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                        <p class="p-new"><span>N</span>ew</p>
+                                        <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                    </div>
 
-                        
-                    </div> 
+                                    <div class="img-show"
+                                        style="background-image: url(/assets/images/shop/shop1-show2.png);"></div>
+                                </div>
+                                <div class="text-cont">
+                                    <h4 class="mt-2 mb-1">Pyramid stud tennis necklace- gold</h4>
+                                    <div class="prices d-flex align-items-center">
+                                        <p class="pe-1">$25.00</p>
+                                        <small> $50.00</small>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-3">
+                                <div class="img-head position-relative">
+                                    <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                        <p class="p-new"><span>N</span>ew</p>
+                                        <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                    </div>
+
+                                    <div class="img-show"
+                                        style="background-image: url(/assets/images/shop/shop2-show2.png);"></div>
+                                </div>
+                                <div class="text-cont">
+                                    <h4 class="mt-2 mb-1">Bezel emerald ballier ring- sapphire- silver</h4>
+                                    <div class="prices d-flex align-items-center">
+                                        <p class="pe-1">$25.00</p>
+                                        <small> $50.00</small>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-3">
+                                <div class="img-head position-relative">
+                                    <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                        <p class="p-new"><span>N</span>ew</p>
+                                        <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                    </div>
+
+                                    <div class="img-show"
+                                        style="background-image: url(/assets/images/shop/shop3-show2.png);"></div>
+                                </div>
+                                <div class="text-cont">
+                                    <h4 class="mt-2 mb-1">Colette shaker statement necklace- gold</h4>
+                                    <div class="prices d-flex align-items-center">
+                                        <p class="pe-1">$25.00</p>
+                                        <small> $50.00</small>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-3">
+                                <div class="img-head position-relative">
+                                    <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                        <p class="p-new"><span>N</span>ew</p>
+                                        <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                    </div>
+
+                                    <div class="img-show"
+                                        style="background-image: url(/assets/images/shop/shop4-show2.png);"></div>
+                                </div>
+                                <div class="text-cont">
+                                    <h4 class="mt-2 mb-1">Baby amalfi tube hoops- gold (ships late march)</h4>
+                                    <div class="prices d-flex align-items-center">
+                                        <p class="pe-1">$25.00</p>
+                                        <small> $50.00</small>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-3">
+                                <div class="img-head position-relative">
+                                    <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                        <p class="p-new"><span>N</span>ew</p>
+                                        <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                    </div>
+
+                                    <div class="img-show"
+                                        style="background-image: url(/assets/images/shop/shop5-show2.png);"></div>
+                                </div>
+                                <div class="text-cont">
+                                    <h4 class="mt-2 mb-1">Colette shaker statement necklace- gold</h4>
+                                    <div class="prices d-flex align-items-center">
+                                        <p class="pe-1">$25.00</p>
+                                        <small> $50.00</small>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 my-3">
+                                <div class="img-head position-relative">
+                                    <div class="rating mt-2 w-100 position-absolute d-flex justify-content-between">
+                                        <p class="p-new"><span>N</span>ew</p>
+                                        <p class="p-star"><i class="fa-regular fa-star"></i> 4.5</p>
+                                    </div>
+
+                                    <div class="img-show"
+                                        style="background-image: url(/assets/images/shop/shop6-show2.png);"></div>
+                                </div>
+                                <div class="text-cont">
+                                    <h4 class="mt-2 mb-1">Hanging pave chain link huggies- gold</h4>
+                                    <div class="prices d-flex align-items-center">
+                                        <p class="pe-1">$25.00</p>
+                                        <small> $50.00</small>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
                     </div>
-                    
+
                 </div>
 
             </div>

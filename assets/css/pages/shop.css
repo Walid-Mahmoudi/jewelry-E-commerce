@@ -174,3 +174,79 @@ background-color: var(--bg-primary);
 footer{
     margin: 114px 0 0 0;
 }
+
+
+
+
+/* //////// */
+::selection {
+  color: #fff;
+  background: #000;
+}
+.price-input {
+  width: 100%;
+  display: flex;
+  margin: 13.5px 0;
+}
+.price-input .field {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.field input {
+  width: 35%;
+  height: 100%;
+  outline: none;
+  font-size: 12px;
+  /* margin-left: 12px; */
+  /* border-radius: 5px; */
+  text-align: center;
+  border: none;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.price-input .separator {
+  display: flex;
+  font-size: 19px;
+  align-items: center;
+  justify-content: center;
+}
+.slider {
+  height: 1px;
+  position: relative;
+  background: var(--bg-primary);
+  border-radius: 5px;
+}
+.slider .progress {
+  height: 100%;
+  left: 25%;
+  right: 25%;
+  position: absolute;
+  border-radius: 5px;
+  background: var(--bg-primary);
+}
+.range-input {
+  position: relative;
+}
+.range-input input {
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -13px;
+  background: none;
+  pointer-events: none;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  height: 13.5px;
+  width: 13.5px;
+  background: #fff;
+  border: 1px solid var(--bg-primary);
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}

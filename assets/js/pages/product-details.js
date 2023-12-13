@@ -49,7 +49,6 @@ let next = document.getElementById("next").addEventListener("click", () => {
   theChecker();
 });
 
-
 // Change images on click
 let img_slider = document.getElementsByClassName("img-slide-detals");
 for (const item of img_slider) {
@@ -57,30 +56,20 @@ for (const item of img_slider) {
     ProductImg.style.backgroundImage = `url(${e.target.currentSrc})`;
     removeAllActive();
     e.target.classList.add("active");
-    pagenationCreateUl.children[curentPagenation].classList.add("active")
-
+    pagenationCreateUl.children[curentPagenation].classList.add("active");
   });
 }
 
-let curentPagenation 
+let curentPagenation;
 
 let iamges = document.querySelectorAll(".img-slide-detals img");
 iamges.forEach((evt, index) => {
   evt.addEventListener("click", () => {
     console.log(index);
-    curentPagenation=index
+    curentPagenation = index;
   });
 });
 
-
-
-// let iamges = document.querySelectorAll(".img-slide-detals img");
-// iamges.forEach((evt, index) => {
-//   evt.addEventListener("click", () => {
-//     console.log(index);
-//     curentPagenation=index
-//   });
-// });
 function theChecker() {
   removeAllActive();
   // Set active classes
@@ -110,16 +99,6 @@ function removeAllActive() {
   });
 }
 
-
-
-
-
-
-
-
-
-
-
 // ************* STARS *****************//
 const stars = document.querySelectorAll(".stars i");
 // loop
@@ -136,4 +115,15 @@ stars.forEach((star, index1) => {
       }
     });
   });
+});
+
+// ************* Shipping Sucsesfuly *****************//
+let cartSucsses = document.querySelector(".cart-sucsses");
+let btnAdd = document.querySelector("#Add-cart");
+console.log(btnAdd);
+
+btnAdd.addEventListener("click", () => {
+  setTimeout(() => {
+    cartSucsses.classList.add("disable");
+  }, 2000);
 });
