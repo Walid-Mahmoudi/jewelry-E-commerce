@@ -1582,7 +1582,7 @@
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link d-flex align-items-normal" id="pills-reviewing-returns-tab"
+                            <button class="nav-link d-flex align-items-normal" id="pills-transferred-tab"
                                 data-bs-toggle="pill" data-bs-target="#pills-reviewing-returns" type="button" role="tab"
                                 aria-controls="pills-reviewing-returns" aria-selected="true">
                                 <span>Reviewing Returns (4)</span>
@@ -2115,7 +2115,180 @@
             <!-- My Wallet -->
             <div class="tab-pane fade my-wallet" id="pills-my-wallet" role="tabpanel"
                 aria-labelledby="pills-my-wallet-tab" tabindex="0">
-                my-wallet
+                <div class="current-balance d-flex align-items-center">
+                    <img src="/assets/images/my-account/empty-wallet.svg" alt="">
+                    <div>
+                        <p>Current Balance</p>
+                        <h4>$1148.40</h4>
+                    </div>
+                </div>
+                <div class="wallet">
+                    <ul class="nav nav-pills mb-3 justify-content-between" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active d-flex align-items-normal justify-content-between"
+                                id="pills-all-transactions-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-all-transactions" type="button" role="tab"
+                                aria-controls="pills-all-transactions" aria-selected="true">
+                                <span>All Transactions</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link d-flex align-items-normal" id="pills-transferred-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-transferred" type="button" role="tab"
+                                aria-controls="pills-transferred" aria-selected="true">
+                                <span>Transferred</span>
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link d-flex align-items-normal" id="pills-received-tab"
+                                data-bs-toggle="pill" data-bs-target="#pills-received" type="button" role="tab"
+                                aria-controls="pills-received" aria-selected="true">
+                                <span>Received</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active all-transactions" id="pills-all-transactions"
+                            role="tabpanel" aria-labelledby="pills-all-transactions-tab" tabindex="0">
+                            <div class="sorted d-flex justify-content-between align-items-center">
+                                <input class="search" type="text" placeholder="Search for orders">
+                                <div class="dropdown">
+                                    <button class="btn-outline dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img src="/assets/images/my-account/sort.svg" alt="">
+                                        Recent
+                                        <img src="/assets/images/my-account/arrow-down.svg" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Last 1 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 2 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 4 months</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Tables -->
+                            <table>
+                                <thead>
+                                    <tr class="head-h">
+                                        <th class="Order-id">ID</th>
+                                        <th>Date</th>
+                                        <th>Time</th>
+                                        <th>Transferring Method</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="main-body">
+                                    <tr>
+                                        <td>#328</td>
+                                        <td>12 Feb 2023 </td>
+                                        <td>04:30 pm</td>
+                                        <td>Wallet</td>
+                                        <td>- $ 234.56</td>
+                                        <td class="delivered">Delivered</td>
+                                        <td class="text-end">
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade transferred" id="pills-transferred" role="tabpanel"
+                            aria-labelledby="pills-in-progress-tab" tabindex="0">
+                            <div class="sorted d-flex justify-content-between align-items-center">
+                                <input class="search" type="text" placeholder="Search for orders">
+                                <div class="dropdown">
+                                    <button class="btn-outline dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img src="/assets/images/my-account/sort.svg" alt="">
+                                        Recent
+                                        <img src="/assets/images/my-account/arrow-down.svg" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Last 1 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 2 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 4 months</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Tables -->
+                            <table>
+                                <thead>
+                                    <tr class="head-h">
+                                        <th class="Order-id">ID</th>
+                                        <th>Date</th>
+                                        <th>Time</th>
+                                        <th>Transferring Method</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="main-body">
+                                    <tr>
+                                        <td>#328</td>
+                                        <td>12 Feb 2023 </td>
+                                        <td>04:30 pm</td>
+                                        <td>Wallet</td>
+                                        <td>- $ 234.56</td>
+                                        <td class="delivered">Delivered</td>
+                                        <td class="text-end">
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade received" id="pills-received" role="tabpanel"
+                            aria-labelledby="pills-completed-tab" tabindex="0">
+                            <div class="sorted d-flex justify-content-between align-items-center">
+                                <input class="search" type="text" placeholder="Search for orders">
+                                <div class="dropdown">
+                                    <button class="btn-outline dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img src="/assets/images/my-account/sort.svg" alt="">
+                                        Recent
+                                        <img src="/assets/images/my-account/arrow-down.svg" alt="">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Last 1 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 2 months</a></li>
+                                        <li><a class="dropdown-item" href="#">Last 4 months</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Tables -->
+                            <table>
+                                <thead>
+                                    <tr class="head-h">
+                                        <th class="Order-id">ID</th>
+                                        <th>Date</th>
+                                        <th>Time</th>
+                                        <th>Transferring Method</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="main-body">
+                                    <tr>
+                                        <td>#328</td>
+                                        <td>12 Feb 2023 </td>
+                                        <td>04:30 pm</td>
+                                        <td>Wallet</td>
+                                        <td>- $ 234.56</td>
+                                        <td class="delivered">Delivered</td>
+                                        <td class="text-end">
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>

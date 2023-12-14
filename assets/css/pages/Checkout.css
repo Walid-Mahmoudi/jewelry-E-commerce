@@ -41,6 +41,10 @@ header nav .profil .dropdown-item:hover {
   font-size: 33px;
 }
 /* MAIN */
+.payment-method , .review-order{
+  display: none;
+}
+
 .summary .btn-solid.disabeld {
   background: var(--bg-gray2);
   border: none;

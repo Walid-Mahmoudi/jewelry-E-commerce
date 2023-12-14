@@ -31,11 +31,11 @@ function added() {
 }
 
 
-// *************** *************//
+// *************** Prices Value *************//
 const rangeInput = document.querySelectorAll(".range-input input"),
 priceInput = document.querySelectorAll(".price-input input"),
 range = document.querySelector(".slider .progress");
-let priceGap = 1000;
+let priceGap = 1;
 
 priceInput.forEach(input =>{
     input.addEventListener("input", e =>{

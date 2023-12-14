@@ -49,26 +49,37 @@ let next = document.getElementById("next").addEventListener("click", () => {
   theChecker();
 });
 
+// let img_slider = document.getElementsByClassName("img-slide-detals");
+// for (const item of img_slider) {
+//   item.addEventListener("click", function (e) {
+//     ProductImg.style.backgroundImage = `url(${e.target.currentSrc})`;
+//     removeAllActive();
+//     e.target.classList.add("active");
+//     pagenationCreateUl.children[curentPagenation].classList.add("active");
+//   });
+// }
+
+
 // Change images on click
-let img_slider = document.getElementsByClassName("img-slide-detals");
-for (const item of img_slider) {
-  item.addEventListener("click", function (e) {
+let iamges = document.querySelectorAll(".img-slide-detals img");
+iamges.forEach((evt, index) => {
+  evt.addEventListener("click", (e) => {
     ProductImg.style.backgroundImage = `url(${e.target.currentSrc})`;
     removeAllActive();
     e.target.classList.add("active");
-    pagenationCreateUl.children[curentPagenation].classList.add("active");
-  });
-}
-
-let curentPagenation;
-
-let iamges = document.querySelectorAll(".img-slide-detals img");
-iamges.forEach((evt, index) => {
-  evt.addEventListener("click", () => {
-    console.log(index);
-    curentPagenation = index;
+    pagenationCreateUl.children[index].classList.add("active");
   });
 });
+
+
+// let curentPagenation;
+
+// let iamges = document.querySelectorAll(".img-slide-detals img");
+// iamges.forEach((evt, index) => {
+//   evt.addEventListener("click", () => {
+//     curentPagenation = index;
+//   });
+// });
 
 function theChecker() {
   removeAllActive();
@@ -120,8 +131,6 @@ stars.forEach((star, index1) => {
 // ************* Shipping Sucsesfuly *****************//
 let cartSucsses = document.querySelector(".cart-sucsses");
 let btnAdd = document.querySelector("#Add-cart");
-console.log(btnAdd);
-
 btnAdd.addEventListener("click", () => {
   setTimeout(() => {
     cartSucsses.classList.add("disable");

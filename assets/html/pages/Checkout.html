@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="/assets/css/bootstrap/all.min.css"> -->
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -120,518 +121,525 @@
     <!-- MAIN -->
     <main class="container">
         <div class="row">
-            <div class="col-lg-9">
-                <!-- shipping-info -->
-                <div class="shipping-info ">
-                    <div class="shipping-steps d-flex align-items-center">
-                        <!-- Progress -->
-                        
+            <div class="col-lg-9 d-flex">
+                <div class="form-steps">
+                    <!-- shipping-info -->
+                    <div class="shipping-info form-step">
+                        <div class="shipping-steps d-flex align-items-center">
+                            <!-- Progress -->
 
 
 
-                        <div class="ms-3">
-                            <div>
-                                <p>Step 1</p>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <h5>Shipping Information</h5>
-                                <button class="previous btn-embty mx-3"><i class="fa-solid fa-arrow-left-long "></i></button>
-                                <button class="next btn-embty"><i class="fa-solid fa-arrow-right-long "></i></button>
-                            </div>
 
-                        </div>
-                    </div>
-                    <div class="shipping-information">
-                        <div class="contact d-flex align-items-center">
-                            <img src="/assets/images/Checkout/Line 28.svg" alt="">
-                            <h5>Contact Information</h5>
-                        </div>
-                        <div class="contact-information">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="field">
-                                        <input type="text" name="firstname" id="firstname" placeholder="">
-                                        <label for="firstname">First Name</label>
-                                    </div>
+                            <div class="ms-3">
+                                <div>
+                                    <p>Step 1</p>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="field">
-                                        <input type="text" name="lastname" id="lastname" placeholder="">
-                                        <label for="lastname">Last Name</label>
-                                    </div>
+                                <div class="d-flex align-items-center">
+                                    <h5>Shipping Information</h5>
+                                    <i class="fa-solid fa-arrow-left-long previous mx-3" role="button"></i>
+                                    <i class="fa-solid fa-arrow-right-long next" role="button"></i>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="field">
-                                        <input type="email" name="email" id="email" placeholder="">
-                                        <label for="email">Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="field">
-                                        <input type="number" name="phonenumber" id="phonenumber" placeholder="">
-                                        <label for="phonenumber">Phone Number</label>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
-                        <div class="contact d-flex align-items-center">
-                            <img src="/assets/images/Checkout/Line 28.svg" alt="">
-                            <h5>Shipping Address</h5>
-                        </div>
-                        <div class="shipping-address">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="field">
-                                        <select required>
-                                            <option value="" disabled selected hidden></option>
-                                            <option value="option1">Option 1</option>
-                                            <option value="option2">Option 2</option>
-                                            <option value="option3">Option 3</option>
-                                        </select>
-                                        <label for="select">Country/Region</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="field">
-                                        <select required>
-                                            <option value="" disabled selected hidden></option>
-                                            <option value="option1">Option 1</option>
-                                            <option value="option2">Option 2</option>
-                                            <option value="option3">Option 3</option>
-                                        </select>
-                                        <label for="select">City</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="field">
-                                        <input type="text" name="postalcode" id="postalcode" placeholder="">
-                                        <label for="postalcode">Postal code / ZIP (Optional)</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="field">
-                                        <input type="text" name="street" id="street" placeholder="">
-                                        <label for="street">Street</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="field">
-                                        <input type="text" name="apartment" id="apartment" placeholder="">
-                                        <label for="apartment">Apartment, Suite, etc.. (Optional)</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="field">
-                                        <input type="text" name="flatnumber" id="flatnumber" placeholder="">
-                                        <label for="flatnumber">Flat Number</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contact d-flex align-items-center">
-                            <img src="/assets/images/Checkout/Line 28.svg" alt="">
-                            <h5>Shipping Method</h5>
-                        </div>
-                        <div class="contact-information">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <input class="Pickup" type="text" placeholder="Pickup">
-                                </div>
-                                <div class="col-lg-6">
-                                    <input class="Ship" type="text" placeholder="Ship">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-end">
-                            <button class="btn-solid">Next</button>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- payment-method -->
-                <div class="payment-method ">
-                    <div class="shipping-steps d-flex align-items-center">
-                        <!-- Progress -->
-                        
-
-
-                        <div class="ms-3">
-                            <div>
-                                <p>Step 2</p>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <h5>Payment Method</h5>
-                                <button class="previous btn-embty mx-3"><i class="fa-solid fa-arrow-left-long  "></i></button>
-                                <button class="next btn-embty"><i class="fa-solid fa-arrow-right-long "></i></button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="shipping-information">
-                        <div class="contact d-flex align-items-center">
-                            <img src="/assets/images/Checkout/Line 28.svg" alt="">
-                            <h5>Select Payment Method</h5>
-                        </div>
-                        <div class="payment-method-select">
-                            <div class="method-select">
-                                <ul class="nav nav-pills mb-3 justify-content-between" id="pills-tab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button
-                                            class="nav-link active d-flex align-items-center justify-content-between"
-                                            id="pills-Card-tab" data-bs-toggle="pill" data-bs-target="#pills-Card"
-                                            type="button" role="tab" aria-controls="pills-Card" aria-selected="true">
-                                            <i class="fa-regular fa-credit-card icons"></i>
-                                            Card
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-PayPal-tab" data-bs-toggle="pill"
-                                            data-bs-target="#pills-PayPal" type="button" role="tab"
-                                            aria-controls="pills-PayPal" aria-selected="true">
-                                            <i class="fa-brands fa-paypal icons"></i>
-                                            PayPal
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-Cash-tab" data-bs-toggle="pill"
-                                            data-bs-target="#pills-Cash" type="button" role="tab"
-                                            aria-controls="pills-Cash" aria-selected="true">
-                                            <i class="fa-solid fa-money-bill icons"></i>
-                                            Cash
-                                        </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pills-Wallet-tab" data-bs-toggle="pill"
-                                            data-bs-target="#pills-Wallet" type="button" role="tab"
-                                            aria-controls="pills-Wallet" aria-selected="true">
-                                            <i class="fa-solid fa-wallet icons"></i>
-                                            Wallet
-                                        </button>
-                                    </li>
-                                </ul>
-                                <div class="tab-content" id="pills-tabContent">
-                                    <div class="tab-pane fade show active Card" id="pills-Card" role="tabpanel"
-                                        aria-labelledby="pills-Card-tab" tabindex="0">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="field">
-                                                    <input type="text" name="Cardholder" id="Cardholder" placeholder="">
-                                                    <label for="Cardholder">Cardholder Name</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="field">
-                                                    <input type="number" name="cardnumber" id="cardnumber"
-                                                        placeholder="">
-                                                    <label for="cardnumber">Card Number</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="field">
-                                                    <input type="text" name="expirationdate" id="expirationdate"
-                                                        placeholder="">
-                                                    <label for="expirationdate">Expiration Date</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="field">
-                                                    <input type="number" name="CVV" id="CVV" placeholder="">
-                                                    <label for="CVV">CVV</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade show PayPal" id="pills-PayPal" role="tabpanel"
-                                        aria-labelledby="pills-PayPal-tab" tabindex="0">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="field">
-                                                    <input type="text" name="Cardholder" id="Cardholder" placeholder="">
-                                                    <label for="Cardholder">Cardholder Name</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="field">
-                                                    <input type="number" name="cardnumber" id="cardnumber"
-                                                        placeholder="">
-                                                    <label for="cardnumber">Card Number</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="field">
-                                                    <input type="text" name="expirationdate" id="expirationdate"
-                                                        placeholder="">
-                                                    <label for="expirationdate">Expiration Date</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="field">
-                                                    <input type="number" name="CVV" id="CVV" placeholder="">
-                                                    <label for="CVV">CVV</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade show Cash" id="pills-Cash" role="tabpanel"
-                                        aria-labelledby="pills-Cash-tab" tabindex="0">
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="field">
-                                                    <input type="text" name="Cardholder" id="Cardholder" placeholder="">
-                                                    <label for="Cardholder">Cardholder Name</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="field">
-                                                    <input type="number" name="cardnumber" id="cardnumber"
-                                                        placeholder="">
-                                                    <label for="cardnumber">Card Number</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="field">
-                                                    <input type="text" name="expirationdate" id="expirationdate"
-                                                        placeholder="">
-                                                    <label for="expirationdate">Expiration Date</label>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="field">
-                                                    <input type="number" name="CVV" id="CVV" placeholder="">
-                                                    <label for="CVV">CVV</label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade show Wallet" id="pills-Wallet" role="tabpanel"
-                                        aria-labelledby="pills-Wallet-tab" tabindex="0">
-                                        <div class="balance">
-                                            <button class="btn-brown w-100">
-                                                <div>Current Balance</div>
-                                                <div>$4350.76</div>
-                                            </button>
-                                            <div class="required-cash d-flex justify-content-between">
-                                                <h5>Required Cash</h5>
-                                                <h5>$250.00</h5>
-                                            </div>
-                                            <div class="remaining-balance d-flex justify-content-between">
-                                                <h5>Remaining Balance</h5>
-                                                <h5>$4150.76</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="d-flex justify-content-end">
-                            <button class="btn-outline">Back</button>
-                            <button class="btn-solid">Confirm</button>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- Review Order -->
-                <div class="review-order ">
-                    <div class="shipping-steps d-flex align-items-center">
-                        <!-- Progress -->
-                        
-
-
-                        
-                        <div class="ms-3">
-                            <div>
-                                <p>Step 3</p>
-                            </div>
-                            <div class="d-flex align-items-center">
-                                <h5>Review Order</h5>
-                                <button class="previous btn-embty mx-3"><i class="fa-solid fa-arrow-left-long "></i></button>
-                                <button class="next btn-embty"><i class="fa-solid fa-arrow-right-long "></i></button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="shipping-information">
-                        <div class="contact d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
+                        <div class="shipping-information">
+                            <div class="contact d-flex align-items-center">
                                 <img src="/assets/images/Checkout/Line 28.svg" alt="">
-                                <h5>Shipping Information</h5>
+                                <h5>Contact Information</h5>
                             </div>
-                            <button class="btn-outline">Edit</button>
-                        </div>
-                        <div class="information">
-                            <div class="contact-info">
+                            <div class="contact-information">
                                 <div class="row">
-                                    <div class="col-lg-12">
-                                        <h5>Contact</h5>
-                                    </div>
                                     <div class="col-lg-6">
-                                        <div class="fullname d-flex align-items-center mb-3">
-                                            <p>Full Name</p>
-                                            <span>Loaa Hany Mohamed</span>
+                                        <div class="field">
+                                            <input type="text" name="firstname" id="firstname" placeholder="">
+                                            <label for="firstname">First Name</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
-                                        <div class="phone d-flex align-items-center">
-                                            <p>Phone</p>
-                                            <span>+01234215735</span>
+                                        <div class="field">
+                                            <input type="text" name="lastname" id="lastname" placeholder="">
+                                            <label for="lastname">Last Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="field">
+                                            <input type="email" name="email" id="email" placeholder="">
+                                            <label for="email">Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="field">
+                                            <input type="number" name="phonenumber" id="phonenumber" placeholder="">
+                                            <label for="phonenumber">Phone Number</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact d-flex align-items-center">
+                                <img src="/assets/images/Checkout/Line 28.svg" alt="">
+                                <h5>Shipping Address</h5>
+                            </div>
+                            <div class="shipping-address">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="field">
+                                            <select required>
+                                                <option value="" disabled selected hidden></option>
+                                                <option value="option1">Option 1</option>
+                                                <option value="option2">Option 2</option>
+                                                <option value="option3">Option 3</option>
+                                            </select>
+                                            <label for="select">Country/Region</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="field">
+                                            <select required>
+                                                <option value="" disabled selected hidden></option>
+                                                <option value="option1">Option 1</option>
+                                                <option value="option2">Option 2</option>
+                                                <option value="option3">Option 3</option>
+                                            </select>
+                                            <label for="select">City</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="field">
+                                            <input type="text" name="postalcode" id="postalcode" placeholder="">
+                                            <label for="postalcode">Postal code / ZIP (Optional)</label>
                                         </div>
                                     </div>
                                     <div class="col-lg-12">
-                                        <div class="email d-flex align-items-center">
-                                            <p>Email</p>
-                                            <span>Loaahany209@gmail.com</span>
+                                        <div class="field">
+                                            <input type="text" name="street" id="street" placeholder="">
+                                            <label for="street">Street</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="field">
+                                            <input type="text" name="apartment" id="apartment" placeholder="">
+                                            <label for="apartment">Apartment, Suite, etc.. (Optional)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="field">
+                                            <input type="text" name="flatnumber" id="flatnumber" placeholder="">
+                                            <label for="flatnumber">Flat Number</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact d-flex align-items-center">
+                                <img src="/assets/images/Checkout/Line 28.svg" alt="">
+                                <h5>Shipping Method</h5>
+                            </div>
+                            <div class="contact-information">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input class="Pickup" type="text" placeholder="Pickup">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <input class="Ship" type="text" placeholder="Ship">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button class="btn-solid btn-next">Next</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- payment-method -->
+                    <div class="payment-method form-step">
+                        <div class="shipping-steps d-flex align-items-center">
+                            <!-- Progress -->
+
+
+
+                            <div class="ms-3">
+                                <div>
+                                    <p>Step 2</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <h5>Payment Method</h5>
+                                    <i class="fa-solid fa-arrow-left-long previous mx-3" role="button"></i>
+                                    <i class="fa-solid fa-arrow-right-long next" role="button"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="shipping-information">
+                            <div class="contact d-flex align-items-center">
+                                <img src="/assets/images/Checkout/Line 28.svg" alt="">
+                                <h5>Select Payment Method</h5>
+                            </div>
+                            <div class="payment-method-select">
+                                <div class="method-select">
+                                    <ul class="nav nav-pills mb-3 justify-content-between" id="pills-tab"
+                                        role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button
+                                                class="nav-link active d-flex align-items-center justify-content-between"
+                                                id="pills-Card-tab" data-bs-toggle="pill" data-bs-target="#pills-Card"
+                                                type="button" role="tab" aria-controls="pills-Card"
+                                                aria-selected="true">
+                                                <i class="fa-regular fa-credit-card icons"></i>
+                                                Card
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-PayPal-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-PayPal" type="button" role="tab"
+                                                aria-controls="pills-PayPal" aria-selected="true">
+                                                <i class="fa-brands fa-paypal icons"></i>
+                                                PayPal
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-Cash-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-Cash" type="button" role="tab"
+                                                aria-controls="pills-Cash" aria-selected="true">
+                                                <i class="fa-solid fa-money-bill icons"></i>
+                                                Cash
+                                            </button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link" id="pills-Wallet-tab" data-bs-toggle="pill"
+                                                data-bs-target="#pills-Wallet" type="button" role="tab"
+                                                aria-controls="pills-Wallet" aria-selected="true">
+                                                <i class="fa-solid fa-wallet icons"></i>
+                                                Wallet
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active Card" id="pills-Card" role="tabpanel"
+                                            aria-labelledby="pills-Card-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="field">
+                                                        <input type="text" name="Cardholder" id="Cardholder"
+                                                            placeholder="">
+                                                        <label for="Cardholder">Cardholder Name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="field">
+                                                        <input type="number" name="cardnumber" id="cardnumber"
+                                                            placeholder="">
+                                                        <label for="cardnumber">Card Number</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="field">
+                                                        <input type="text" name="expirationdate" id="expirationdate"
+                                                            placeholder="">
+                                                        <label for="expirationdate">Expiration Date</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="field">
+                                                        <input type="number" name="CVV" id="CVV" placeholder="">
+                                                        <label for="CVV">CVV</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade show PayPal" id="pills-PayPal" role="tabpanel"
+                                            aria-labelledby="pills-PayPal-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="field">
+                                                        <input type="text" name="Cardholder" id="Cardholder"
+                                                            placeholder="">
+                                                        <label for="Cardholder">Cardholder Name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="field">
+                                                        <input type="number" name="cardnumber" id="cardnumber"
+                                                            placeholder="">
+                                                        <label for="cardnumber">Card Number</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="field">
+                                                        <input type="text" name="expirationdate" id="expirationdate"
+                                                            placeholder="">
+                                                        <label for="expirationdate">Expiration Date</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="field">
+                                                        <input type="number" name="CVV" id="CVV" placeholder="">
+                                                        <label for="CVV">CVV</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade show Cash" id="pills-Cash" role="tabpanel"
+                                            aria-labelledby="pills-Cash-tab" tabindex="0">
+                                            <div class="row">
+                                                <div class="col-lg-12">
+                                                    <div class="field">
+                                                        <input type="text" name="Cardholder" id="Cardholder"
+                                                            placeholder="">
+                                                        <label for="Cardholder">Cardholder Name</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="field">
+                                                        <input type="number" name="cardnumber" id="cardnumber"
+                                                            placeholder="">
+                                                        <label for="cardnumber">Card Number</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="field">
+                                                        <input type="text" name="expirationdate" id="expirationdate"
+                                                            placeholder="">
+                                                        <label for="expirationdate">Expiration Date</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <div class="field">
+                                                        <input type="number" name="CVV" id="CVV" placeholder="">
+                                                        <label for="CVV">CVV</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade show Wallet" id="pills-Wallet" role="tabpanel"
+                                            aria-labelledby="pills-Wallet-tab" tabindex="0">
+                                            <div class="balance">
+                                                <button class="btn-brown w-100">
+                                                    <div>Current Balance</div>
+                                                    <div>$4350.76</div>
+                                                </button>
+                                                <div class="required-cash d-flex justify-content-between">
+                                                    <h5>Required Cash</h5>
+                                                    <h5>$250.00</h5>
+                                                </div>
+                                                <div class="remaining-balance d-flex justify-content-between">
+                                                    <h5>Remaining Balance</h5>
+                                                    <h5>$4150.76</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-end">
+                                <button class="btn-outline">Back</button>
+                                <button class="btn-solid">Confirm</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Review Order -->
+                    <div class="review-order form-step">
+                        <div class="shipping-steps d-flex align-items-center">
+                            <!-- Progress -->
+
+
+
+
+                            <div class="ms-3">
+                                <div>
+                                    <p>Step 3</p>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <h5>Review Order</h5>
+                                    <i class="fa-solid fa-arrow-left-long previous mx-3" role="button"></i>
+                                    <i class="fa-solid fa-arrow-right-long next" role="button"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="shipping-information">
+                            <div class="contact d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/images/Checkout/Line 28.svg" alt="">
+                                    <h5>Shipping Information</h5>
+                                </div>
+                                <button class="btn-outline">Edit</button>
+                            </div>
+                            <div class="information">
+                                <div class="contact-info">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <h5>Contact</h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="fullname d-flex align-items-center mb-3">
+                                                <p>Full Name</p>
+                                                <span>Loaa Hany Mohamed</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="phone d-flex align-items-center">
+                                                <p>Phone</p>
+                                                <span>+01234215735</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="email d-flex align-items-center">
+                                                <p>Email</p>
+                                                <span>Loaahany209@gmail.com</span>
+                                            </div>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="col-lg-6">
+                                            <h5>Address</h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h5>Shipping Method</h5>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="warehouse">
+                                                <p>The LCO warehouse. </p>
+                                                <span>251 Eastern Baseline road, suite 107, gilbert aZ</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="Pickup d-flex align-items-center">
+                                                <img src="/assets/images/Checkout/shop.svg" alt="">
+                                                <span>Pickup</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Payment Method Info -->
+                            <div class="contact d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/images/Checkout/Line 28.svg" alt="">
+                                    <h5>Payment Method</h5>
+                                </div>
+                                <button class="btn-outline">Edit</button>
+                            </div>
+                            <div class="information">
+                                <div class="contact-info">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="method d-flex align-items-center">
+                                                <i class="fa-regular fa-credit-card"></i>
+                                                <h5>Card</h5>
+                                            </div>
+                                            <p class="card-num">**** **** **** 4643</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Items -->
+                            <div class="contact d-flex align-items-center justify-content-between">
+                                <div class="d-flex align-items-center">
+                                    <img src="/assets/images/Checkout/Line 28.svg" alt="">
+                                    <h5>Items</h5>
+                                </div>
+                                <button class="btn-outline">Edit</button>
+                            </div>
+                            <div class="information">
+                                <div class="contact-info">
+                                    <div class="items-veiw">
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <div class="items-cart d-flex align-items-center">
+                                                    <div class="item-img">
+                                                        <img src="/assets/images/Cart/item-cart1.svg" alt="">
+                                                    </div>
+                                                    <div class="title-item">
+                                                        <span>Colette Shaker Statement Necklace- Gold</span>
+                                                        <div class="prices d-flex align-items-center">
+                                                            <p class="pe-1">$125.00</p>
+                                                            <small> $150.00</small>
+                                                        </div>
+                                                        <div class="quantity-detales">
+                                                            <p>Quantity: <span>2</span> </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div
+                                                    class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
+                                                    <button class="btn-brown">
+                                                        <div>Subtotal:</div>
+                                                        <div>$250.00</div>
+                                                    </button>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="line"></div>
-                                    <div class="col-lg-6">
-                                        <h5>Address</h5>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <h5>Shipping Method</h5>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="warehouse">
-                                            <p>The LCO warehouse. </p>
-                                            <span>251 Eastern Baseline road, suite 107, gilbert aZ</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="Pickup d-flex align-items-center">
-                                            <img src="/assets/images/Checkout/shop.svg" alt="">
-                                            <span>Pickup</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Payment Method Info -->
-                        <div class="contact d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <img src="/assets/images/Checkout/Line 28.svg" alt="">
-                                <h5>Payment Method</h5>
-                            </div>
-                            <button class="btn-outline">Edit</button>
-                        </div>
-                        <div class="information">
-                            <div class="contact-info">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="method d-flex align-items-center">
-                                            <i class="fa-regular fa-credit-card"></i>
-                                            <h5>Card</h5>
-                                        </div>
-                                        <p class="card-num">**** **** **** 4643</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Items -->
-                        <div class="contact d-flex align-items-center justify-content-between">
-                            <div class="d-flex align-items-center">
-                                <img src="/assets/images/Checkout/Line 28.svg" alt="">
-                                <h5>Items</h5>
-                            </div>
-                            <button class="btn-outline">Edit</button>
-                        </div>
-                        <div class="information">
-                            <div class="contact-info">
-                                <div class="items-veiw">
-                                    <div class="row">
-                                        <div class="col-lg-8">
-                                            <div class="items-cart d-flex align-items-center">
-                                                <div class="item-img">
-                                                    <img src="/assets/images/Cart/item-cart1.svg" alt="">
-                                                </div>
-                                                <div class="title-item">
-                                                    <span>Colette Shaker Statement Necklace- Gold</span>
-                                                    <div class="prices d-flex align-items-center">
-                                                        <p class="pe-1">$125.00</p>
-                                                        <small> $150.00</small>
+                                    <div class="items-veiw">
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <div class="items-cart d-flex align-items-center">
+                                                    <div class="item-img">
+                                                        <img src="/assets/images/Cart/item-cart2.svg" alt="">
                                                     </div>
-                                                    <div class="quantity-detales">
-                                                        <p>Quantity: <span>2</span> </p>
+                                                    <div class="title-item">
+                                                        <span>Colette Shaker Statement Necklace- Gold</span>
+                                                        <div class="prices d-flex align-items-center">
+                                                            <p class="pe-1">$125.00</p>
+                                                            <small> $150.00</small>
+                                                        </div>
+                                                        <div class="quantity-detales">
+                                                            <p>Quantity: <span>2</span> </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div
-                                                class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
-                                                <button class="btn-brown">
-                                                    <div>Subtotal:</div>
-                                                    <div>$250.00</div>
-                                                </button>
+                                            <div class="col-lg-4">
+                                                <div
+                                                    class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
+                                                    <button class="btn-brown">
+                                                        <div>Subtotal:</div>
+                                                        <div>$250.00</div>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="line"></div>
-                                <div class="items-veiw">
-                                    <div class="row">
-                                        <div class="col-lg-8">
-                                            <div class="items-cart d-flex align-items-center">
-                                                <div class="item-img">
-                                                    <img src="/assets/images/Cart/item-cart2.svg" alt="">
-                                                </div>
-                                                <div class="title-item">
-                                                    <span>Colette Shaker Statement Necklace- Gold</span>
-                                                    <div class="prices d-flex align-items-center">
-                                                        <p class="pe-1">$125.00</p>
-                                                        <small> $150.00</small>
+                                    <div class="line"></div>
+                                    <div class="items-veiw">
+                                        <div class="row">
+                                            <div class="col-lg-8">
+                                                <div class="items-cart d-flex align-items-center">
+                                                    <div class="item-img">
+                                                        <img src="/assets/images/Cart/item-cart3.svg" alt="">
                                                     </div>
-                                                    <div class="quantity-detales">
-                                                        <p>Quantity: <span>2</span> </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div
-                                                class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
-                                                <button class="btn-brown">
-                                                    <div>Subtotal:</div>
-                                                    <div>$250.00</div>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="line"></div>
-                                <div class="items-veiw">
-                                    <div class="row">
-                                        <div class="col-lg-8">
-                                            <div class="items-cart d-flex align-items-center">
-                                                <div class="item-img">
-                                                    <img src="/assets/images/Cart/item-cart3.svg" alt="">
-                                                </div>
-                                                <div class="title-item">
-                                                    <span>Colette Shaker Statement Necklace- Gold</span>
-                                                    <div class="prices d-flex align-items-center">
-                                                        <p class="pe-1">$125.00</p>
-                                                        <small> $150.00</small>
-                                                    </div>
-                                                    <div class="quantity-detales">
-                                                        <p>Quantity: <span>2</span> </p>
+                                                    <div class="title-item">
+                                                        <span>Colette Shaker Statement Necklace- Gold</span>
+                                                        <div class="prices d-flex align-items-center">
+                                                            <p class="pe-1">$125.00</p>
+                                                            <small> $150.00</small>
+                                                        </div>
+                                                        <div class="quantity-detales">
+                                                            <p>Quantity: <span>2</span> </p>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div
-                                                class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
-                                                <button class="btn-brown">
-                                                    <div>Subtotal:</div>
-                                                    <div>$250.00</div>
-                                                </button>
+                                            <div class="col-lg-4">
+                                                <div
+                                                    class="items-cart h-100 d-flex flex-column justify-content-between align-items-end">
+                                                    <button class="btn-brown">
+                                                        <div>Subtotal:</div>
+                                                        <div>$250.00</div>
+                                                    </button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
 
@@ -653,7 +661,10 @@
                         <span>Free</span>
                     </div>
                     <div class="line"></div>
-                    <input type="text" placeholder="Have a promo code?">
+                    <div class="field">
+                        <input type="text" name="promo-code" id="promo-code" placeholder="">
+                        <label for="promo-code">Have a promo code?</label>
+                    </div>
                     <button class="btn-brown w-100">
                         <div>Total</div>
                         <div>$250.00</div>
@@ -750,10 +761,10 @@
 
 
     <script src="/assets/js/bootstrap/bootstrap.bundle.js"></script>
-    <script src="/assets/js/bootstrap/all.min.js"></script>
+    <!-- <script src="/assets/js/bootstrap/all.min.js"></script> -->
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/pages/Checkout.js"></script>
-    
+
 </body>
 
 
