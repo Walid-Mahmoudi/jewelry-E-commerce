@@ -120,7 +120,7 @@
   pointer-events: none;
   margin-left: 25px;
 }
-.summary .field input:focus{
+.summary .field input:focus ,.summary .field input:not(:placeholder-shown){
   background: transparent;
   transition: all 1s ease-in-out;
 }

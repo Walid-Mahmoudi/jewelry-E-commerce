@@ -392,6 +392,18 @@
   margin: 20px 0;
 }
 /* my-orders */
+
+.orders-veiw.active{
+  display: none;
+  animation: fadeIn 0.5s ;
+}
+
+@keyframes fadeIn {
+  from { display: block; }
+  to { opacity: .2;}
+}
+
+
 .orders-veiw,
 .returns-veiw,
 .wallet {
@@ -637,6 +649,14 @@
 }
 
 /* order-status */
+.order-status.active{
+display: none;
+animation: fadeIn 0.5s ;
+}
+@keyframes fadeIn {
+  from { display: block; }
+  to { opacity: .2;}
+}
 .order-status .information .items-cart .btn-outline {
   border-color: var(--bg-primary);
   color: var(--bg-primary);

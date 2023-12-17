@@ -41,8 +41,48 @@ header nav .profil .dropdown-item:hover {
   font-size: 33px;
 }
 /* MAIN */
-.payment-method , .review-order{
+.form-step{
+  animation: fadeIn 0.5s ;
+
+}
+.form-step.active {
   display: none;
+  animation: fadeIn 0.5s ;
+}
+@keyframes fadeIn {
+  from { display: block; }
+  to { opacity: .2;}
+}
+
+.form-steps .headers {
+  margin-bottom: 20px;
+}
+/* Progres */
+.circular-progres {
+  position: relative;
+  width: 87px;
+  height: 87px;
+  background: var(--bg-Secondary);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.circular-progres::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  border-radius: 50%;
+}
+.circular-progres .value-progres {
+  position: relative;
+}
+.form-steps .headers .previous.active {
+  color: var(--bg-gray2);
+}
+.form-steps .headers .next.active {
+  color: var(--bg-gray2);
 }
 
 .summary .btn-solid.disabeld {
@@ -139,9 +179,8 @@ select {
   padding: 22px 48px;
   background: transparent;
   border-radius: 0;
-
 }
-.payment-method-select .method-select .nav-pills .nav-link .icons{
+.payment-method-select .method-select .nav-pills .nav-link .icons {
   margin-right: 14px;
   font-size: 20px;
 }
@@ -153,82 +192,81 @@ select {
 .payment-method-select .method-select button:hover {
   background: none;
 }
-.payment-method-select .method-select{
+.payment-method-select .method-select {
   padding: 20px 0;
   gap: 20px;
 }
-.shipping-information .btn-outline{
+.shipping-information .btn-outline {
   width: 15%;
   margin-right: 14px;
 }
-.payment-method-select .method-select .btn-brown{
+.payment-method-select .method-select .btn-brown {
   background: var(--bg-Secondary2);
   color: #fff;
   padding: 14px;
   font-size: 14px;
   font-weight: 600;
 }
-.payment-method-select .method-select .balance{
+.payment-method-select .method-select .balance {
   border: 1px solid var(--bg-gray1);
   padding: 20px;
+  min-width: 770px;
 }
-.payment-method-select .method-select .btn-brown:hover{
+.payment-method-select .method-select .btn-brown:hover {
   background: var(--bg-Secondary2);
   color: #fff;
 }
-.payment-method-select .method-select .balance h5{
+.payment-method-select .method-select .balance h5 {
   font-size: 14px;
   font-weight: 600;
   padding: 0;
 }
-.payment-method-select .method-select .balance .required-cash
-{
+.payment-method-select .method-select .balance .required-cash {
   padding: 20px 14px 0 14px;
 }
-.payment-method-select .method-select .balance .remaining-balance{
+.payment-method-select .method-select .balance .remaining-balance {
   padding: 0 14px 0 14px;
 }
 /*  */
-.shipping-information .contact .btn-outline{
+.shipping-information .contact .btn-outline {
   padding: 3px;
   width: 9%;
   margin: 0;
   font-family: Montserrat;
   cursor: default;
 }
-.information .contact-info{
+.information .contact-info {
   margin: 20px 0;
   border: 1px solid var(--bg-gray1);
   padding: 20px;
 }
-.information .contact-info h5{
+.information .contact-info h5 {
   padding: 0;
 }
-.information .contact-info p{
-  font-size: 12px ;
+.information .contact-info p {
+  font-size: 12px;
   font-weight: 500;
-  
 }
-.information .contact-info span{
-  font-size: 12px ;
+.information .contact-info span {
+  font-size: 12px;
   font-weight: 400;
 }
-.information .contact-info .fullname p ,
-.information .contact-info .phone p{
-margin-right: 5px;
+.information .contact-info .fullname p,
+.information .contact-info .phone p {
+  margin-right: 5px;
 }
-.information .contact-info .email p{
+.information .contact-info .email p {
   margin-right: 33.5px;
 }
-.information .contact-info .line{
+.information .contact-info .line {
   border-bottom: 1px solid var(--bg-gray1);
   margin: 20px 0;
 }
-.information .contact-info .Pickup img{
+.information .contact-info .Pickup img {
   width: 20px;
   margin-right: 5px;
 }
-.information .contact-info .method h5{
+.information .contact-info .method h5 {
   margin-left: 14px;
 }
 .information .contact-info .card-num {
@@ -239,80 +277,3 @@ margin-right: 5px;
   height: 80px;
   object-fit: cover;
 }
-
-
-
-
-
-
-/* Progress */
-.progress {
-  width: 150px;
-  height: 150px;
-  background: none;
-  position: relative;
-}
-
-.progress::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  border: 6px solid #eee;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.progress>span {
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  z-index: 1;
-}
-
-.progress .progress-left {
-  left: 0;
-}
-
-.progress .progress-bar {
-  width: 100%;
-  height: 100%;
-  background: none;
-  border-width: 6px;
-  border-style: solid;
-  position: absolute;
-  top: 0;
-}
-
-.progress .progress-left .progress-bar {
-  left: 100%;
-  border-top-right-radius: 80px;
-  border-bottom-right-radius: 80px;
-  border-left: 0;
-  transform-origin: center left;
-}
-
-.progress .progress-right {
-  right: 0;
-}
-
-.progress .progress-right .progress-bar {
-  left: -100%;
-  border-top-left-radius: 80px;
-  border-bottom-left-radius: 80px;
-  border-right: 0;
-  transform-origin: center right;
-}
-
-.progress .progress-value {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-
-
-
