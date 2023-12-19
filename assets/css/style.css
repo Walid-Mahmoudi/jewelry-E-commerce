@@ -208,6 +208,15 @@ body {
 }
 /* ----HEADER---- */
 /* NAVBAR1 */
+/* header .search input{
+  border: none;
+  padding: 0;
+  background: url(/assets/images/search-normal.svg) no-repeat center left;
+  background-size: 20px;
+  height: 100%;
+  text-indent: 30px;
+} */
+
 .search img,
 .profil img {
   width: 20px;

@@ -157,13 +157,22 @@
   transition: opacity 0.3s ease;
   transition: height 0.3s ease;
 }
+.update-information,
+.profile,
+.update-password {
+  animation: fadeIn 0.5s reverse ;
+}
 .update-information.disable,
 .profile.disable,
 .update-password.disable {
-  height: 0;
-  opacity: 0;
-  transition: all 0.3s ease;
+  display: none;
+  animation: fadeIn 0.5s ;
 }
+@keyframes fadeIn {
+  from { display: block; }
+  to { opacity: .2;}
+}
+
 #back,
 #back-reset {
   z-index: 333;
@@ -782,6 +791,14 @@ animation: fadeIn 0.5s ;
 }
 
 /* Returns */
+.returns-veiw.disable , .refunded-items.disable , .reviewing-items.disable{
+  display: none;
+  animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+  from{display:block ;}
+  to{opacity: .2;}
+}
 .returning-method .contact,
 .address .contact {
   background: rgba(237, 227, 217, 0.4);
